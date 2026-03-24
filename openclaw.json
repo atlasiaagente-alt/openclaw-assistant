@@ -26,15 +26,25 @@
       }
     }
   },
-  "models": {
-    "providers": {
-      "ollama": {
-        "baseUrl": "http://127.0.0.1:11434",
-        "apiKey": "ollama-local",
-        "api": "ollama"
-      }
-    }
-  },
+	"models": {
+	  "providers": {
+		"ollama": {
+		  "baseUrl": "http://127.0.0.1:11434",
+		  "apiKey": "ollama-local",
+		  "api": "ollama",
+		  "models": [
+			{
+			  "id": "qwen3:30b",
+			  "name": "qwen3:30b"
+			},
+			{
+			  "id": "qwen3:8b",
+			  "name": "qwen3:8b"
+			}
+		  ]
+		}
+	  }
+	},
   "tools": {
     "profile": "coding",
     "web": {
