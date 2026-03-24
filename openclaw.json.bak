@@ -1,10 +1,10 @@
 {
   "meta": {
     "lastTouchedVersion": "2026.3.23-1",
-    "lastTouchedAt": "2026-03-24T02:35:57.517Z"
+    "lastTouchedAt": "2026-03-24T13:50:46.094Z"
   },
   "wizard": {
-    "lastRunAt": "2026-03-24T02:10:31.238Z",
+    "lastRunAt": "2026-03-24T02:36:24.515Z",
     "lastRunVersion": "2026.3.23-1",
     "lastRunCommand": "onboard",
     "lastRunMode": "local"
@@ -45,12 +45,13 @@
       "model": {
         "primary": "openai-codex/gpt-5.4",
         "fallbacks": [
-          "ollama/qwen3:30b",
-          "ollama/qwen3:8b"
+          "ollama/qwen3:30b"
         ]
       },
       "models": {
-        "openai-codex/gpt-5.4": {}
+        "openai-codex/gpt-5.4": {},
+        "ollama/qwen3:30b": {},
+        "ollama/qwen3:8b": {}
       },
       "workspace": "C:\\Users\\Gustavo\\.openclaw\\workspace"
     }

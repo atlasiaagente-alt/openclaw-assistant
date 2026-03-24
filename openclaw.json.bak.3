@@ -1,19 +1,71 @@
 {
+  "meta": {
+    "lastTouchedVersion": "2026.3.23-1",
+    "lastTouchedAt": "2026-03-24T13:42:58.102Z"
+  },
+  "wizard": {
+    "lastRunAt": "2026-03-24T02:36:24.515Z",
+    "lastRunVersion": "2026.3.23-1",
+    "lastRunCommand": "onboard",
+    "lastRunMode": "local"
+  },
   "auth": {
     "profiles": {
       "anthropic:anthropic-token": {
         "provider": "anthropic",
         "mode": "token"
+      },
+      "openai-codex:default": {
+        "provider": "openai-codex",
+        "mode": "oauth"
+      }
+    }
+  },
+  "models": {
+    "providers": {
+      "ollama": {
+        "baseUrl": "http://127.0.0.1:11434",
+        "apiKey": "ollama-local",
+        "api": "ollama",
+        "models": [
+          {
+            "id": "qwen3:30b",
+            "name": "qwen3:30b"
+          },
+          {
+            "id": "qwen3:8b",
+            "name": "qwen3:8b"
+          }
+        ]
       }
     }
   },
   "agents": {
     "defaults": {
+      "model": {
+        "primary": "anthropic/claude-opus-4-6",
+        "fallbacks": [
+          "openai-codex/gpt-5.4",
+          "ollama/qwen3:30b",
+          "ollama/qwen3:8b"
+        ]
+      },
+      "models": {
+        "openai-codex/gpt-5.4": {},
+        "ollama/qwen3:30b": {},
+        "ollama/qwen3:8b": {}
+      },
       "workspace": "C:\\Users\\Gustavo\\.openclaw\\workspace"
     }
   },
   "tools": {
-    "profile": "coding"
+    "profile": "coding",
+    "web": {
+      "search": {
+        "enabled": true,
+        "provider": "duckduckgo"
+      }
+    }
   },
   "commands": {
     "native": "auto",
@@ -24,8 +76,19 @@
   "session": {
     "dmScope": "per-channel-peer"
   },
+  "hooks": {
+    "internal": {
+      "enabled": true,
+      "entries": {
+        "session-memory": {
+          "enabled": true
+        }
+      }
+    }
+  },
   "channels": {
     "whatsapp": {
+      "enabled": true,
       "dmPolicy": "pairing",
       "selfChatMode": false,
       "allowFrom": [
@@ -60,8 +123,11 @@
       ]
     }
   },
-  "meta": {
-    "lastTouchedVersion": "2026.3.23-1",
-    "lastTouchedAt": "2026-03-24T02:10:19.823Z"
+  "plugins": {
+    "entries": {
+      "duckduckgo": {
+        "enabled": true
+      }
+    }
   }
 }
