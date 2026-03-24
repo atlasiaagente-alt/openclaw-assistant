@@ -1,0 +1,24 @@
+{
+  "providers": {
+    "openai-codex": {
+      "baseUrl": "https://chatgpt.com/backend-api",
+      "api": "openai-codex-responses",
+      "models": []
+    },
+    "ollama": {
+      "baseUrl": "http://127.0.0.1:11434",
+      "apiKey": "OLLAMA_API_KEY",
+      "api": "ollama",
+      "models": [
+        {
+          "id": "qwen3:30b",
+          "name": "qwen3:30b"
+        },
+        {
+          "id": "qwen3:8b",
+          "name": "qwen3:8b"
+        }
+      ]
+    }
+  }
+}
