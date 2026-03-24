@@ -74,10 +74,16 @@ Tener un agente creado **no** implica que ya exista una sesión viva con label r
 Diferencia práctica:
 
 - `openclaw agent --agent <id> --message "..."` → invoca al agente por CLI y devuelve respuesta
-- sesión persistente → permite hablarle como hilo/chat continuo aparte
+- sesión persistente conversable → normalmente aparece cuando el agente queda conectado a un canal o routing real (binding)
+
+Conclusión práctica para replicar:
+
+- para agentes separados de OpenClaw, la verificación base y segura es la invocación por CLI
+- si se quiere conversación persistente real, el siguiente paso no es `sessions_spawn`, sino **binding/routing de canal hacia ese agentId**
+- en WhatsApp con un solo número, eso se resuelve con bindings por peer/contacto hacia agentes distintos
 
 Por ahora, la forma segura y replicable para verificar un agente nuevo es la invocación por CLI.
-La sesión persistente debe añadirse después según el canal o flujo que se quiera montar.
+La sesión persistente debe añadirse después mediante canal + binding.
 
 ## 7) Patrón para futuros agentes
 
