@@ -5,15 +5,27 @@
       "type": "token",
       "provider": "anthropic",
       "token": "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"
+    },
+    "openai-codex:default": {
+      "type": "oauth",
+      "provider": "openai-codex",
+      "access": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjE5MzQ0ZTY1LWJiYzktNDRkMS1hOWQwLWY5NTdiMDc5YmQwZSIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS92MSJdLCJjbGllbnRfaWQiOiJhcHBfRU1vYW1FRVo3M2YwQ2tYYVhwN2hyYW5uIiwiZXhwIjoxNzc1MTgzNzQzLCJodHRwczovL2FwaS5vcGVuYWkuY29tL2F1dGgiOnsiY2hhdGdwdF9hY2NvdW50X2lkIjoiMzU0NDBmMzUtNThhNC00NWU5LWEwZjItMDViZTY2ODA3ZGFlIiwiY2hhdGdwdF9hY2NvdW50X3VzZXJfaWQiOiJ1c2VyLVlTaUZlTGxyT2RUVFF3TjI5dXFobFpjbF9fMzU0NDBmMzUtNThhNC00NWU5LWEwZjItMDViZTY2ODA3ZGFlIiwiY2hhdGdwdF9jb21wdXRlX3Jlc2lkZW5jeSI6Im5vX2NvbnN0cmFpbnQiLCJjaGF0Z3B0X3BsYW5fdHlwZSI6InBsdXMiLCJjaGF0Z3B0X3VzZXJfaWQiOiJ1c2VyLVlTaUZlTGxyT2RUVFF3TjI5dXFobFpjbCIsImxvY2FsaG9zdCI6dHJ1ZSwidXNlcl9pZCI6InVzZXItWVNpRmVMbHJPZFRUUXdOMjl1cWhsWmNsIn0sImh0dHBzOi8vYXBpLm9wZW5haS5jb20vcHJvZmlsZSI6eyJlbWFpbCI6InRvbGVkbzk3MDUwMUBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZX0sImlhdCI6MTc3NDMxOTc0MiwiaXNzIjoiaHR0cHM6Ly9hdXRoLm9wZW5haS5jb20iLCJqdGkiOiIyNGZmODgwMi1iMDhiLTRiY2ItODIzZC0zNzBlYWU0ZDg2MTYiLCJuYmYiOjE3NzQzMTk3NDIsInB3ZF9hdXRoX3RpbWUiOjE3NzQzMTk3NDE1NTQsInNjcCI6WyJvcGVuaWQiLCJwcm9maWxlIiwiZW1haWwiLCJvZmZsaW5lX2FjY2VzcyJdLCJzZXNzaW9uX2lkIjoiYXV0aHNlc3NfV204UU1IeUszSWxQd1M5R0ZmRjBUbXVSIiwic2wiOnRydWUsInN1YiI6Imdvb2dsZS1vYXV0aDJ8MTA0Njg0NjAxMjQ5MTA2NDU2NTEzIn0.rDcGPL2xIlzBky9YneF2l1IyHu3RNmIebjjMkZNok_YvobrjehFp50uKC_a-frsvjUVNEAe2hx7LyjODd_atDYcDHRXyH20C-4hOvfhs5azgW0MHMVGpJHysDwqqYXSdqLe3Rl1_QcWXzrIerJUhe04B68Y7rISDHi2vZiZDoau23FZ9plcQIy7L2Vt2E9GAWmO3f8wZUfxMQHXkINfiEmCinX9qNlbhXjUoGPRI03DHNdDq5P0K1aX0ppZsGtXGqzGdb6v-6y-cHBKOEPJ7O-PJ-Xq62lQH-sg_g5mpVSfI2ecwfnoEl3hIiR1Eld7NnHcsPMWHqwZMrqnBWvsoP0QK9p5q07Y-AtV207zMagq9WofmK5VpI6q7oE7Rxzz58lB_jmUHWtWEvj-zY4rwogp9mXVs02usDkItO-nLKu9jVheAmCYa4QhhuI1dfoExOF9IO2l1894rM14OnCYLXBPPjEcbldZ1a7ztdC9W5YyCUVEU4nXxv-eb6q0GpPgrnGFKmyge-0Y5LdTtIF2_V8uADMWsJW2BaqEfe-lAn_8rIKSk-aAYfKkYgaRv8OLCQcOoKODn-72PL7gmJg9Yk8KfzErne9-8lwLu5hoKuXBBOMGRa5568YCwtBw4llUz9pc17bPXBpYMMAlHPlYxuMN_xkuWdgxnxTMx4fdtUw8",
+      "refresh": "rt_kSY1W7ZaC1-QChK_gm8gb20fXDsVzOnvSL7X3v7AB9Y.Rg7P-aPzoID5tKakIEWKYso3Lay_EopW5CIIl6dpO-M",
+      "expires": 1775183742062
     }
   },
   "lastGood": {
-    "anthropic": "anthropic:anthropic-token"
+    "anthropic": "anthropic:anthropic-token",
+    "openai-codex": "openai-codex:default"
   },
   "usageStats": {
     "anthropic:anthropic-token": {
       "errorCount": 0,
-      "lastUsed": 1774318958289
+      "lastUsed": 1774319702628
+    },
+    "openai-codex:default": {
+      "errorCount": 0,
+      "lastUsed": 1774319832039
     }
   }
 }

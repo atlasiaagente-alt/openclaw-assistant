@@ -1,12 +1,9 @@
 {
   "agent:main:main": {
     "sessionId": "b8a06271-9bf9-40ee-88df-af907c39a3f6",
-    "updatedAt": 1774318958292,
+    "updatedAt": 1774319832044,
     "systemSent": true,
     "abortedLastRun": false,
-    "authProfileOverride": "anthropic:anthropic-token",
-    "authProfileOverrideSource": "auto",
-    "authProfileOverrideCompactionCount": 0,
     "chatType": "direct",
     "deliveryContext": {
       "channel": "webchat"
@@ -98,17 +95,17 @@
       "version": 0
     },
     "status": "done",
-    "startedAt": 1774318890473,
-    "modelProvider": "anthropic",
-    "model": "claude-opus-4-6",
-    "contextTokens": 1000000,
+    "startedAt": 1774319827742,
+    "modelProvider": "openai-codex",
+    "model": "gpt-5.4",
+    "contextTokens": 272000,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1774318890456,
+      "generatedAt": 1774319827721,
       "sessionId": "b8a06271-9bf9-40ee-88df-af907c39a3f6",
       "sessionKey": "agent:main:main",
-      "provider": "anthropic",
-      "model": "claude-opus-4-6",
+      "provider": "openai-codex",
+      "model": "gpt-5.4",
       "workspaceDir": "C:\\Users\\Gustavo\\.openclaw\\workspace",
       "bootstrapMaxChars": 20000,
       "bootstrapTotalMaxChars": 150000,
@@ -124,9 +121,9 @@
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 27385,
-        "projectContextChars": 13655,
-        "nonProjectContextChars": 13730
+        "chars": 26975,
+        "projectContextChars": 13270,
+        "nonProjectContextChars": 13705
       },
       "injectedWorkspaceFiles": [
         {
@@ -157,16 +154,16 @@
           "name": "IDENTITY.md",
           "path": "C:\\Users\\Gustavo\\.openclaw\\workspace\\IDENTITY.md",
           "missing": false,
-          "rawChars": 633,
-          "injectedChars": 633,
+          "rawChars": 307,
+          "injectedChars": 307,
           "truncated": false
         },
         {
           "name": "USER.md",
           "path": "C:\\Users\\Gustavo\\.openclaw\\workspace\\USER.md",
           "missing": false,
-          "rawChars": 474,
-          "injectedChars": 474,
+          "rawChars": 415,
+          "injectedChars": 415,
           "truncated": false
         },
         {
@@ -330,14 +327,18 @@
         ]
       }
     },
-    "inputTokens": 14,
-    "outputTokens": 2073,
-    "cacheRead": 36766,
-    "cacheWrite": 329,
-    "totalTokens": 37096,
+    "inputTokens": 284,
+    "outputTokens": 31,
+    "cacheRead": 33152,
+    "cacheWrite": 0,
+    "totalTokens": 33436,
     "totalTokensFresh": true,
-    "endedAt": 1774318958274,
-    "runtimeMs": 67801
+    "estimatedCostUsd": 0.37249825,
+    "authProfileOverride": "openai-codex:default",
+    "authProfileOverrideSource": "auto",
+    "authProfileOverrideCompactionCount": 0,
+    "endedAt": 1774319832025,
+    "runtimeMs": 4283
   },
   "agent:main:whatsapp:direct:+573183718246": {
     "sessionId": "b78d51dd-c921-48e5-bb31-58250684cca7",

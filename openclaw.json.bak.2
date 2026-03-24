@@ -1,8 +1,4 @@
 {
-  "meta": {
-    "lastTouchedVersion": "2026.3.23-1",
-    "lastTouchedAt": "2026-03-24T02:10:38.048Z"
-  },
   "wizard": {
     "lastRunAt": "2026-03-24T02:10:31.238Z",
     "lastRunVersion": "2026.3.23-1",
@@ -19,32 +15,9 @@
   },
   "agents": {
     "defaults": {
-      "workspace": "C:\\Users\\Gustavo\\.openclaw\\workspace",
-      "model": {
-        "primary": "anthropic/claude-opus-4-6",
-        "fallbacks": ["ollama/qwen3:30b", "ollama/qwen3:8b"]
-      }
+      "workspace": "C:\\Users\\Gustavo\\.openclaw\\workspace"
     }
   },
-	"models": {
-	  "providers": {
-		"ollama": {
-		  "baseUrl": "http://127.0.0.1:11434",
-		  "apiKey": "ollama-local",
-		  "api": "ollama",
-		  "models": [
-			{
-			  "id": "qwen3:30b",
-			  "name": "qwen3:30b"
-			},
-			{
-			  "id": "qwen3:8b",
-			  "name": "qwen3:8b"
-			}
-		  ]
-		}
-	  }
-	},
   "tools": {
     "profile": "coding",
     "web": {
@@ -75,7 +48,6 @@
   },
   "channels": {
     "whatsapp": {
-      "enabled": true,
       "dmPolicy": "pairing",
       "selfChatMode": false,
       "allowFrom": [
@@ -116,5 +88,9 @@
         "enabled": true
       }
     }
+  },
+  "meta": {
+    "lastTouchedVersion": "2026.3.23-1",
+    "lastTouchedAt": "2026-03-24T02:10:31.299Z"
   }
 }
