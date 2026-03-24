@@ -98,7 +98,24 @@ Repetir:
 7. probar con `openclaw agent --agent <id> --message "..."`
 8. luego añadir bindings/routing
 
-## 7) Notas
+## 8) Patrón recomendado para “mismo número, varios agentes”
+
+Modelo elegido por Gustavo:
+
+- un solo número de WhatsApp
+- múltiples agentes aislados
+- routing por contacto/grupo hacia el agente correcto
+- separación interna real por `agentId`, workspace y sesiones
+- un solo remitente visible hacia afuera
+
+Caso inicial:
+
+- Jorge (`+573144752380`) → `hestia`
+- resto → `main` / Atlas
+
+Esto se implementa con bindings por `peer` en WhatsApp.
+
+## 9) Notas
 
 - En PowerShell directo, `openclaw` puede chocar con execution policy. Usar:
 
