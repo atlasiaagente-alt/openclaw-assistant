@@ -26,6 +26,7 @@
 - Existe un playbook para subir el criterio conversacional de futuros agentes sin cambiar de modelo: `workspace/agents-soul-playbook.md`.
 - Existe un playbook para enrutar múltiples agentes sobre un mismo WhatsApp compartido, incluyendo grupos con activación por nombre textual vía `groupChat.mentionPatterns`: `workspace/agents-whatsapp-routing-playbook.md`.
 - Preferencia operativa para nuevos agentes: siempre trabajar en este orden: (1) redactar primero la base del agente (`IDENTITY.md`, `USER.md`, `SOUL.md` y heurísticas), (2) revisar/ajustar el criterio, y solo después (3) crear el agente real.
+- Preferencia nueva de Gustavo: los agentes deben tener criterio para usar mejor el stack de modelos/razonamiento según la necesidad; especialmente Prometeo debe escalar pensamiento y delegar trabajo de código cuando la tarea lo amerite, en vez de tratar todo como simple chat.
 - Patrón recordatorio:
   1. `cmd /c openclaw agents add <id>`
   2. copiar auth desde `main`
