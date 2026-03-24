@@ -1,7 +1,7 @@
 {
   "agent:main:main": {
     "sessionId": "8ce68dc4-7cc4-4942-baff-dfb71fd23df0",
-    "updatedAt": 1774390061499,
+    "updatedAt": 1774390805751,
     "systemSent": true,
     "abortedLastRun": false,
     "chatType": "direct",
@@ -96,13 +96,13 @@
       "version": 0
     },
     "status": "done",
-    "startedAt": 1774390019145,
+    "startedAt": 1774390796788,
     "modelProvider": "openai-codex",
     "model": "gpt-5.4",
     "contextTokens": 272000,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1774390019105,
+      "generatedAt": 1774390796749,
       "sessionId": "8ce68dc4-7cc4-4942-baff-dfb71fd23df0",
       "sessionKey": "agent:main:main",
       "provider": "openai-codex",
@@ -336,19 +336,19 @@
         ]
       }
     },
-    "inputTokens": 53824,
-    "outputTokens": 980,
-    "cacheRead": 99968,
+    "inputTokens": 324,
+    "outputTokens": 124,
+    "cacheRead": 108672,
     "cacheWrite": 0,
-    "estimatedCostUsd": 9.20877025,
+    "estimatedCostUsd": 9.95031675,
     "totalTokensFresh": true,
     "lastChannel": "webchat",
     "authProfileOverride": "openai-codex:default",
     "authProfileOverrideSource": "auto",
     "authProfileOverrideCompactionCount": 0,
-    "totalTokens": 100211,
-    "endedAt": 1774390061479,
-    "runtimeMs": 42334
+    "totalTokens": 108996,
+    "endedAt": 1774390805732,
+    "runtimeMs": 8944
   },
   "agent:main:whatsapp:direct:+573183718246": {
     "sessionId": "b78d51dd-c921-48e5-bb31-58250684cca7",
