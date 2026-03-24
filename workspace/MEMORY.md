@@ -33,6 +33,8 @@
 - Política global deseada por Gustavo: `Atlas` es el router de modelos; preferir Ollama para trabajo barato/seguro, Claude Code como builder por defecto para código, ChatGPT como thinker por defecto para razonamiento, y Opus/GPT-5 solo para casos complejos o de alto riesgo. Documento base: `workspace/model-routing-policy.md`.
 - Tener presente para todos los agentes la guía de seguridad de OpenClaw (`/gateway/security`): operar bajo modelo de asistente personal con un solo límite de confianza, mínimo privilegio, DMs aislados por contacto, canales/restricciones cuidadas y no asumir aislamiento multi-tenant fuerte. Notas internas: `workspace/security-baseline-notes.md`.
 - Recordar: sí existe integración usable con Notion en esta máquina vía API token local (`NOTION_TOKEN`), y Gustavo quiere usarla como tablero operativo vivo.
+- Recordar: para interactuar con Notion desde esta máquina, usar la API oficial con `Authorization: Bearer $env:NOTION_TOKEN` y `Notion-Version`, normalmente vía `Invoke-RestMethod` a `https://api.notion.com/v1/...`.
+- Página operativa principal ya identificada: `Atlas OS` en Notion.
 - Rutina deseada: revisar Notion / `Atlas OS` todos los días a las 8:00 AM y, con base en eso, coordinar trabajo con los subagentes.
 - Patrón recordatorio:
   1. `cmd /c openclaw agents add <id>`
