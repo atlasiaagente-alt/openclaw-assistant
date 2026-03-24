@@ -1,16 +1,17 @@
 {
   "agent:main:main": {
     "sessionId": "8ce68dc4-7cc4-4942-baff-dfb71fd23df0",
-    "updatedAt": 1774384758890,
+    "updatedAt": 1774385337503,
     "systemSent": true,
     "abortedLastRun": false,
     "chatType": "direct",
     "deliveryContext": {
-      "channel": "webchat"
+      "channel": "webchat",
+      "to": "heartbeat"
     },
     "origin": {
-      "label": "openclaw-tui",
-      "provider": "webchat",
+      "label": "heartbeat",
+      "provider": "heartbeat",
       "from": "heartbeat",
       "to": "heartbeat",
       "surface": "webchat",
@@ -95,14 +96,14 @@
       ],
       "version": 0
     },
-    "status": "done",
-    "startedAt": 1774384754743,
+    "status": "failed",
+    "startedAt": 1774385262596,
     "modelProvider": "openai-codex",
     "model": "gpt-5.4",
     "contextTokens": 272000,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1774384754719,
+      "generatedAt": 1774385211971,
       "sessionId": "8ce68dc4-7cc4-4942-baff-dfb71fd23df0",
       "sessionKey": "agent:main:main",
       "provider": "openai-codex",
@@ -336,19 +337,20 @@
         ]
       }
     },
-    "inputTokens": 272,
-    "outputTokens": 41,
-    "cacheRead": 65408,
+    "inputTokens": 1274,
+    "outputTokens": 941,
+    "cacheRead": 70400,
     "cacheWrite": 0,
-    "estimatedCostUsd": 3.965754750000001,
+    "estimatedCostUsd": 4.360906250000001,
     "totalTokensFresh": true,
     "lastChannel": "webchat",
     "authProfileOverride": "openai-codex:default",
     "authProfileOverrideSource": "auto",
     "authProfileOverrideCompactionCount": 0,
-    "totalTokens": 65680,
-    "endedAt": 1774384758865,
-    "runtimeMs": 4122
+    "totalTokens": 70550,
+    "lastTo": "heartbeat",
+    "endedAt": 1774385337493,
+    "runtimeMs": 74897
   },
   "agent:main:whatsapp:direct:+573183718246": {
     "sessionId": "b78d51dd-c921-48e5-bb31-58250684cca7",
