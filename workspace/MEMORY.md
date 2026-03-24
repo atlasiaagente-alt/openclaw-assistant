@@ -4,6 +4,7 @@
 
 - Para crear nuevos agentes aislados en OpenClaw, existe un playbook replicable en `workspace/agents-setup-playbook.md`.
 - Caso base ya implementado: **Hestia**.
+- Recordar: crear un agente no lo deja automáticamente como sesión persistente conversable; la verificación base se hace con `cmd /c openclaw agent --agent <id> --message "..."`.
 - Patrón recordatorio:
   1. `cmd /c openclaw agents add <id>`
   2. copiar auth desde `main`

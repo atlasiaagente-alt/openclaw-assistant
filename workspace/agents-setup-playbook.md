@@ -61,7 +61,25 @@ Ejemplo por CLI:
 cmd /c openclaw agent --agent hestia --message "Preséntate en una línea"
 ```
 
-## 6) Patrón para futuros agentes
+Esto sirve como prueba mínima de que:
+
+- el agente existe
+- su workspace carga bien
+- su identidad/persona responde
+
+## 6) Sobre sesiones persistentes
+
+Tener un agente creado **no** implica que ya exista una sesión viva con label reutilizable.
+
+Diferencia práctica:
+
+- `openclaw agent --agent <id> --message "..."` → invoca al agente por CLI y devuelve respuesta
+- sesión persistente → permite hablarle como hilo/chat continuo aparte
+
+Por ahora, la forma segura y replicable para verificar un agente nuevo es la invocación por CLI.
+La sesión persistente debe añadirse después según el canal o flujo que se quiera montar.
+
+## 7) Patrón para futuros agentes
 
 Repetir:
 
