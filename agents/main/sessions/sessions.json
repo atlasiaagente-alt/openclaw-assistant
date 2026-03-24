@@ -1306,7 +1306,7 @@
   },
   "agent:main:tui-58aa22b5-1457-44bd-b48d-a200e23ff599": {
     "sessionId": "53917618-3bbd-4365-bd2c-7297f83ec358",
-    "updatedAt": 1774375242072,
+    "updatedAt": 1774375296366,
     "systemSent": true,
     "abortedLastRun": false,
     "authProfileOverride": "openai-codex:default",
@@ -1405,14 +1405,14 @@
       ],
       "version": 0
     },
-    "status": "running",
+    "status": "done",
     "startedAt": 1774375242049,
     "modelProvider": "openai-codex",
     "model": "gpt-5.4",
     "contextTokens": 272000,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1774375197982,
+      "generatedAt": 1774375242032,
       "sessionId": "53917618-3bbd-4365-bd2c-7297f83ec358",
       "sessionKey": "agent:main:tui-58aa22b5-1457-44bd-b48d-a200e23ff599",
       "provider": "openai-codex",
@@ -1646,12 +1646,14 @@
         ]
       }
     },
-    "inputTokens": 425,
-    "outputTokens": 523,
-    "cacheRead": 17408,
+    "inputTokens": 7642,
+    "outputTokens": 2058,
+    "cacheRead": 25984,
     "cacheWrite": 0,
-    "totalTokens": 17533,
+    "totalTokens": 26395,
     "totalTokensFresh": true,
-    "lastTo": "heartbeat"
+    "lastTo": "heartbeat",
+    "endedAt": 1774375296339,
+    "runtimeMs": 54290
   }
 }
