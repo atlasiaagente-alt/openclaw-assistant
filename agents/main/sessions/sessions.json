@@ -1,17 +1,16 @@
 {
   "agent:main:main": {
     "sessionId": "8ce68dc4-7cc4-4942-baff-dfb71fd23df0",
-    "updatedAt": 1774380981669,
+    "updatedAt": 1774384758890,
     "systemSent": true,
     "abortedLastRun": false,
     "chatType": "direct",
     "deliveryContext": {
-      "channel": "webchat",
-      "to": "heartbeat"
+      "channel": "webchat"
     },
     "origin": {
-      "label": "heartbeat",
-      "provider": "heartbeat",
+      "label": "openclaw-tui",
+      "provider": "webchat",
       "from": "heartbeat",
       "to": "heartbeat",
       "surface": "webchat",
@@ -97,13 +96,13 @@
       "version": 0
     },
     "status": "done",
-    "startedAt": 1774380977050,
+    "startedAt": 1774384754743,
     "modelProvider": "openai-codex",
     "model": "gpt-5.4",
     "contextTokens": 272000,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1774380977019,
+      "generatedAt": 1774384754719,
       "sessionId": "8ce68dc4-7cc4-4942-baff-dfb71fd23df0",
       "sessionKey": "agent:main:main",
       "provider": "openai-codex",
@@ -123,9 +122,9 @@
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 28932,
-        "projectContextChars": 15564,
-        "nonProjectContextChars": 13368
+        "chars": 31191,
+        "projectContextChars": 17486,
+        "nonProjectContextChars": 13705
       },
       "injectedWorkspaceFiles": [
         {
@@ -188,8 +187,8 @@
           "name": "MEMORY.md",
           "path": "C:\\Users\\Gustavo\\.openclaw\\workspace\\MEMORY.md",
           "missing": false,
-          "rawChars": 2243,
-          "injectedChars": 2243,
+          "rawChars": 4165,
+          "injectedChars": 4165,
           "truncated": false
         }
       ],
@@ -223,8 +222,8 @@
         ]
       },
       "tools": {
-        "listChars": 1660,
-        "schemaChars": 6938,
+        "listChars": 1979,
+        "schemaChars": 7628,
         "entries": [
           {
             "name": "read",
@@ -255,6 +254,12 @@
             "summaryChars": 85,
             "schemaChars": 961,
             "propertiesCount": 12
+          },
+          {
+            "name": "cron",
+            "summaryChars": 3420,
+            "schemaChars": 690,
+            "propertiesCount": 13
           },
           {
             "name": "sessions_list",
@@ -331,20 +336,19 @@
         ]
       }
     },
-    "inputTokens": 60863,
-    "outputTokens": 9,
-    "cacheRead": 0,
+    "inputTokens": 272,
+    "outputTokens": 41,
+    "cacheRead": 65408,
     "cacheWrite": 0,
-    "estimatedCostUsd": 3.6347792500000007,
+    "estimatedCostUsd": 3.965754750000001,
     "totalTokensFresh": true,
     "lastChannel": "webchat",
     "authProfileOverride": "openai-codex:default",
     "authProfileOverrideSource": "auto",
     "authProfileOverrideCompactionCount": 0,
-    "totalTokens": 60863,
-    "lastTo": "heartbeat",
-    "endedAt": 1774380981652,
-    "runtimeMs": 4602
+    "totalTokens": 65680,
+    "endedAt": 1774384758865,
+    "runtimeMs": 4122
   },
   "agent:main:whatsapp:direct:+573183718246": {
     "sessionId": "b78d51dd-c921-48e5-bb31-58250684cca7",
@@ -1302,7 +1306,7 @@
   },
   "agent:main:tui-58aa22b5-1457-44bd-b48d-a200e23ff599": {
     "sessionId": "53917618-3bbd-4365-bd2c-7297f83ec358",
-    "updatedAt": 1774383945844,
+    "updatedAt": 1774384542054,
     "systemSent": true,
     "abortedLastRun": false,
     "authProfileOverride": "openai-codex:default",
@@ -1402,13 +1406,13 @@
       "version": 0
     },
     "status": "done",
-    "startedAt": 1774383938664,
+    "startedAt": 1774384500412,
     "modelProvider": "openai-codex",
     "model": "gpt-5.4",
     "contextTokens": 272000,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1774383938624,
+      "generatedAt": 1774384500383,
       "sessionId": "53917618-3bbd-4365-bd2c-7297f83ec358",
       "sessionKey": "agent:main:tui-58aa22b5-1457-44bd-b48d-a200e23ff599",
       "provider": "openai-codex",
@@ -1642,16 +1646,16 @@
         ]
       }
     },
-    "inputTokens": 113292,
-    "outputTokens": 152,
-    "cacheRead": 1536,
+    "inputTokens": 1464,
+    "outputTokens": 1829,
+    "cacheRead": 124800,
     "cacheWrite": 0,
-    "totalTokens": 114828,
+    "totalTokens": 124994,
     "totalTokensFresh": true,
     "lastTo": "heartbeat",
-    "estimatedCostUsd": 2.5454385,
-    "endedAt": 1774383945805,
-    "runtimeMs": 7141
+    "estimatedCostUsd": 3.0613735,
+    "endedAt": 1774384542029,
+    "runtimeMs": 41617
   },
   "agent:main:whatsapp:group:120363424964463765@g.us": {
     "updatedAt": 1774381830747,
