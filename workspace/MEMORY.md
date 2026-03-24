@@ -39,6 +39,7 @@
 - Correo/Google Workspace ya operativo en esta máquina vía `gog`; cuenta autenticada detectada: `atlas.ia.agente@gmail.com` con acceso a Gmail/Calendar/Drive/Contacts/Docs/Sheets/Tasks. Usarlo en futuras sesiones cuando haga falta.
 - Rutina deseada con correo: revisar diariamente `atlas.ia.agente@gmail.com`, detectar reenvíos/pendientes/plazos útiles y recordarle a Gustavo por WhatsApp (`+573183718246`) lo que tenga pendiente para ese día y próximos deadlines.
 - Además, cuando aplique, citar/agendar esos pendientes relevantes hacia el correo/calendario de Gustavo: `toledo970501@gmail.com`.
+- Paneo deseado dos veces al día: 8:00 AM y 7:00 PM, incluyendo WhatsApp a Gustavo y organización de lo relevante en calendario hacia `toledo970501@gmail.com`.
 - Ejemplo vigente a recordar: desde hoy Gustavo tiene 3 días para realizar un challenge de ZooLATECH.
 - Patrón recordatorio:
   1. `cmd /c openclaw agents add <id>`
