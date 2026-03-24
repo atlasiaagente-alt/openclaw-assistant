@@ -37,6 +37,8 @@
 - Página operativa principal ya identificada: `Atlas OS` en Notion.
 - Rutina deseada: revisar Notion / `Atlas OS` todos los días a las 8:00 AM y, con base en eso, coordinar trabajo con los subagentes.
 - Correo/Google Workspace ya operativo en esta máquina vía `gog`; cuenta autenticada detectada: `atlas.ia.agente@gmail.com` con acceso a Gmail/Calendar/Drive/Contacts/Docs/Sheets/Tasks. Usarlo en futuras sesiones cuando haga falta.
+- Rutina deseada con correo: revisar diariamente `atlas.ia.agente@gmail.com`, detectar reenvíos/pendientes/plazos útiles y recordarle a Gustavo por WhatsApp (`+573183718246`) lo que tenga pendiente para ese día y próximos deadlines.
+- Ejemplo vigente a recordar: desde hoy Gustavo tiene 3 días para realizar un challenge de ZooLATECH.
 - Patrón recordatorio:
   1. `cmd /c openclaw agents add <id>`
   2. copiar auth desde `main`
