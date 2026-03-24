@@ -96,13 +96,26 @@
       }
     }
   },
+  "bindings": [
+    {
+      "agentId": "hestia",
+      "match": {
+        "channel": "whatsapp",
+        "peer": {
+          "kind": "direct",
+          "id": "+573144752380"
+        }
+      }
+    }
+  ],
   "channels": {
     "whatsapp": {
       "enabled": true,
       "dmPolicy": "pairing",
       "selfChatMode": false,
       "allowFrom": [
-        "+573183718246"
+        "+573183718246",
+        "+573144752380"
       ],
       "groupPolicy": "allowlist",
       "debounceMs": 0,

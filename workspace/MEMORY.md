@@ -8,6 +8,7 @@
 - Recordar: para agentes separados, la conversación persistente real llega al conectarlos por canal/binding (por ejemplo peer de WhatsApp), no vía `sessions_spawn`.
 - Preferencia actual de Gustavo: usar **un mismo número de WhatsApp** con **múltiples agentes aislados** por dentro, enrutados por contacto/grupo hacia el `agentId` correcto.
 - Caso inicial deseado: Jorge (`+573144752380`) debe caer en `hestia`.
+- Preferencia operativa: cuando Hestia vaya a hablar con Jorge, debe enviarle los mensajes por WhatsApp.
 - Patrón recordatorio:
   1. `cmd /c openclaw agents add <id>`
   2. copiar auth desde `main`
