@@ -1,7 +1,7 @@
 {
   "agent:main:main": {
     "sessionId": "8ce68dc4-7cc4-4942-baff-dfb71fd23df0",
-    "updatedAt": 1774385337503,
+    "updatedAt": 1774385470273,
     "systemSent": true,
     "abortedLastRun": false,
     "chatType": "direct",
@@ -103,7 +103,7 @@
     "contextTokens": 272000,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1774385211971,
+      "generatedAt": 1774385262572,
       "sessionId": "8ce68dc4-7cc4-4942-baff-dfb71fd23df0",
       "sessionKey": "agent:main:main",
       "provider": "openai-codex",
@@ -123,9 +123,9 @@
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 31191,
+        "chars": 30854,
         "projectContextChars": 17486,
-        "nonProjectContextChars": 13705
+        "nonProjectContextChars": 13368
       },
       "injectedWorkspaceFiles": [
         {
@@ -223,8 +223,8 @@
         ]
       },
       "tools": {
-        "listChars": 1979,
-        "schemaChars": 7628,
+        "listChars": 1660,
+        "schemaChars": 6938,
         "entries": [
           {
             "name": "read",
@@ -255,12 +255,6 @@
             "summaryChars": 85,
             "schemaChars": 961,
             "propertiesCount": 12
-          },
-          {
-            "name": "cron",
-            "summaryChars": 3420,
-            "schemaChars": 690,
-            "propertiesCount": 13
           },
           {
             "name": "sessions_list",
@@ -337,17 +331,17 @@
         ]
       }
     },
-    "inputTokens": 1274,
-    "outputTokens": 941,
-    "cacheRead": 70400,
+    "inputTokens": 69468,
+    "outputTokens": 52,
+    "cacheRead": 69376,
     "cacheWrite": 0,
-    "estimatedCostUsd": 4.360906250000001,
+    "estimatedCostUsd": 4.552700250000001,
     "totalTokensFresh": true,
     "lastChannel": "webchat",
     "authProfileOverride": "openai-codex:default",
     "authProfileOverrideSource": "auto",
     "authProfileOverrideCompactionCount": 0,
-    "totalTokens": 70550,
+    "totalTokens": 69470,
     "lastTo": "heartbeat",
     "endedAt": 1774385337493,
     "runtimeMs": 74897

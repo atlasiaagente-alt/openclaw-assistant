@@ -326,7 +326,7 @@
   },
   "agent:prometeo:whatsapp:group:120363407571517396@g.us": {
     "sessionId": "923f7941-8832-4b11-baab-70573a106770",
-    "updatedAt": 1774385317319,
+    "updatedAt": 1774386547341,
     "systemSent": true,
     "abortedLastRun": false,
     "authProfileOverride": "openai-codex:default",
@@ -347,9 +347,9 @@
     "lastAccountId": "default",
     "origin": {
       "label": "120363407571517396@g.us",
-      "provider": "whatsapp",
-      "surface": "whatsapp",
-      "chatType": "group",
+      "provider": "webchat",
+      "surface": "webchat",
+      "chatType": "direct",
       "from": "120363407571517396@g.us",
       "to": "120363407571517396@g.us",
       "accountId": "default"
@@ -433,14 +433,14 @@
       ],
       "version": 0
     },
-    "status": "running",
-    "startedAt": 1774385317301,
+    "status": "done",
+    "startedAt": 1774386533004,
     "modelProvider": "openai-codex",
     "model": "gpt-5.4",
     "contextTokens": 272000,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1774383990958,
+      "generatedAt": 1774386532982,
       "sessionId": "923f7941-8832-4b11-baab-70573a106770",
       "sessionKey": "agent:prometeo:whatsapp:group:120363407571517396@g.us",
       "provider": "openai-codex",
@@ -460,9 +460,9 @@
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 29867,
-        "projectContextChars": 15316,
-        "nonProjectContextChars": 14551
+        "chars": 30410,
+        "projectContextChars": 16850,
+        "nonProjectContextChars": 13560
       },
       "injectedWorkspaceFiles": [
         {
@@ -477,8 +477,8 @@
           "name": "SOUL.md",
           "path": "C:\\Users\\Gustavo\\.openclaw\\workspace-prometeo\\SOUL.md",
           "missing": false,
-          "rawChars": 2462,
-          "injectedChars": 2462,
+          "rawChars": 3769,
+          "injectedChars": 3769,
           "truncated": false
         },
         {
@@ -501,8 +501,8 @@
           "name": "USER.md",
           "path": "C:\\Users\\Gustavo\\.openclaw\\workspace-prometeo\\USER.md",
           "missing": false,
-          "rawChars": 893,
-          "injectedChars": 893,
+          "rawChars": 1120,
+          "injectedChars": 1120,
           "truncated": false
         },
         {
@@ -666,12 +666,14 @@
         ]
       }
     },
-    "inputTokens": 8489,
-    "outputTokens": 18,
-    "cacheRead": 1536,
+    "inputTokens": 879,
+    "outputTokens": 498,
+    "cacheRead": 26880,
     "cacheWrite": 0,
-    "estimatedCostUsd": 0.0218765,
-    "totalTokens": 10025,
-    "totalTokensFresh": true
+    "estimatedCostUsd": 0.38644850000000003,
+    "totalTokens": 27450,
+    "totalTokensFresh": true,
+    "endedAt": 1774386547314,
+    "runtimeMs": 14310
   }
 }
