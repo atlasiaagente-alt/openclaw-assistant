@@ -1302,7 +1302,7 @@
   },
   "agent:main:tui-58aa22b5-1457-44bd-b48d-a200e23ff599": {
     "sessionId": "53917618-3bbd-4365-bd2c-7297f83ec358",
-    "updatedAt": 1774376963962,
+    "updatedAt": 1774377532438,
     "systemSent": true,
     "abortedLastRun": false,
     "authProfileOverride": "openai-codex:default",
@@ -1402,13 +1402,13 @@
       "version": 0
     },
     "status": "done",
-    "startedAt": 1774376872321,
+    "startedAt": 1774377488063,
     "modelProvider": "openai-codex",
     "model": "gpt-5.4",
     "contextTokens": 272000,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1774376872299,
+      "generatedAt": 1774377488031,
       "sessionId": "53917618-3bbd-4365-bd2c-7297f83ec358",
       "sessionKey": "agent:main:tui-58aa22b5-1457-44bd-b48d-a200e23ff599",
       "provider": "openai-codex",
@@ -1428,8 +1428,8 @@
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 28185,
-        "projectContextChars": 14480,
+        "chars": 28982,
+        "projectContextChars": 15277,
         "nonProjectContextChars": 13705
       },
       "injectedWorkspaceFiles": [
@@ -1493,8 +1493,8 @@
           "name": "MEMORY.md",
           "path": "C:\\Users\\Gustavo\\.openclaw\\workspace\\MEMORY.md",
           "missing": false,
-          "rawChars": 1159,
-          "injectedChars": 1159,
+          "rawChars": 1956,
+          "injectedChars": 1956,
           "truncated": false
         }
       ],
@@ -1642,14 +1642,15 @@
         ]
       }
     },
-    "inputTokens": 6298,
-    "outputTokens": 2263,
-    "cacheRead": 37120,
+    "inputTokens": 74922,
+    "outputTokens": 1150,
+    "cacheRead": 38912,
     "cacheWrite": 0,
-    "totalTokens": 37523,
+    "totalTokens": 39556,
     "totalTokensFresh": true,
     "lastTo": "heartbeat",
-    "endedAt": 1774376963934,
-    "runtimeMs": 91613
+    "endedAt": 1774377532406,
+    "runtimeMs": 44343,
+    "estimatedCostUsd": 0.244075
   }
 }
