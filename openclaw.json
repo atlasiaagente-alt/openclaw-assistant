@@ -1,7 +1,7 @@
 {
   "meta": {
     "lastTouchedVersion": "2026.3.23-1",
-    "lastTouchedAt": "2026-03-24T13:50:52.622Z"
+    "lastTouchedAt": "2026-03-24T14:56:45.438Z"
   },
   "wizard": {
     "lastRunAt": "2026-03-24T02:36:24.515Z",
@@ -55,7 +55,18 @@
         "ollama/qwen3:8b": {}
       },
       "workspace": "C:\\Users\\Gustavo\\.openclaw\\workspace"
-    }
+    },
+    "list": [
+      {
+        "id": "main"
+      },
+      {
+        "id": "hestia",
+        "name": "hestia",
+        "workspace": "C:\\Users\\Gustavo\\.openclaw\\workspace-hestia",
+        "agentDir": "C:\\Users\\Gustavo\\.openclaw\\agents\\hestia\\agent"
+      }
+    ]
   },
   "tools": {
     "profile": "coding",
