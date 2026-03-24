@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "profiles": {
+    "anthropic:anthropic-token": {
+      "type": "token",
+      "provider": "anthropic",
+      "token": "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"
+    }
+  },
+  "lastGood": {
+    "anthropic": "anthropic:anthropic-token"
+  },
+  "usageStats": {
+    "anthropic:anthropic-token": {
+      "errorCount": 0,
+      "lastUsed": 1774318958289
+    }
+  }
+}

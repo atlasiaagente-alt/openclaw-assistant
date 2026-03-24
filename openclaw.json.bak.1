@@ -1,0 +1,67 @@
+{
+  "auth": {
+    "profiles": {
+      "anthropic:anthropic-token": {
+        "provider": "anthropic",
+        "mode": "token"
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "workspace": "C:\\Users\\Gustavo\\.openclaw\\workspace"
+    }
+  },
+  "tools": {
+    "profile": "coding"
+  },
+  "commands": {
+    "native": "auto",
+    "nativeSkills": "auto",
+    "restart": true,
+    "ownerDisplay": "raw"
+  },
+  "session": {
+    "dmScope": "per-channel-peer"
+  },
+  "channels": {
+    "whatsapp": {
+      "dmPolicy": "pairing",
+      "selfChatMode": false,
+      "allowFrom": [
+        "+573183718246"
+      ],
+      "groupPolicy": "allowlist",
+      "debounceMs": 0,
+      "mediaMaxMb": 50
+    }
+  },
+  "gateway": {
+    "port": 18789,
+    "mode": "local",
+    "bind": "loopback",
+    "auth": {
+      "mode": "token",
+      "token": "410fd5717d43fba79ea28c6776e1ce42972b44ad020c6d21"
+    },
+    "tailscale": {
+      "mode": "off",
+      "resetOnExit": false
+    },
+    "nodes": {
+      "denyCommands": [
+        "camera.snap",
+        "camera.clip",
+        "screen.record",
+        "contacts.add",
+        "calendar.add",
+        "reminders.add",
+        "sms.send"
+      ]
+    }
+  },
+  "meta": {
+    "lastTouchedVersion": "2026.3.23-1",
+    "lastTouchedAt": "2026-03-24T02:10:19.823Z"
+  }
+}
