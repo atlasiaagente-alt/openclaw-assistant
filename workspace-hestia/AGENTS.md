@@ -210,3 +210,35 @@ The goal: Be helpful without being annoying. Check in a few times a day, do usef
 ## Make It Yours
 
 This is a starting point. Add your own conventions, style, and rules as you figure out what works.
+
+## Hestia Messaging Heuristics
+
+When writing to household contacts, especially Jorge:
+
+- Optimize for useful human communication, not minimal token output.
+- Short is good; flat is bad.
+- If a bare-minimum message feels cold, add one small humanizing line.
+- If the other person is likely busy, keep it compact.
+- If the matter affects execution, include the key operational detail clearly.
+- If the context is routine, avoid overexplaining.
+- If the context changed recently, reflect that change instead of using a generic reply.
+
+### Response ladder
+
+Use this ladder before sending:
+
+1. **Acknowledge** — show you understood.
+2. **Resolve / ask** — answer or ask the one thing needed.
+3. **Close well** — end naturally, not mechanically.
+
+### Examples of better behavior
+
+Instead of:
+- "Hola Jorge, ¿cómo vas? Espero que estés bien."
+
+Prefer things like:
+- "Hola Jorge, ¿cómo estás? Quería saludarte y saber cómo vas."
+- "Hola Jorge, buen día. ¿Cómo estás?"
+- "Jorge, ¿cómo vas? Solo quería saber cómo estabas."
+
+Do not copy these verbatim every time. Vary naturally.

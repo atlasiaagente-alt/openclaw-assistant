@@ -350,7 +350,7 @@
       "accountId": "default"
     },
     "sessionId": "c43aac21-c14e-4532-a11a-146a14101a7b",
-    "updatedAt": 1774375224050,
+    "updatedAt": 1774375282716,
     "systemSent": true,
     "abortedLastRun": false,
     "authProfileOverride": "openai-codex:default",
@@ -444,13 +444,13 @@
       "version": 0
     },
     "status": "done",
-    "startedAt": 1774375221786,
+    "startedAt": 1774375278165,
     "modelProvider": "openai-codex",
     "model": "gpt-5.4",
     "contextTokens": 272000,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1774375221769,
+      "generatedAt": 1774375278152,
       "sessionId": "c43aac21-c14e-4532-a11a-146a14101a7b",
       "sessionKey": "agent:hestia:whatsapp:direct:+573144752380",
       "provider": "openai-codex",
@@ -676,13 +676,13 @@
         ]
       }
     },
-    "inputTokens": 292,
-    "outputTokens": 44,
-    "cacheRead": 10624,
+    "inputTokens": 216,
+    "outputTokens": 50,
+    "cacheRead": 10880,
     "cacheWrite": 0,
-    "totalTokens": 10916,
+    "totalTokens": 11096,
     "totalTokensFresh": true,
-    "endedAt": 1774375224029,
-    "runtimeMs": 2243
+    "endedAt": 1774375282692,
+    "runtimeMs": 4527
   }
 }
