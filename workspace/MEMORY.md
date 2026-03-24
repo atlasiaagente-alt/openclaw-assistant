@@ -32,6 +32,8 @@
 - Preferencia nueva de Gustavo: los agentes deben tener criterio para usar mejor el stack de modelos/razonamiento según la necesidad; especialmente Prometeo debe escalar pensamiento y delegar trabajo de código cuando la tarea lo amerite, en vez de tratar todo como simple chat.
 - Política global deseada por Gustavo: `Atlas` es el router de modelos; preferir Ollama para trabajo barato/seguro, Claude Code como builder por defecto para código, ChatGPT como thinker por defecto para razonamiento, y Opus/GPT-5 solo para casos complejos o de alto riesgo. Documento base: `workspace/model-routing-policy.md`.
 - Tener presente para todos los agentes la guía de seguridad de OpenClaw (`/gateway/security`): operar bajo modelo de asistente personal con un solo límite de confianza, mínimo privilegio, DMs aislados por contacto, canales/restricciones cuidadas y no asumir aislamiento multi-tenant fuerte. Notas internas: `workspace/security-baseline-notes.md`.
+- Recordar: sí existe integración usable con Notion en esta máquina vía API token local (`NOTION_TOKEN`), y Gustavo quiere usarla como tablero operativo vivo.
+- Rutina deseada: revisar Notion / `Atlas OS` todos los días a las 8:00 AM y, con base en eso, coordinar trabajo con los subagentes.
 - Patrón recordatorio:
   1. `cmd /c openclaw agents add <id>`
   2. copiar auth desde `main`
