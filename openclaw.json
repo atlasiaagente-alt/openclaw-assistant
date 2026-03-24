@@ -70,7 +70,14 @@
         "id": "ares",
         "name": "ares",
         "workspace": "C:\\Users\\Gustavo\\.openclaw\\workspace-ares",
-        "agentDir": "C:\\Users\\Gustavo\\.openclaw\\agents\\ares\\agent"
+        "agentDir": "C:\\Users\\Gustavo\\.openclaw\\agents\\ares\\agent",
+        "groupChat": {
+          "historyLimit": 50,
+          "mentionPatterns": [
+            "\\bares\\b",
+            "\\bAres\\b"
+          ]
+        }
       }
     ]
   },
@@ -91,6 +98,16 @@
         "peer": {
           "kind": "direct",
           "id": "+573144752380"
+        }
+      }
+    },
+    {
+      "agentId": "ares",
+      "match": {
+        "channel": "whatsapp",
+        "peer": {
+          "kind": "group",
+          "id": "120363424964463765@g.us"
         }
       }
     }

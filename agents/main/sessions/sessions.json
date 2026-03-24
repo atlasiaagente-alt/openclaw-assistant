@@ -1,7 +1,7 @@
 {
   "agent:main:main": {
     "sessionId": "8ce68dc4-7cc4-4942-baff-dfb71fd23df0",
-    "updatedAt": 1774376376817,
+    "updatedAt": 1774380981669,
     "systemSent": true,
     "abortedLastRun": false,
     "chatType": "direct",
@@ -97,13 +97,13 @@
       "version": 0
     },
     "status": "done",
-    "startedAt": 1774376372024,
+    "startedAt": 1774380977050,
     "modelProvider": "openai-codex",
     "model": "gpt-5.4",
     "contextTokens": 272000,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1774376371999,
+      "generatedAt": 1774380977019,
       "sessionId": "8ce68dc4-7cc4-4942-baff-dfb71fd23df0",
       "sessionKey": "agent:main:main",
       "provider": "openai-codex",
@@ -123,8 +123,8 @@
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 27848,
-        "projectContextChars": 14480,
+        "chars": 28932,
+        "projectContextChars": 15564,
         "nonProjectContextChars": 13368
       },
       "injectedWorkspaceFiles": [
@@ -188,8 +188,8 @@
           "name": "MEMORY.md",
           "path": "C:\\Users\\Gustavo\\.openclaw\\workspace\\MEMORY.md",
           "missing": false,
-          "rawChars": 1159,
-          "injectedChars": 1159,
+          "rawChars": 2243,
+          "injectedChars": 2243,
           "truncated": false
         }
       ],
@@ -331,20 +331,20 @@
         ]
       }
     },
-    "inputTokens": 60614,
+    "inputTokens": 60863,
     "outputTokens": 9,
     "cacheRead": 0,
     "cacheWrite": 0,
-    "estimatedCostUsd": 3.3301342500000004,
+    "estimatedCostUsd": 3.6347792500000007,
     "totalTokensFresh": true,
     "lastChannel": "webchat",
     "authProfileOverride": "openai-codex:default",
     "authProfileOverrideSource": "auto",
     "authProfileOverrideCompactionCount": 0,
-    "totalTokens": 60614,
+    "totalTokens": 60863,
     "lastTo": "heartbeat",
-    "endedAt": 1774376376799,
-    "runtimeMs": 4775
+    "endedAt": 1774380981652,
+    "runtimeMs": 4602
   },
   "agent:main:whatsapp:direct:+573183718246": {
     "sessionId": "b78d51dd-c921-48e5-bb31-58250684cca7",
@@ -1302,7 +1302,7 @@
   },
   "agent:main:tui-58aa22b5-1457-44bd-b48d-a200e23ff599": {
     "sessionId": "53917618-3bbd-4365-bd2c-7297f83ec358",
-    "updatedAt": 1774377532438,
+    "updatedAt": 1774382946205,
     "systemSent": true,
     "abortedLastRun": false,
     "authProfileOverride": "openai-codex:default",
@@ -1402,13 +1402,13 @@
       "version": 0
     },
     "status": "done",
-    "startedAt": 1774377488063,
+    "startedAt": 1774382900365,
     "modelProvider": "openai-codex",
     "model": "gpt-5.4",
     "contextTokens": 272000,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1774377488031,
+      "generatedAt": 1774382900331,
       "sessionId": "53917618-3bbd-4365-bd2c-7297f83ec358",
       "sessionKey": "agent:main:tui-58aa22b5-1457-44bd-b48d-a200e23ff599",
       "provider": "openai-codex",
@@ -1428,8 +1428,8 @@
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 28982,
-        "projectContextChars": 15277,
+        "chars": 29269,
+        "projectContextChars": 15564,
         "nonProjectContextChars": 13705
       },
       "injectedWorkspaceFiles": [
@@ -1493,8 +1493,8 @@
           "name": "MEMORY.md",
           "path": "C:\\Users\\Gustavo\\.openclaw\\workspace\\MEMORY.md",
           "missing": false,
-          "rawChars": 1956,
-          "injectedChars": 1956,
+          "rawChars": 2243,
+          "injectedChars": 2243,
           "truncated": false
         }
       ],
@@ -1642,15 +1642,41 @@
         ]
       }
     },
-    "inputTokens": 74922,
-    "outputTokens": 1150,
-    "cacheRead": 38912,
+    "inputTokens": 1082,
+    "outputTokens": 1794,
+    "cacheRead": 104192,
     "cacheWrite": 0,
-    "totalTokens": 39556,
+    "totalTokens": 104448,
     "totalTokensFresh": true,
     "lastTo": "heartbeat",
-    "endedAt": 1774377532406,
-    "runtimeMs": 44343,
-    "estimatedCostUsd": 0.244075
+    "estimatedCostUsd": 1.6290204999999998,
+    "endedAt": 1774382946177,
+    "runtimeMs": 45812
+  },
+  "agent:main:whatsapp:group:120363424964463765@g.us": {
+    "updatedAt": 1774381830747,
+    "deliveryContext": {
+      "channel": "whatsapp",
+      "to": "120363424964463765@g.us",
+      "accountId": "default"
+    },
+    "lastChannel": "whatsapp",
+    "lastTo": "120363424964463765@g.us",
+    "lastAccountId": "default",
+    "chatType": "group",
+    "channel": "whatsapp",
+    "groupId": "120363424964463765@g.us",
+    "subject": "Smart project",
+    "displayName": "whatsapp:g-smart-project",
+    "origin": {
+      "label": "120363424964463765@g.us",
+      "provider": "whatsapp",
+      "surface": "whatsapp",
+      "chatType": "group",
+      "from": "120363424964463765@g.us",
+      "to": "120363424964463765@g.us",
+      "accountId": "default"
+    },
+    "sessionId": "8c9cefc4-d908-430b-ab1f-67684c0f7c32"
   }
 }

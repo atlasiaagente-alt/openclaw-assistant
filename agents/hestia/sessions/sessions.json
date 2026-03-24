@@ -350,7 +350,7 @@
       "accountId": "default"
     },
     "sessionId": "c43aac21-c14e-4532-a11a-146a14101a7b",
-    "updatedAt": 1774375282716,
+    "updatedAt": 1774379463810,
     "systemSent": true,
     "abortedLastRun": false,
     "authProfileOverride": "openai-codex:default",
@@ -444,13 +444,13 @@
       "version": 0
     },
     "status": "done",
-    "startedAt": 1774375278165,
+    "startedAt": 1774379457750,
     "modelProvider": "openai-codex",
     "model": "gpt-5.4",
     "contextTokens": 272000,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1774375278152,
+      "generatedAt": 1774379457734,
       "sessionId": "c43aac21-c14e-4532-a11a-146a14101a7b",
       "sessionKey": "agent:hestia:whatsapp:direct:+573144752380",
       "provider": "openai-codex",
@@ -470,8 +470,8 @@
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 26208,
-        "projectContextChars": 12454,
+        "chars": 30381,
+        "projectContextChars": 16627,
         "nonProjectContextChars": 13754
       },
       "injectedWorkspaceFiles": [
@@ -479,16 +479,16 @@
           "name": "AGENTS.md",
           "path": "C:\\Users\\Gustavo\\.openclaw\\workspace-hestia\\AGENTS.md",
           "missing": false,
-          "rawChars": 7809,
-          "injectedChars": 7809,
+          "rawChars": 9427,
+          "injectedChars": 9427,
           "truncated": false
         },
         {
           "name": "SOUL.md",
           "path": "C:\\Users\\Gustavo\\.openclaw\\workspace-hestia\\SOUL.md",
           "missing": false,
-          "rawChars": 788,
-          "injectedChars": 788,
+          "rawChars": 3343,
+          "injectedChars": 3343,
           "truncated": false
         },
         {
@@ -676,13 +676,14 @@
         ]
       }
     },
-    "inputTokens": 216,
-    "outputTokens": 50,
-    "cacheRead": 10880,
+    "inputTokens": 603,
+    "outputTokens": 33,
+    "cacheRead": 12416,
     "cacheWrite": 0,
-    "totalTokens": 11096,
+    "totalTokens": 12771,
     "totalTokensFresh": true,
-    "endedAt": 1774375282692,
-    "runtimeMs": 4527
+    "estimatedCostUsd": 0.039215,
+    "endedAt": 1774379463795,
+    "runtimeMs": 6045
   }
 }
