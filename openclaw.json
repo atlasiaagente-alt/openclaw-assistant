@@ -1,7 +1,7 @@
 {
   "meta": {
     "lastTouchedVersion": "2026.3.23-1",
-    "lastTouchedAt": "2026-03-24T18:28:20.307Z"
+    "lastTouchedAt": "2026-03-24T20:18:42.840Z"
   },
   "wizard": {
     "lastRunAt": "2026-03-24T02:36:24.515Z",
@@ -72,10 +72,23 @@
         "workspace": "C:\\Users\\Gustavo\\.openclaw\\workspace-ares",
         "agentDir": "C:\\Users\\Gustavo\\.openclaw\\agents\\ares\\agent",
         "groupChat": {
-          "historyLimit": 50,
           "mentionPatterns": [
             "\\bares\\b",
             "\\bAres\\b"
+          ],
+          "historyLimit": 50
+        }
+      },
+      {
+        "id": "prometeo",
+        "name": "prometeo",
+        "workspace": "C:\\Users\\Gustavo\\.openclaw\\workspace-prometeo",
+        "agentDir": "C:\\Users\\Gustavo\\.openclaw\\agents\\prometeo\\agent",
+        "groupChat": {
+          "historyLimit": 50,
+          "mentionPatterns": [
+            "\\bprometeo\\b",
+            "\\bPrometeo\\b"
           ]
         }
       }
@@ -108,6 +121,16 @@
         "peer": {
           "kind": "group",
           "id": "120363424964463765@g.us"
+        }
+      }
+    },
+    {
+      "agentId": "prometeo",
+      "match": {
+        "channel": "whatsapp",
+        "peer": {
+          "kind": "group",
+          "id": "120363407571517396@g.us"
         }
       }
     }

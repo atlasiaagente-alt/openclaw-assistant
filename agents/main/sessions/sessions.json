@@ -1302,7 +1302,7 @@
   },
   "agent:main:tui-58aa22b5-1457-44bd-b48d-a200e23ff599": {
     "sessionId": "53917618-3bbd-4365-bd2c-7297f83ec358",
-    "updatedAt": 1774382946205,
+    "updatedAt": 1774383945844,
     "systemSent": true,
     "abortedLastRun": false,
     "authProfileOverride": "openai-codex:default",
@@ -1402,13 +1402,13 @@
       "version": 0
     },
     "status": "done",
-    "startedAt": 1774382900365,
+    "startedAt": 1774383938664,
     "modelProvider": "openai-codex",
     "model": "gpt-5.4",
     "contextTokens": 272000,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1774382900331,
+      "generatedAt": 1774383938624,
       "sessionId": "53917618-3bbd-4365-bd2c-7297f83ec358",
       "sessionKey": "agent:main:tui-58aa22b5-1457-44bd-b48d-a200e23ff599",
       "provider": "openai-codex",
@@ -1428,8 +1428,8 @@
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 29269,
-        "projectContextChars": 15564,
+        "chars": 30585,
+        "projectContextChars": 16880,
         "nonProjectContextChars": 13705
       },
       "injectedWorkspaceFiles": [
@@ -1493,8 +1493,8 @@
           "name": "MEMORY.md",
           "path": "C:\\Users\\Gustavo\\.openclaw\\workspace\\MEMORY.md",
           "missing": false,
-          "rawChars": 2243,
-          "injectedChars": 2243,
+          "rawChars": 3559,
+          "injectedChars": 3559,
           "truncated": false
         }
       ],
@@ -1642,16 +1642,16 @@
         ]
       }
     },
-    "inputTokens": 1082,
-    "outputTokens": 1794,
-    "cacheRead": 104192,
+    "inputTokens": 113292,
+    "outputTokens": 152,
+    "cacheRead": 1536,
     "cacheWrite": 0,
-    "totalTokens": 104448,
+    "totalTokens": 114828,
     "totalTokensFresh": true,
     "lastTo": "heartbeat",
-    "estimatedCostUsd": 1.6290204999999998,
-    "endedAt": 1774382946177,
-    "runtimeMs": 45812
+    "estimatedCostUsd": 2.5454385,
+    "endedAt": 1774383945805,
+    "runtimeMs": 7141
   },
   "agent:main:whatsapp:group:120363424964463765@g.us": {
     "updatedAt": 1774381830747,
@@ -1678,5 +1678,31 @@
       "accountId": "default"
     },
     "sessionId": "8c9cefc4-d908-430b-ab1f-67684c0f7c32"
+  },
+  "agent:main:whatsapp:group:120363407571517396@g.us": {
+    "updatedAt": 1774383778763,
+    "deliveryContext": {
+      "channel": "whatsapp",
+      "to": "120363407571517396@g.us",
+      "accountId": "default"
+    },
+    "lastChannel": "whatsapp",
+    "lastTo": "120363407571517396@g.us",
+    "lastAccountId": "default",
+    "chatType": "group",
+    "channel": "whatsapp",
+    "groupId": "120363407571517396@g.us",
+    "subject": "TradeLab",
+    "displayName": "whatsapp:g-tradelab",
+    "origin": {
+      "label": "120363407571517396@g.us",
+      "provider": "whatsapp",
+      "surface": "whatsapp",
+      "chatType": "group",
+      "from": "120363407571517396@g.us",
+      "to": "120363407571517396@g.us",
+      "accountId": "default"
+    },
+    "sessionId": "5093db04-8e72-41bb-8b0d-d061d3c264a3"
   }
 }
