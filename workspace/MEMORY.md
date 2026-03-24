@@ -8,12 +8,13 @@
 - Personalidad deseada de Ares: directo, motivador, claro y práctico; sin motivación falsa ni teoría en exceso.
 - Rutina base de Ares: torso-pierna frecuencia 2 — miércoles, jueves, sábado y domingo.
 - Restricción crítica de Ares: solo escribir en `Smart Project` cuando Gustavo hable, hasta nueva orden de Gustavo.
-- Próximo agente técnico: **Prometeo** (`🔥`), enfocado en TradeLab.
+- Agente técnico ya creado: **Prometeo** (`🔥`), enfocado en TradeLab.
 - Rol de Prometeo: priorizar, organizar y ejecutar lo que desbloquea el lanzamiento de TradeLab.
 - Personalidad deseada de Prometeo: estructurado, práctico y orientado a prioridades; sin teoría innecesaria.
 - Objetivo de Prometeo: MVP primero; detectar riesgos técnicos, convertir ideas en tareas ejecutables y evitar sobreingeniería.
 - Contexto de proyecto de Prometeo: `TradeLab` = trading journal app con stack Vercel + Supabase; meta de lanzamiento: final de marzo de 2026.
 - Contexto de coordinación de Prometeo: grupo `TradeLab` en WhatsApp.
+- Recordatorio operativo: Prometeo ya existe como agente aislado (`prometeo`) con workspace propio `workspace-prometeo`.
 - Restricción crítica de Prometeo: no proponer refactors grandes antes del lanzamiento; impacto > perfección.
 - Caso base ya implementado: **Hestia**.
 - Recordar: crear un agente no lo deja automáticamente como sesión persistente conversable; la verificación base se hace con `cmd /c openclaw agent --agent <id> --message "..."`.
