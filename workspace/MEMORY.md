@@ -3,6 +3,7 @@
 ## Operación / OpenClaw
 
 - Para crear nuevos agentes aislados en OpenClaw, existe un playbook replicable en `workspace/agents-setup-playbook.md`.
+- Política global deseada por Gustavo: `Atlas` es el router de modelos; preferir Ollama para trabajo barato/seguro, Claude Code como builder por defecto para código, ChatGPT como thinker por defecto para razonamiento, y Opus/GPT-5 solo para casos complejos o de alto riesgo. Documento base: `workspace/model-routing-policy.md`.
 - Próximo agente objetivo: **Ares** (`⚔️`), enfocado en entrenamiento, consistencia física, hábitos y disciplina.
 - Rol de Ares: ayudar a decidir el entrenamiento del día según energía y carga semanal; coordinar el grupo `Smart Project`.
 - Personalidad deseada de Ares: directo, motivador, claro y práctico; sin motivación falsa ni teoría en exceso.
@@ -27,6 +28,7 @@
 - Existe un playbook para enrutar múltiples agentes sobre un mismo WhatsApp compartido, incluyendo grupos con activación por nombre textual vía `groupChat.mentionPatterns`: `workspace/agents-whatsapp-routing-playbook.md`.
 - Preferencia operativa para nuevos agentes: siempre trabajar en este orden: (1) redactar primero la base del agente (`IDENTITY.md`, `USER.md`, `SOUL.md` y heurísticas), (2) revisar/ajustar el criterio, y solo después (3) crear el agente real.
 - Preferencia nueva de Gustavo: los agentes deben tener criterio para usar mejor el stack de modelos/razonamiento según la necesidad; especialmente Prometeo debe escalar pensamiento y delegar trabajo de código cuando la tarea lo amerite, en vez de tratar todo como simple chat.
+- Política global deseada por Gustavo: `Atlas` es el router de modelos; preferir Ollama para trabajo barato/seguro, Claude Code como builder por defecto para código, ChatGPT como thinker por defecto para razonamiento, y Opus/GPT-5 solo para casos complejos o de alto riesgo. Documento base: `workspace/model-routing-policy.md`.
 - Patrón recordatorio:
   1. `cmd /c openclaw agents add <id>`
   2. copiar auth desde `main`
