@@ -81,6 +81,87 @@
       "state": {
         "nextRunAtMs": 1774443600000
       }
+    },
+    {
+      "id": "8157ed89-ee52-482d-a791-31181c4fff11",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "evening-email-review-and-calendar-check",
+      "enabled": true,
+      "createdAtMs": 1774390767598,
+      "updatedAtMs": 1774390767598,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 19 * * *",
+        "tz": "America/Bogota"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Review the Gmail inbox of atlas.ia.agente@gmail.com using gog for pending items, unresolved tasks, and near-term deadlines. Organize relevant items into the appropriate shared calendar flow for Gustavo by citing/scheduling what applies toward toledo970501@gmail.com, then send Gustavo a concise WhatsApp reminder to +573183718246 with the evening paneo: what is still pending, what rolls into tomorrow, and what deadlines are close. Keep it concise and practical.",
+        "timeoutSeconds": 900
+      },
+      "delivery": {
+        "mode": "announce"
+      },
+      "state": {
+        "nextRunAtMs": 1774396800000
+      }
+    },
+    {
+      "id": "1b498596-f8f3-4976-89ea-07a8edda91dc",
+      "agentId": "main",
+      "sessionKey": "agent:main:tui-ff9e3c06-d72f-4309-808e-17050e7b293f",
+      "name": "Atlas OS review - morning",
+      "enabled": true,
+      "createdAtMs": 1774392410001,
+      "updatedAtMs": 1774392410001,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 8 * * *",
+        "tz": "America/Bogota"
+      },
+      "sessionTarget": "session:agent:main:tui-ff9e3c06-d72f-4309-808e-17050e7b293f",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Revisa la página de Notion 'Atlas OS' y úsala como dashboard operativo. Haz una revisión ejecutiva de mañana: 1) identifica tareas activas, listas, bloqueadas, waiting y hechas; 2) detecta si alguna tarea se terminó o cambió de estado; 3) produce un análisis breve de prioridades, cuellos de botella y siguientes pasos; 4) con base en los pendientes, coordina y ordena a los subagentes correctos para avanzar en sus actividades cuando aplique; 5) responde al usuario con un resumen accionable en español, directo y práctico. No hagas acciones destructivas en Notion. Si hay restricciones de un subagente o dudas operativas, respétalas y menciona la limitación.",
+        "timeoutSeconds": 1800
+      },
+      "delivery": {
+        "mode": "announce"
+      },
+      "state": {
+        "nextRunAtMs": 1774443600000
+      }
+    },
+    {
+      "id": "3911daa5-65a3-4fca-b14a-0ec664a6cb10",
+      "agentId": "main",
+      "sessionKey": "agent:main:tui-ff9e3c06-d72f-4309-808e-17050e7b293f",
+      "name": "Atlas OS review - midday",
+      "enabled": true,
+      "createdAtMs": 1774392416651,
+      "updatedAtMs": 1774392416651,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 12 * * *",
+        "tz": "America/Bogota"
+      },
+      "sessionTarget": "session:agent:main:tui-ff9e3c06-d72f-4309-808e-17050e7b293f",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Revisa la página de Notion 'Atlas OS' y úsala como dashboard operativo. Haz una revisión ejecutiva de mediodía: 1) identifica tareas activas, listas, bloqueadas, waiting y hechas; 2) detecta si alguna tarea se terminó o cambió de estado; 3) produce un análisis breve de prioridades, cuellos de botella y siguientes pasos; 4) con base en los pendientes, coordina y ordena a los subagentes correctos para avanzar en sus actividades cuando aplique; 5) responde al usuario con un resumen accionable en español, directo y práctico. No hagas acciones destructivas en Notion. Si hay restricciones de un subagente o dudas operativas, respétalas y menciona la limitación.",
+        "timeoutSeconds": 1800
+      },
+      "delivery": {
+        "mode": "announce"
+      },
+      "state": {
+        "nextRunAtMs": 1774458000000
+      }
     }
   ]
 }

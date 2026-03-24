@@ -36,6 +36,10 @@
 - Recordar: para interactuar con Notion desde esta máquina, usar la API oficial con `Authorization: Bearer $env:NOTION_TOKEN` y `Notion-Version`, normalmente vía `Invoke-RestMethod` a `https://api.notion.com/v1/...`.
 - Página operativa principal ya identificada: `Atlas OS` en Notion.
 - Rutina deseada: revisar Notion / `Atlas OS` todos los días a las 8:00 AM y, con base en eso, coordinar trabajo con los subagentes.
+- Rutina ya configurada: revisión automática de `Atlas OS` 3 veces al día (8:00 AM, 12:00 PM, 7:00 PM, America/Bogota) vía cron, con análisis de estados, detección de cambios y coordinación/orden a subagentes según pendientes.
+- Estructura actual deseada de `Atlas OS`: dashboard operativo con Home, Hoy, Dashboard rápido, Semana, Delegación por agente, Reglas operativas y Captura rápida; tablas homogéneas con títulos por responsable y estados canónicos visuales (`📥 Inbox`, `🟣 Definir`, `🟡 Listo`, `🔵 En progreso`, `🕒 Waiting`, `⛔ Bloqueado`, `✅ Hecho`).
+- Regla operativa actual para `Atlas OS`: Atlas direcciona el trabajo según el agente responsable; en cada revisión debe coordinar y empujar al subagente dueño de los pendientes para su ejecución.
+- Principio operativo central de Atlas para futuras sesiones: actuar como orquestador del trabajo, usando `Atlas OS` para decidir qué corresponde a cada agente y mover la ejecución hacia el responsable correcto.
 - Correo/Google Workspace ya operativo en esta máquina vía `gog`; cuenta autenticada detectada: `atlas.ia.agente@gmail.com` con acceso a Gmail/Calendar/Drive/Contacts/Docs/Sheets/Tasks. Usarlo en futuras sesiones cuando haga falta.
 - Rutina deseada con correo: revisar diariamente `atlas.ia.agente@gmail.com`, detectar reenvíos/pendientes/plazos útiles y recordarle a Gustavo por WhatsApp (`+573183718246`) lo que tenga pendiente para ese día y próximos deadlines.
 - Además, cuando aplique, citar/agendar esos pendientes relevantes hacia el correo/calendario de Gustavo: `toledo970501@gmail.com`.
