@@ -27,33 +27,6 @@
       "state": {
         "nextRunAtMs": 1774409400000
       }
-    },
-    {
-      "id": "03b29602-b584-4ec0-9241-b0d74393cc82",
-      "agentId": "main",
-      "sessionKey": "agent:main:main",
-      "name": "daily-atlas-os-review",
-      "enabled": true,
-      "createdAtMs": 1774388052968,
-      "updatedAtMs": 1774388052968,
-      "schedule": {
-        "kind": "cron",
-        "expr": "0 8 * * *",
-        "tz": "America/Bogota"
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "Review the Notion page 'Atlas OS' using the local Notion integration available on this machine. Summarize what is active, blocked, and next. Then coordinate with the relevant sub-agents only when useful based on the board state. Keep it concise and action-oriented. If nothing needs intervention, send a short no-op summary.",
-        "timeoutSeconds": 900
-      },
-      "delivery": {
-        "mode": "announce"
-      },
-      "state": {
-        "nextRunAtMs": 1774443600000
-      }
     }
   ]
 }
