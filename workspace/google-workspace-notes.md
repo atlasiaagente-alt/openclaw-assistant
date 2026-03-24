@@ -36,3 +36,10 @@ cmd /c gog auth list
 ## Nota operativa
 
 Confirmar antes de enviar correos o crear eventos. Para lectura, búsqueda y revisión de inbox/calendario, esta integración ya se puede usar directamente.
+
+## Acuerdo actual con Gustavo
+
+- Revisar diariamente `atlas.ia.agente@gmail.com`.
+- Detectar reenvíos, pendientes y deadlines útiles.
+- Recordar por WhatsApp al `+573183718246` lo pendiente del día y plazos cercanos.
+- Cuando aplique, agendar/citar lo relevante hacia `toledo970501@gmail.com` para que aparezca en su calendario.
