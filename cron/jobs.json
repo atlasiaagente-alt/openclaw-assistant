@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "jobs": [
+    {
+      "id": "b8b184ac-d733-4a46-a6f3-dbe3877d1496",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "daily-openclaw-git-backup",
+      "enabled": true,
+      "createdAtMs": 1774361618484,
+      "updatedAtMs": 1774361618484,
+      "schedule": {
+        "kind": "cron",
+        "expr": "30 22 * * *",
+        "tz": "America/Bogota"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Run the script `C:\\Users\\Gustavo\\.openclaw\\workspace\\scripts\\daily-backup-to-branch.cmd` on the host. It should perform a brute-force git backup of `C:\\Users\\Gustavo\\.openclaw` to branch `backup`. After running it, report success or the exact failure in one short message. Do not modify the script unless execution fails and the fix is obvious.",
+        "timeoutSeconds": 600
+      },
+      "delivery": {
+        "mode": "announce"
+      },
+      "state": {
+        "nextRunAtMs": 1774409400000
+      }
+    }
+  ]
+}
