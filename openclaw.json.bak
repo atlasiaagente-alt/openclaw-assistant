@@ -1,7 +1,7 @@
 {
   "meta": {
     "lastTouchedVersion": "2026.3.23-1",
-    "lastTouchedAt": "2026-03-24T18:28:20.307Z"
+    "lastTouchedAt": "2026-03-24T20:18:42.840Z"
   },
   "wizard": {
     "lastRunAt": "2026-03-24T02:36:24.515Z",
@@ -37,6 +37,20 @@
             "name": "qwen3:8b"
           }
         ]
+      },
+      "anthropic": {
+        "baseUrl": "https://api.anthropic.com",
+        "api": "anthropic-messages",
+        "models": [
+          {
+            "id": "claude-sonnet-4-6",
+            "name": "Claude Sonnet 4.6"
+          },
+          {
+            "id": "claude-opus-4-6",
+            "name": "Claude Opus 4.6"
+          }
+        ]
       }
     }
   },
@@ -45,12 +59,15 @@
       "model": {
         "primary": "openai-codex/gpt-5.4",
         "fallbacks": [
+          "anthropic/claude-sonnet-4-6",
           "ollama/qwen3:30b",
           "ollama/qwen3:8b"
         ]
       },
       "models": {
         "openai-codex/gpt-5.4": {},
+        "anthropic/claude-sonnet-4-6": {},
+        "anthropic/claude-opus-4-6": {},
         "ollama/qwen3:30b": {},
         "ollama/qwen3:8b": {}
       },
@@ -72,10 +89,23 @@
         "workspace": "C:\\Users\\Gustavo\\.openclaw\\workspace-ares",
         "agentDir": "C:\\Users\\Gustavo\\.openclaw\\agents\\ares\\agent",
         "groupChat": {
-          "historyLimit": 50,
           "mentionPatterns": [
             "\\bares\\b",
             "\\bAres\\b"
+          ],
+          "historyLimit": 50
+        }
+      },
+      {
+        "id": "prometeo",
+        "name": "prometeo",
+        "workspace": "C:\\Users\\Gustavo\\.openclaw\\workspace-prometeo",
+        "agentDir": "C:\\Users\\Gustavo\\.openclaw\\agents\\prometeo\\agent",
+        "groupChat": {
+          "historyLimit": 50,
+          "mentionPatterns": [
+            "\\bprometeo\\b",
+            "\\bPrometeo\\b"
           ]
         }
       }
@@ -83,10 +113,61 @@
   },
   "tools": {
     "profile": "coding",
+    "exec": {
+      "host": "gateway",
+      "security": "full",
+      "ask": "off"
+    },
+    "elevated": {
+      "enabled": true,
+      "allowFrom": {
+        "whatsapp": [
+          "+573183718246"
+        ]
+      }
+    },
+    "agentToAgent": {
+      "enabled": true,
+      "allow": [
+        "ares",
+        "prometeo",
+        "hestia",
+        "main"
+      ]
+    },
+    "sessions": {
+      "visibility": "all"
+    },
     "web": {
       "search": {
         "enabled": true,
         "provider": "duckduckgo"
+      }
+    },
+    "media": {
+      "audio": {
+        "enabled": true,
+        "attachments": {
+          "mode": "all",
+          "maxAttachments": 4
+        },
+        "echoTranscript": true,
+        "echoFormat": "📝 {transcript}",
+        "models": [
+          {
+            "type": "cli",
+            "command": "python",
+            "args": [
+              "C:\\Users\\Gustavo\\.openclaw\\workspace\\scripts\\whisper-bridge.py",
+              "{{MediaPath}}",
+              "--model",
+              "base",
+              "--language",
+              "es"
+            ],
+            "timeoutSeconds": 180
+          }
+        ]
       }
     }
   },
@@ -108,6 +189,16 @@
         "peer": {
           "kind": "group",
           "id": "120363424964463765@g.us"
+        }
+      }
+    },
+    {
+      "agentId": "prometeo",
+      "match": {
+        "channel": "whatsapp",
+        "peer": {
+          "kind": "group",
+          "id": "120363407571517396@g.us"
         }
       }
     }

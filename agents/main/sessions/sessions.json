@@ -1,7 +1,7 @@
 {
   "agent:main:main": {
     "sessionId": "926432fb-894b-4f9a-a8e6-76e6b3f75a2d",
-    "updatedAt": 1774481882638,
+    "updatedAt": 1774482162001,
     "systemSent": true,
     "abortedLastRun": false,
     "chatType": "direct",
@@ -120,11 +120,11 @@
       ],
       "version": 0
     },
-    "status": "running",
-    "startedAt": 1774481834823,
+    "status": "done",
+    "startedAt": 1774482152598,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1774481636129,
+      "generatedAt": 1774482152568,
       "sessionId": "926432fb-894b-4f9a-a8e6-76e6b3f75a2d",
       "sessionKey": "agent:main:main",
       "provider": "openai-codex",
@@ -144,9 +144,9 @@
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 39617,
+        "chars": 39792,
         "projectContextChars": 24818,
-        "nonProjectContextChars": 14799
+        "nonProjectContextChars": 14974
       },
       "injectedWorkspaceFiles": [
         {
@@ -366,16 +366,22 @@
         ]
       }
     },
-    "inputTokens": 3639,
-    "outputTokens": 1703,
-    "cacheRead": 92160,
+    "inputTokens": 189,
+    "outputTokens": 363,
+    "cacheRead": 113152,
     "cacheWrite": 0,
-    "estimatedCostUsd": 1.5040810000000002,
-    "totalTokens": 93978,
+    "estimatedCostUsd": 1.6165700000000003,
+    "totalTokens": 113341,
     "totalTokensFresh": true,
     "lastChannel": "webchat",
-    "providerOverride": "anthropic",
-    "modelOverride": "claude-sonnet-4-6"
+    "authProfileOverride": "openai-codex:default",
+    "authProfileOverrideSource": "auto",
+    "authProfileOverrideCompactionCount": 0,
+    "modelProvider": "openai-codex",
+    "model": "gpt-5.4",
+    "contextTokens": 272000,
+    "endedAt": 1774482161959,
+    "runtimeMs": 9361
   },
   "agent:main:whatsapp:direct:+573183718246": {
     "sessionId": "f3456005-9059-4299-8371-98b43a6d2222",
