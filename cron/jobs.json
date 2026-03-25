@@ -8,7 +8,7 @@
       "name": "daily-openclaw-git-backup",
       "enabled": true,
       "createdAtMs": 1774361618484,
-      "updatedAtMs": 1774361618484,
+      "updatedAtMs": 1774409431389,
       "schedule": {
         "kind": "cron",
         "expr": "30 22 * * *",
@@ -25,7 +25,14 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1774409400000
+        "nextRunAtMs": 1774495800000,
+        "lastRunAtMs": 1774409400016,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 31373,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0
       }
     },
     {
@@ -177,7 +184,7 @@
       "name": "Atlas OS review - end of day",
       "enabled": true,
       "createdAtMs": 1774392423014,
-      "updatedAtMs": 1774396867056,
+      "updatedAtMs": 1774399974587,
       "schedule": {
         "kind": "cron",
         "expr": "0 19 * * *",
@@ -187,7 +194,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Revisa la página de Notion 'Atlas OS' y úsala como dashboard operativo. Haz una revisión ejecutiva de cierre de jornada: 1) identifica tareas activas, listas, bloqueadas, waiting y hechas; 2) detecta si alguna tarea se terminó o cambió de estado; 3) produce un análisis breve de prioridades, cuellos de botella y siguientes pasos; 4) con base en los pendientes, coordina y ordena a los subagentes correctos para avanzar en sus actividades cuando aplique; 5) responde al usuario con un resumen accionable en español, directo y práctico. No hagas acciones destructivas en Notion. Si hay restricciones de un subagente o dudas operativas, respétalas y menciona la limitación.",
+        "message": "Revisa la página de Notion 'Atlas OS' y úsala como dashboard operativo. Haz una revisión ejecutiva de cierre de jornada: 1) identifica tareas activas, listas, bloqueadas, waiting y hechas; 2) detecta si alguna tarea se terminó o cambió de estado; 3) produce un análisis breve de prioridades, cuellos de botella y siguientes pasos; 4) con base en los pendientes, coordina y ordena a los agentes responsables correctos para avanzar en sus actividades usando coordinación cross-agent cuando aplique; 5) si una tarea requiere acción inmediata de un agente específico (por ejemplo Ares en Smart Project), envíale la coordinación directamente a su sesión correspondiente; 6) responde al usuario con un resumen accionable en español, directo y práctico, incluyendo qué agentes fueron coordinados. No hagas acciones destructivas en Notion. Si un agente tiene dudas o se traba, ayúdalo; si hace falta aprobación, escala a Gustavo por WhatsApp.",
         "timeoutSeconds": 1800
       },
       "delivery": {
@@ -195,10 +202,10 @@
       },
       "state": {
         "nextRunAtMs": 1774483200000,
-        "lastRunAtMs": 1774396832632,
+        "lastRunAtMs": 1774399958536,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 34424,
+        "lastDurationMs": 16051,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0

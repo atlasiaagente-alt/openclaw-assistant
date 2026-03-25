@@ -37,4 +37,23 @@ Skills are shared. Your setup is yours. Keeping them apart means you can update 
 
 ---
 
+## Notion
+
+- Auth local disponible vía `NOTION_TOKEN`.
+- API base: `https://api.notion.com/v1/...`
+- Headers típicos en PowerShell:
+  - `Authorization: Bearer $env:NOTION_TOKEN`
+  - `Notion-Version: 2022-06-28`
+- Verificación ya probada: la API respondió bien y el bot autenticado es `Atlas`.
+- Página operativa principal: `Atlas OS`.
+
+## Audio / Transcripción
+
+- `ffmpeg` instalado y operativo en esta máquina.
+- Versión verificada: `8.1-full_build-www.gyan.dev`.
+- Incluye `libwhisper` y soporte amplio de codecs/aceleración.
+- Pipeline probado para transcribir audios:
+  - `python C:\Users\Gustavo\.openclaw\workspace\scripts\whisper-bridge.py <audio.ogg> --model base --language es`
+- Caso real probado: transcribió `Hola Chicichi, vamos.` desde un `.ogg`.
+
 Add whatever helps you do your job. This is your cheat sheet.

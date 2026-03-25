@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "socket": {
+    "path": "C:\\Users\\Gustavo/.openclaw/exec-approvals.sock",
+    "token": "kCZ3MEk-cC6dahzB-kcZ0AmvCfXT75-W"
+  },
+  "defaults": {},
+  "agents": {
+    "main": {
+      "security": "full",
+      "ask": "off",
+      "askFallback": "full",
+      "allowlist": [
+        {
+          "pattern": "C:\\Users\\Gustavo\\AppData\\Roaming\\npm\\openclaw.cmd",
+          "lastUsedAt": 1774442959199,
+          "id": "41dedc42-c60d-41cd-bd8f-3aae7ff0d461"
+        },
+        {
+          "pattern": "C:\\Windows\\System32\\cmd.exe",
+          "lastUsedAt": 1774442968128,
+          "id": "d499cd79-2102-4c1f-8c45-a93a596e650b",
+          "lastUsedCommand": "cmd /c openclaw approvals allowlist add --agent main \"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\"",
+          "lastResolvedPath": "C:\\Windows\\System32\\cmd.exe"
+        },
+        {
+          "pattern": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+          "lastUsedAt": 1774442968909,
+          "id": "3a652e62-cb3f-4b44-979c-ba4d91d060d4"
+        }
+      ]
+    }
+  }
+}

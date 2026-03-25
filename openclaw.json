@@ -96,6 +96,19 @@
   },
   "tools": {
     "profile": "coding",
+    "exec": {
+      "host": "gateway",
+      "security": "full",
+      "ask": "off"
+    },
+    "elevated": {
+      "enabled": true,
+      "allowFrom": {
+        "whatsapp": [
+          "+573183718246"
+        ]
+      }
+    },
     "agentToAgent": {
       "enabled": true,
       "allow": [
@@ -112,6 +125,28 @@
       "search": {
         "enabled": true,
         "provider": "duckduckgo"
+      }
+    },
+    "media": {
+      "audio": {
+        "enabled": true,
+        "echoTranscript": true,
+        "echoFormat": "📝 {transcript}",
+        "models": [
+          {
+            "type": "cli",
+            "command": "python",
+            "args": [
+              "C:\\Users\\Gustavo\\.openclaw\\workspace\\scripts\\whisper-bridge.py",
+              "{{MediaPath}}",
+              "--model",
+              "base",
+              "--language",
+              "es"
+            ],
+            "timeoutSeconds": 180
+          }
+        ]
       }
     }
   },

@@ -89,7 +89,7 @@
       "name": "evening-email-review-and-calendar-check",
       "enabled": true,
       "createdAtMs": 1774390767598,
-      "updatedAtMs": 1774390767598,
+      "updatedAtMs": 1774396832632,
       "schedule": {
         "kind": "cron",
         "expr": "0 19 * * *",
@@ -106,7 +106,14 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1774396800000
+        "nextRunAtMs": 1774483200000,
+        "lastRunAtMs": 1774396800021,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 32611,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0
       }
     },
     {
@@ -161,6 +168,40 @@
       },
       "state": {
         "nextRunAtMs": 1774458000000
+      }
+    },
+    {
+      "id": "af05158b-5c6f-4bea-b93d-38366dea639f",
+      "agentId": "main",
+      "sessionKey": "agent:main:tui-ff9e3c06-d72f-4309-808e-17050e7b293f",
+      "name": "Atlas OS review - end of day",
+      "enabled": true,
+      "createdAtMs": 1774392423014,
+      "updatedAtMs": 1774396867056,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 19 * * *",
+        "tz": "America/Bogota"
+      },
+      "sessionTarget": "session:agent:main:tui-ff9e3c06-d72f-4309-808e-17050e7b293f",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Revisa la página de Notion 'Atlas OS' y úsala como dashboard operativo. Haz una revisión ejecutiva de cierre de jornada: 1) identifica tareas activas, listas, bloqueadas, waiting y hechas; 2) detecta si alguna tarea se terminó o cambió de estado; 3) produce un análisis breve de prioridades, cuellos de botella y siguientes pasos; 4) con base en los pendientes, coordina y ordena a los subagentes correctos para avanzar en sus actividades cuando aplique; 5) responde al usuario con un resumen accionable en español, directo y práctico. No hagas acciones destructivas en Notion. Si hay restricciones de un subagente o dudas operativas, respétalas y menciona la limitación.",
+        "timeoutSeconds": 1800
+      },
+      "delivery": {
+        "mode": "announce"
+      },
+      "state": {
+        "nextRunAtMs": 1774483200000,
+        "lastRunAtMs": 1774396832632,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 34424,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0
       }
     }
   ]

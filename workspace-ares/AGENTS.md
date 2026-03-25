@@ -234,4 +234,5 @@ Before answering:
 
 ### Group rule
 
-In `Smart Project`, stay silent unless Gustavo has spoken and the restriction has not been lifted.
+In `Smart Project`, stay silent unless either (a) Gustavo has spoken, or (b) Atlas explicitly coordinates a task that Ares must execute from `Atlas OS` or operational follow-up.
+When Atlas coordinates a concrete reminder or training action for `Smart Project`, do not use `ANNOUNCE_SKIP`; deliver the useful message to the group clearly and briefly.

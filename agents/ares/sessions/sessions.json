@@ -325,7 +325,7 @@
     "runtimeMs": 3185
   },
   "agent:ares:whatsapp:group:120363424964463765@g.us": {
-    "updatedAt": 1774397397282,
+    "updatedAt": 1774404506270,
     "deliveryContext": {
       "channel": "whatsapp",
       "to": "120363424964463765@g.us",
@@ -433,13 +433,13 @@
       "version": 0
     },
     "status": "done",
-    "startedAt": 1774397389655,
+    "startedAt": 1774401324576,
     "modelProvider": "openai-codex",
     "model": "gpt-5.4",
     "contextTokens": 272000,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1774397394821,
+      "generatedAt": 1774401324559,
       "sessionId": "ce130e86-4bbf-47af-801e-8b540026fe0c",
       "sessionKey": "agent:ares:whatsapp:group:120363424964463765@g.us",
       "provider": "openai-codex",
@@ -459,25 +459,25 @@
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 29203,
-        "projectContextChars": 15519,
-        "nonProjectContextChars": 13684
+        "chars": 30073,
+        "projectContextChars": 16034,
+        "nonProjectContextChars": 14039
       },
       "injectedWorkspaceFiles": [
         {
           "name": "AGENTS.md",
           "path": "C:\\Users\\Gustavo\\.openclaw\\workspace-ares\\AGENTS.md",
           "missing": false,
-          "rawChars": 8582,
-          "injectedChars": 8582,
+          "rawChars": 8833,
+          "injectedChars": 8833,
           "truncated": false
         },
         {
           "name": "SOUL.md",
           "path": "C:\\Users\\Gustavo\\.openclaw\\workspace-ares\\SOUL.md",
           "missing": false,
-          "rawChars": 2814,
-          "injectedChars": 2814,
+          "rawChars": 3078,
+          "injectedChars": 3078,
           "truncated": false
         },
         {
@@ -551,8 +551,8 @@
         ]
       },
       "tools": {
-        "listChars": 1660,
-        "schemaChars": 6938,
+        "listChars": 1979,
+        "schemaChars": 7756,
         "entries": [
           {
             "name": "read",
@@ -583,6 +583,12 @@
             "summaryChars": 85,
             "schemaChars": 961,
             "propertiesCount": 12
+          },
+          {
+            "name": "cron",
+            "summaryChars": 3420,
+            "schemaChars": 690,
+            "propertiesCount": 13
           },
           {
             "name": "sessions_list",
@@ -628,9 +634,9 @@
           },
           {
             "name": "web_search",
-            "summaryChars": 93,
-            "schemaChars": 446,
-            "propertiesCount": 4
+            "summaryChars": 123,
+            "schemaChars": 574,
+            "propertiesCount": 7
           },
           {
             "name": "web_fetch",
@@ -659,14 +665,14 @@
         ]
       }
     },
-    "inputTokens": 7019,
-    "outputTokens": 30,
-    "cacheRead": 3584,
+    "inputTokens": 12598,
+    "outputTokens": 87,
+    "cacheRead": 1536,
     "cacheWrite": 0,
-    "estimatedCostUsd": 0.1357675,
-    "totalTokens": 10603,
+    "estimatedCostUsd": 0.22175350000000002,
+    "totalTokens": 14134,
     "totalTokensFresh": true,
-    "endedAt": 1774397394624,
-    "runtimeMs": 4969
+    "endedAt": 1774401332065,
+    "runtimeMs": 7489
   }
 }
