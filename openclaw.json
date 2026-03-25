@@ -37,6 +37,20 @@
             "name": "qwen3:8b"
           }
         ]
+      },
+      "anthropic": {
+        "baseUrl": "https://api.anthropic.com",
+        "api": "anthropic-messages",
+        "models": [
+          {
+            "id": "claude-sonnet-4-6",
+            "name": "Claude Sonnet 4.6"
+          },
+          {
+            "id": "claude-opus-4-6",
+            "name": "Claude Opus 4.6"
+          }
+        ]
       }
     }
   },
@@ -45,12 +59,15 @@
       "model": {
         "primary": "openai-codex/gpt-5.4",
         "fallbacks": [
+          "anthropic/claude-sonnet-4-6",
           "ollama/qwen3:30b",
           "ollama/qwen3:8b"
         ]
       },
       "models": {
         "openai-codex/gpt-5.4": {},
+        "anthropic/claude-sonnet-4-6": {},
+        "anthropic/claude-opus-4-6": {},
         "ollama/qwen3:30b": {},
         "ollama/qwen3:8b": {}
       },
