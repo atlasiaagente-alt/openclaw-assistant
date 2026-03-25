@@ -325,7 +325,7 @@
     "runtimeMs": 3185
   },
   "agent:ares:whatsapp:group:120363424964463765@g.us": {
-    "updatedAt": 1774384869019,
+    "updatedAt": 1774397397282,
     "deliveryContext": {
       "channel": "whatsapp",
       "to": "120363424964463765@g.us",
@@ -433,13 +433,13 @@
       "version": 0
     },
     "status": "done",
-    "startedAt": 1774384867115,
+    "startedAt": 1774397389655,
     "modelProvider": "openai-codex",
     "model": "gpt-5.4",
     "contextTokens": 272000,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1774384867102,
+      "generatedAt": 1774397394821,
       "sessionId": "ce130e86-4bbf-47af-801e-8b540026fe0c",
       "sessionKey": "agent:ares:whatsapp:group:120363424964463765@g.us",
       "provider": "openai-codex",
@@ -459,9 +459,9 @@
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 29558,
+        "chars": 29203,
         "projectContextChars": 15519,
-        "nonProjectContextChars": 14039
+        "nonProjectContextChars": 13684
       },
       "injectedWorkspaceFiles": [
         {
@@ -551,8 +551,8 @@
         ]
       },
       "tools": {
-        "listChars": 1979,
-        "schemaChars": 7628,
+        "listChars": 1660,
+        "schemaChars": 6938,
         "entries": [
           {
             "name": "read",
@@ -583,12 +583,6 @@
             "summaryChars": 85,
             "schemaChars": 961,
             "propertiesCount": 12
-          },
-          {
-            "name": "cron",
-            "summaryChars": 3420,
-            "schemaChars": 690,
-            "propertiesCount": 13
           },
           {
             "name": "sessions_list",
@@ -665,14 +659,14 @@
         ]
       }
     },
-    "inputTokens": 9660,
-    "outputTokens": 33,
-    "cacheRead": 1536,
+    "inputTokens": 7019,
+    "outputTokens": 30,
+    "cacheRead": 3584,
     "cacheWrite": 0,
-    "estimatedCostUsd": 0.068098,
-    "totalTokens": 11196,
+    "estimatedCostUsd": 0.1357675,
+    "totalTokens": 10603,
     "totalTokensFresh": true,
-    "endedAt": 1774384869002,
-    "runtimeMs": 1887
+    "endedAt": 1774397394624,
+    "runtimeMs": 4969
   }
 }

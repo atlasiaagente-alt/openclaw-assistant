@@ -96,6 +96,18 @@
   },
   "tools": {
     "profile": "coding",
+    "agentToAgent": {
+      "enabled": true,
+      "allow": [
+        "ares",
+        "prometeo",
+        "hestia",
+        "main"
+      ]
+    },
+    "sessions": {
+      "visibility": "all"
+    },
     "web": {
       "search": {
         "enabled": true,
