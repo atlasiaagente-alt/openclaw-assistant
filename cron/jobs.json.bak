@@ -8,7 +8,7 @@
       "name": "daily-openclaw-git-backup",
       "enabled": true,
       "createdAtMs": 1774361618484,
-      "updatedAtMs": 1774361618484,
+      "updatedAtMs": 1774409431389,
       "schedule": {
         "kind": "cron",
         "expr": "30 22 * * *",
@@ -25,17 +25,24 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1774409400000
+        "nextRunAtMs": 1774495800000,
+        "lastRunAtMs": 1774409400016,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 31373,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0
       }
     },
     {
       "id": "03b29602-b584-4ec0-9241-b0d74393cc82",
       "agentId": "main",
       "sessionKey": "agent:main:main",
-      "name": "daily-atlas-os-review",
+      "name": "Atlas OS review - morning",
       "enabled": true,
       "createdAtMs": 1774388052968,
-      "updatedAtMs": 1774388052968,
+      "updatedAtMs": 1774453988359,
       "schedule": {
         "kind": "cron",
         "expr": "0 8 * * *",
@@ -45,14 +52,23 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Review the Notion page 'Atlas OS' using the local Notion integration available on this machine. Summarize what is active, blocked, and next. Then coordinate with the relevant sub-agents only when useful based on the board state. Keep it concise and action-oriented. If nothing needs intervention, send a short no-op summary.",
-        "timeoutSeconds": 900
+        "message": "Revisa la página de Notion 'Atlas OS' y úsala como dashboard operativo. Flujo obligatorio y completo: (1) trata la primera tabla visible como inbox operativo principal; (2) por cada fila del inbox con responsable/dueño claro, muévela primero a la tabla correspondiente del agente/área (Prometeo = TradeLab/producto/técnica; Ares = entrenamiento/disciplina/hábitos; Hestia = relación/fechas/detalles del hogar; Atlas = operación general/vida práctica); no basta con resumirla; (3) después de moverla, coordina activamente al agente dueño mediante conversación real con su sesión; (4) exige decisión, primer paso concreto, o bloqueo explícito; (5) si un subagente no responde, responde ambiguamente o no ejecuta, destrábalo o escálalo explícitamente; no lo reportes como resuelto; (6) cuando una tarea o subagente quede bloqueado por ambigüedad pequeña (por ejemplo fecha pasada, estado incierto o falta de confirmación menor), no te frenes: intenta destrabar con una acción segura y natural, como una pregunta breve en el canal correcto, reencaminar al agente a la siguiente acción útil o continuar con otra actividad mientras esperas respuesta; (7) cuando recibas respuesta suficiente del subagente, vuelve a Notion y actualiza la tarea según el resultado real reportado: estado, siguiente paso, bloqueo y notas útiles; (8) nunca confundas coordinado con ejecutado ni ejecutado con entregado; (9) al final responde con un resumen breve y accionable que incluya evidencia explícita de qué moviste en Notion, con qué sesiones/subagentes hablaste, qué respondió cada uno, qué bloqueos destrabaste y qué quedó pendiente o bloqueado. Si no moviste una tarea con dueño claro, explica por qué.",
+        "timeoutSeconds": 1800
       },
       "delivery": {
-        "mode": "announce"
+        "mode": "announce",
+        "channel": "whatsapp",
+        "to": "+573183718246"
       },
       "state": {
-        "nextRunAtMs": 1774443600000
+        "nextRunAtMs": 1774530000000,
+        "lastRunAtMs": 1774450883548,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 167836,
+        "lastDeliveryStatus": "unknown",
+        "consecutiveErrors": 1,
+        "lastError": "Channel is required (no configured channels detected). Set delivery.channel explicitly or use a main session with a previous channel."
       }
     },
     {
@@ -62,7 +78,7 @@
       "name": "daily-email-review-and-whatsapp-reminder",
       "enabled": true,
       "createdAtMs": 1774390465819,
-      "updatedAtMs": 1774390767591,
+      "updatedAtMs": 1774443751348,
       "schedule": {
         "kind": "cron",
         "expr": "0 8 * * *",
@@ -79,7 +95,14 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1774443600000
+        "nextRunAtMs": 1774530000000,
+        "lastRunAtMs": 1774443713214,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 38134,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0
       }
     },
     {
@@ -117,91 +140,66 @@
       }
     },
     {
-      "id": "1b498596-f8f3-4976-89ea-07a8edda91dc",
+      "id": "ca097918-7155-44b5-80f9-4408f88c50ef",
       "agentId": "main",
-      "sessionKey": "agent:main:tui-ff9e3c06-d72f-4309-808e-17050e7b293f",
-      "name": "Atlas OS review - morning",
-      "enabled": true,
-      "createdAtMs": 1774392410001,
-      "updatedAtMs": 1774392410001,
-      "schedule": {
-        "kind": "cron",
-        "expr": "0 8 * * *",
-        "tz": "America/Bogota"
-      },
-      "sessionTarget": "session:agent:main:tui-ff9e3c06-d72f-4309-808e-17050e7b293f",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "Revisa la página de Notion 'Atlas OS' y úsala como dashboard operativo. Haz una revisión ejecutiva de mañana: 1) identifica tareas activas, listas, bloqueadas, waiting y hechas; 2) detecta si alguna tarea se terminó o cambió de estado; 3) produce un análisis breve de prioridades, cuellos de botella y siguientes pasos; 4) con base en los pendientes, coordina y ordena a los subagentes correctos para avanzar en sus actividades cuando aplique; 5) responde al usuario con un resumen accionable en español, directo y práctico. No hagas acciones destructivas en Notion. Si hay restricciones de un subagente o dudas operativas, respétalas y menciona la limitación.",
-        "timeoutSeconds": 1800
-      },
-      "delivery": {
-        "mode": "announce"
-      },
-      "state": {
-        "nextRunAtMs": 1774443600000
-      }
-    },
-    {
-      "id": "3911daa5-65a3-4fca-b14a-0ec664a6cb10",
-      "agentId": "main",
-      "sessionKey": "agent:main:tui-ff9e3c06-d72f-4309-808e-17050e7b293f",
+      "sessionKey": "agent:main:tui-43d69cf6-069a-4921-b97c-b5f76e740c45",
       "name": "Atlas OS review - midday",
       "enabled": true,
-      "createdAtMs": 1774392416651,
-      "updatedAtMs": 1774392416651,
+      "createdAtMs": 1774451432440,
+      "updatedAtMs": 1774453991738,
       "schedule": {
         "kind": "cron",
         "expr": "0 12 * * *",
         "tz": "America/Bogota"
       },
-      "sessionTarget": "session:agent:main:tui-ff9e3c06-d72f-4309-808e-17050e7b293f",
+      "sessionTarget": "isolated",
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Revisa la página de Notion 'Atlas OS' y úsala como dashboard operativo. Haz una revisión ejecutiva de mediodía: 1) identifica tareas activas, listas, bloqueadas, waiting y hechas; 2) detecta si alguna tarea se terminó o cambió de estado; 3) produce un análisis breve de prioridades, cuellos de botella y siguientes pasos; 4) con base en los pendientes, coordina y ordena a los subagentes correctos para avanzar en sus actividades cuando aplique; 5) responde al usuario con un resumen accionable en español, directo y práctico. No hagas acciones destructivas en Notion. Si hay restricciones de un subagente o dudas operativas, respétalas y menciona la limitación.",
+        "message": "Revisa la página de Notion 'Atlas OS' y úsala como dashboard operativo. Flujo obligatorio y completo: (1) trata la primera tabla visible como inbox operativo principal; (2) por cada fila del inbox con responsable/dueño claro, muévela primero a la tabla correspondiente del agente/área (Prometeo = TradeLab/producto/técnica; Ares = entrenamiento/disciplina/hábitos; Hestia = relación/fechas/detalles del hogar; Atlas = operación general/vida práctica); no basta con resumirla; (3) después de moverla, coordina activamente al agente dueño mediante conversación real con su sesión; (4) exige decisión, primer paso concreto, o bloqueo explícito; (5) si un subagente no responde, responde ambiguamente o no ejecuta, destrábalo o escálalo explícitamente; no lo reportes como resuelto; (6) cuando una tarea o subagente quede bloqueado por ambigüedad pequeña (por ejemplo fecha pasada, estado incierto o falta de confirmación menor), no te frenes: intenta destrabar con una acción segura y natural, como una pregunta breve en el canal correcto, reencaminar al agente a la siguiente acción útil o continuar con otra actividad mientras esperas respuesta; (7) cuando recibas respuesta suficiente del subagente, vuelve a Notion y actualiza la tarea según el resultado real reportado: estado, siguiente paso, bloqueo y notas útiles; (8) nunca confundas coordinado con ejecutado ni ejecutado con entregado; (9) al final responde con un resumen breve y accionable que incluya evidencia explícita de qué moviste en Notion, con qué sesiones/subagentes hablaste, qué respondió cada uno, qué bloqueos destrabaste y qué quedó pendiente o bloqueado. Si no moviste una tarea con dueño claro, explica por qué.",
         "timeoutSeconds": 1800
       },
       "delivery": {
-        "mode": "announce"
+        "mode": "announce",
+        "channel": "whatsapp",
+        "to": "+573183718246"
       },
       "state": {
-        "nextRunAtMs": 1774458000000
+        "nextRunAtMs": 1774458000000,
+        "lastRunAtMs": 1774451782377,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 464859,
+        "lastError": "Channel is required (no configured channels detected). Set delivery.channel explicitly or use a main session with a previous channel.",
+        "lastDeliveryStatus": "unknown",
+        "consecutiveErrors": 1
       }
     },
     {
-      "id": "af05158b-5c6f-4bea-b93d-38366dea639f",
+      "id": "5ca10713-4dc9-4044-aeda-6dd2bc570cb4",
       "agentId": "main",
-      "sessionKey": "agent:main:tui-ff9e3c06-d72f-4309-808e-17050e7b293f",
+      "sessionKey": "agent:main:tui-43d69cf6-069a-4921-b97c-b5f76e740c45",
       "name": "Atlas OS review - end of day",
       "enabled": true,
-      "createdAtMs": 1774392423014,
-      "updatedAtMs": 1774396867056,
+      "createdAtMs": 1774451444116,
+      "updatedAtMs": 1774453346379,
       "schedule": {
         "kind": "cron",
         "expr": "0 19 * * *",
         "tz": "America/Bogota"
       },
-      "sessionTarget": "session:agent:main:tui-ff9e3c06-d72f-4309-808e-17050e7b293f",
+      "sessionTarget": "isolated",
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Revisa la página de Notion 'Atlas OS' y úsala como dashboard operativo. Haz una revisión ejecutiva de cierre de jornada: 1) identifica tareas activas, listas, bloqueadas, waiting y hechas; 2) detecta si alguna tarea se terminó o cambió de estado; 3) produce un análisis breve de prioridades, cuellos de botella y siguientes pasos; 4) con base en los pendientes, coordina y ordena a los subagentes correctos para avanzar en sus actividades cuando aplique; 5) responde al usuario con un resumen accionable en español, directo y práctico. No hagas acciones destructivas en Notion. Si hay restricciones de un subagente o dudas operativas, respétalas y menciona la limitación.",
+        "message": "Revisa la página de Notion 'Atlas OS' y úsala como dashboard operativo. Flujo obligatorio y completo: (1) trata la primera tabla visible como inbox operativo principal; (2) por cada fila del inbox con responsable/dueño claro, muévela primero a la tabla correspondiente del agente/área (Prometeo = TradeLab/producto/técnica; Ares = entrenamiento/disciplina/hábitos; Hestia = relación/fechas/detalles del hogar; Atlas = operación general/vida práctica); no basta con resumirla; (3) después de moverla, coordina activamente al agente dueño mediante conversación real con su sesión; (4) exige decisión, primer paso concreto, o bloqueo explícito; (5) si un subagente no responde, responde ambiguamente o no ejecuta, destrábalo o escálalo explícitamente; no lo reportes como resuelto; (6) cuando una tarea o subagente quede bloqueado por ambigüedad pequeña (por ejemplo fecha pasada, estado incierto o falta de confirmación menor), no te frenes: intenta destrabar con una acción segura y natural, como una pregunta breve en el canal correcto, reencaminar al agente a la siguiente acción útil o continuar con otra actividad mientras esperas respuesta; (7) cuando recibas respuesta suficiente del subagente, vuelve a Notion y actualiza la tarea según el resultado real reportado: estado, siguiente paso, bloqueo y notas útiles; (8) nunca confundas coordinado con ejecutado ni ejecutado con entregado; (9) al final responde con un resumen breve y accionable que incluya evidencia explícita de qué moviste en Notion, con qué sesiones/subagentes hablaste, qué respondió cada uno, qué bloqueos destrabaste y qué quedó pendiente o bloqueado. Si no moviste una tarea con dueño claro, explica por qué.",
         "timeoutSeconds": 1800
       },
       "delivery": {
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1774483200000,
-        "lastRunAtMs": 1774396832632,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 34424,
-        "lastDelivered": true,
-        "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0
+        "nextRunAtMs": 1774483200000
       }
     }
   ]

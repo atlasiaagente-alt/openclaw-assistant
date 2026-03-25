@@ -18,9 +18,9 @@
         },
         {
           "pattern": "C:\\Windows\\System32\\cmd.exe",
-          "lastUsedAt": 1774442968128,
+          "lastUsedAt": 1774450875776,
           "id": "d499cd79-2102-4c1f-8c45-a93a596e650b",
-          "lastUsedCommand": "cmd /c openclaw approvals allowlist add --agent main \"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\"",
+          "lastUsedCommand": "cmd /c openclaw gateway status",
           "lastResolvedPath": "C:\\Windows\\System32\\cmd.exe"
         },
         {
