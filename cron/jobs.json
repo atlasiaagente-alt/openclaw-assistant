@@ -146,7 +146,7 @@
       "name": "Atlas OS review - midday",
       "enabled": true,
       "createdAtMs": 1774451432440,
-      "updatedAtMs": 1774458269781,
+      "updatedAtMs": 1774462189903,
       "schedule": {
         "kind": "cron",
         "expr": "0 12 * * *",
@@ -166,10 +166,10 @@
       },
       "state": {
         "nextRunAtMs": 1774544400000,
-        "lastRunAtMs": 1774458000021,
+        "lastRunAtMs": 1774461883468,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 269760,
+        "lastDurationMs": 306435,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
         "lastDelivered": true

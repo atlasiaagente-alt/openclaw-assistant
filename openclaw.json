@@ -130,6 +130,10 @@
     "media": {
       "audio": {
         "enabled": true,
+        "attachments": {
+          "mode": "all",
+          "maxAttachments": 4
+        },
         "echoTranscript": true,
         "echoFormat": "📝 {transcript}",
         "models": [
