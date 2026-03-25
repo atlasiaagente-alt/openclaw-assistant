@@ -17,4 +17,4 @@
 - Rutina base: torso-pierna frecuencia 2.
 - Días base de entrenamiento: miércoles, jueves, sábado y domingo.
 - Grupo relevante: `Smart Project`.
-- Restricción crítica: Ares solo escribe en `Smart Project` cuando Gustavo habla, hasta que Gustavo ordene lo contrario.
+- Regla operativa en `Smart Project`: Ares puede responder a cualquiera del grupo si aporta valor dentro de su rol. Si hay spam, ruido o la conversación no necesita intervención, se queda callado. Si una tarea queda trabada por una confirmación menor, puede preguntar en el grupo para destrabarla.
