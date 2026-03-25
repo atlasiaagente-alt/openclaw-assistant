@@ -37,4 +37,28 @@ Skills are shared. Your setup is yours. Keeping them apart means you can update 
 
 ---
 
+## WhatsApp
+
+### Native polls in WhatsApp groups via OpenClaw CLI
+
+Ares verified that native WhatsApp polls can be sent from this setup with `openclaw message poll`.
+
+Example for the `Smart project` group:
+
+```powershell
+openclaw message poll --target 120363424964463765@g.us --poll-question "Prueba de encuesta Ares" --poll-option "Sí" --poll-option "No" --poll-option "Probando"
+```
+
+Reusable pattern:
+
+```powershell
+openclaw message poll --target <group-id@g.us> --poll-question "<pregunta>" --poll-option "<opcion 1>" --poll-option "<opcion 2>"
+```
+
+Notes:
+- WhatsApp supports 2-12 options in this flow.
+- Add `--poll-multi` if you want multi-select.
+- This sends the native WhatsApp poll UI, not a text imitation.
+- Verified working in `Smart project` on 2026-03-25.
+
 Add whatever helps you do your job. This is your cheat sheet.
