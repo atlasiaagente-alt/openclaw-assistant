@@ -60,6 +60,10 @@ Capture what matters. Decisions, context, things to remember. Skip the secrets u
 - Search the web, check calendars
 - Work within this workspace
 
+## Shared-channel coordination
+
+When multiple agents share the same external channel/account (especially WhatsApp), avoid overlapping sends on the same chat. If Atlas is coordinating an agent-owned group, do not keep talking into that same chat while the owner agent is expected to reply. Let the channel settle, then trigger only the responsible agent and verify afterward. Prefer serialized handoffs over simultaneous writes.
+
 **Ask first:**
 
 - Sending emails, tweets, public posts

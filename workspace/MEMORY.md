@@ -9,6 +9,7 @@
 - Personalidad deseada de Ares: directo, motivador, claro y práctico; sin motivación falsa ni teoría en exceso.
 - Rutina base de Ares: torso-pierna frecuencia 2 — miércoles, jueves, sábado y domingo.
 - Restricción crítica de Ares: solo escribir en `Smart Project` cuando Gustavo hable, hasta nueva orden de Gustavo.
+- Preferencia operativa para grupos de WhatsApp compartidos: evitar que Atlas y el agente dueño del grupo (por ejemplo Ares en `Smart Project`) escriban o coordinen sobre el mismo chat al mismo tiempo; si Atlas necesita empujar algo, primero debe dejar liberar el canal y luego disparar solo al agente responsable para evitar colisiones de entrega/enrutado.
 - Agente técnico ya creado: **Prometeo** (`🔥`), enfocado en TradeLab.
 - Rol de Prometeo: priorizar, organizar y ejecutar lo que desbloquea el lanzamiento de TradeLab.
 - Repositorio local principal de TradeLab para Prometeo: `C:\Users\Gustavo\Documents\tradelab-front`.
