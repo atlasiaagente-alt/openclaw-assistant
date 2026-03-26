@@ -14,6 +14,7 @@
 - Lección operativa reforzada por Ares: `sessions_send` entre sesiones sirve para coordinación interna pero no garantiza salida al canal externo real; si la tarea depende de mensajería externa, validar entrega en el canal nativo antes de darla por hecha.
 - Criterio operativo transversal útil para agentes: ante bloqueos menores o ambigüedad pequeña, destrabar con interacción mínima útil en el canal correcto (mensaje corto, claro, humano y orientado a mover la acción) en vez de quedarse en análisis o devolver solo "falta confirmación".
 - Para grupos operativos de WhatsApp, cuando haya duda sobre el enrutamiento/salida externa, verificar primero la vía nativa correcta de OpenClaw antes de marcar una tarea como ejecutada o entregada.
+- Estándar operativo transversal ya adoptado por Ares, Hestia y Prometeo para futuras sesiones: coordinar en sesión interna solo para ordenar; ejecutar en el canal externo real cuando aplique; y marcar entrega únicamente con confirmación real de salida del gateway/canal. Usar `sessions_send` para coordinación entre agentes y `openclaw message send --target <canal> --message "..."` para mensajería externa real.
 - Agente técnico ya creado: **Prometeo** (`🔥`), enfocado en TradeLab.
 - Rol de Prometeo: priorizar, organizar y ejecutar lo que desbloquea el lanzamiento de TradeLab.
 - Repositorio local principal de TradeLab para Prometeo: `C:\Users\Gustavo\Documents\tradelab-front`.
