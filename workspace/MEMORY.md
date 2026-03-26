@@ -11,6 +11,9 @@
 - Restricción crítica actualizada de Ares en `Smart Project`: puede escribir cuando Gustavo hable o cuando Atlas lo active/coordine explícitamente para ejecutar una tarea; fuera de eso, no debe intervenir por cuenta propia.
 - Preferencia operativa para grupos de WhatsApp compartidos: evitar que Atlas y el agente dueño del grupo (por ejemplo Ares en `Smart Project`) escriban o coordinen sobre el mismo chat al mismo tiempo; si Atlas necesita empujar algo, primero debe dejar liberar el canal y luego disparar solo al agente responsable para evitar colisiones de entrega/enrutado.
 - Nueva regla operativa crítica: en coordinación entre agentes, `coordinado` no significa `ejecutado` y `ejecutado` no significa `entregado`. Atlas no debe reportar tareas como hechas sin confirmación suficiente del agente responsable y, cuando aplique, evidencia real de entrega en el canal externo.
+- Lección operativa reforzada por Ares: `sessions_send` entre sesiones sirve para coordinación interna pero no garantiza salida al canal externo real; si la tarea depende de mensajería externa, validar entrega en el canal nativo antes de darla por hecha.
+- Criterio operativo transversal útil para agentes: ante bloqueos menores o ambigüedad pequeña, destrabar con interacción mínima útil en el canal correcto (mensaje corto, claro, humano y orientado a mover la acción) en vez de quedarse en análisis o devolver solo "falta confirmación".
+- Para grupos operativos de WhatsApp, cuando haya duda sobre el enrutamiento/salida externa, verificar primero la vía nativa correcta de OpenClaw antes de marcar una tarea como ejecutada o entregada.
 - Agente técnico ya creado: **Prometeo** (`🔥`), enfocado en TradeLab.
 - Rol de Prometeo: priorizar, organizar y ejecutar lo que desbloquea el lanzamiento de TradeLab.
 - Repositorio local principal de TradeLab para Prometeo: `C:\Users\Gustavo\Documents\tradelab-front`.
