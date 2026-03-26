@@ -1,7 +1,7 @@
 {
   "agent:prometeo:main": {
     "sessionId": "c7264268-2e76-4a99-92f9-617f906a785c",
-    "updatedAt": 1774462219037,
+    "updatedAt": 1774487066813,
     "skillsSnapshot": {
       "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>coding-agent</name>\n    <description>Delegate coding tasks to Codex, Claude Code, or Pi agents via background process. Use when: (1) building/creating new features or apps, (2) reviewing PRs (spawn in temp dir), (3) refactoring large codebases, (4) iterative coding that needs file exploration. NOT for: simple one-liner fixes (just edit), reading code (use read tool), thread-bound ACP harness requests in chat (for example spawn/run Codex or Claude Code in a Discord thread; use sessions_spawn with runtime:&quot;acp&quot;), or any work in ~/clawd workspace (never spawn agents here). Claude Code: use --print --permission-mode bypassPermissions (no PTY). Codex/Pi/OpenCode: pty:true required.</description>\n    <location>~/AppData\\Roaming\\npm\\node_modules\\openclaw\\skills\\coding-agent\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>gog</name>\n    <description>Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs.</description>\n    <location>~/AppData\\Roaming\\npm\\node_modules\\openclaw\\skills\\gog\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>~/AppData\\Roaming\\npm\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>node-connect</name>\n    <description>Diagnose OpenClaw node connection and pairing failures for Android, iOS, and macOS companion apps. Use when QR/setup code/manual connect fails, local Wi-Fi works but VPS/tailnet does not, or errors mention pairing required, unauthorized, bootstrap token invalid or expired, gateway.bind, gateway.remote.url, Tailscale, or plugins.entries.device-pair.config.publicUrl.</description>\n    <location>~/AppData\\Roaming\\npm\\node_modules\\openclaw\\skills\\node-connect\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create, edit, improve, or audit AgentSkills. Use when creating a new skill from scratch or when asked to improve, review, audit, tidy up, or clean up an existing skill or SKILL.md file. Also use when editing or restructuring a skill directory (moving files to references/ or scripts/, removing stale content, validating against the AgentSkills spec). Triggers on phrases like &quot;create a skill&quot;, &quot;author a skill&quot;, &quot;tidy up a skill&quot;, &quot;improve this skill&quot;, &quot;review the skill&quot;, &quot;clean up the skill&quot;, &quot;audit the skill&quot;.</description>\n    <location>~/AppData\\Roaming\\npm\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>weather</name>\n    <description>Get current weather and forecasts via wttr.in or Open-Meteo. Use when: user asks about weather, temperature, or forecasts for any location. NOT for: historical weather data, severe weather alerts, or detailed meteorological analysis. No API key needed.</description>\n    <location>~/AppData\\Roaming\\npm\\node_modules\\openclaw\\skills\\weather\\SKILL.md</location>\n  </skill>\n</available_skills>",
       "skills": [
@@ -83,16 +83,16 @@
     "status": "done",
     "startedAt": 1774383567567,
     "abortedLastRun": false,
-    "contextTokens": 272000,
-    "modelProvider": "openai-codex",
-    "model": "gpt-5.4",
+    "contextTokens": 200000,
+    "modelProvider": "anthropic",
+    "model": "claude-sonnet-4-6",
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1774462212028,
+      "generatedAt": 1774487063915,
       "sessionId": "c7264268-2e76-4a99-92f9-617f906a785c",
       "sessionKey": "agent:prometeo:main",
-      "provider": "openai-codex",
-      "model": "gpt-5.4",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
       "workspaceDir": "C:\\Users\\Gustavo\\.openclaw\\workspace-prometeo",
       "bootstrapMaxChars": 20000,
       "bootstrapTotalMaxChars": 150000,
@@ -108,9 +108,9 @@
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 31634,
-        "projectContextChars": 18751,
-        "nonProjectContextChars": 12883
+        "chars": 33781,
+        "projectContextChars": 19122,
+        "nonProjectContextChars": 14659
       },
       "injectedWorkspaceFiles": [
         {
@@ -125,8 +125,8 @@
           "name": "SOUL.md",
           "path": "C:\\Users\\Gustavo\\.openclaw\\workspace-prometeo\\SOUL.md",
           "missing": false,
-          "rawChars": 5112,
-          "injectedChars": 5112,
+          "rawChars": 5271,
+          "injectedChars": 5271,
           "truncated": false
         },
         {
@@ -149,8 +149,8 @@
           "name": "USER.md",
           "path": "C:\\Users\\Gustavo\\.openclaw\\workspace-prometeo\\USER.md",
           "missing": false,
-          "rawChars": 1120,
-          "injectedChars": 1120,
+          "rawChars": 1332,
+          "injectedChars": 1332,
           "truncated": false
         },
         {
@@ -289,7 +289,7 @@
           },
           {
             "name": "image",
-            "summaryChars": 260,
+            "summaryChars": 201,
             "schemaChars": 342,
             "propertiesCount": 6
           },
@@ -308,12 +308,12 @@
         ]
       }
     },
-    "inputTokens": 1148,
-    "outputTokens": 120,
-    "totalTokens": 11900,
+    "inputTokens": 3,
+    "outputTokens": 8,
+    "totalTokens": 24822,
     "totalTokensFresh": true,
-    "cacheRead": 10752,
-    "cacheWrite": 0,
+    "cacheRead": 3369,
+    "cacheWrite": 21450,
     "estimatedCostUsd": 0.2126895,
     "deliveryContext": {
       "channel": "webchat"

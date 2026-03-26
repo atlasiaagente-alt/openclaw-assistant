@@ -19,6 +19,21 @@
           "name": "qwen3:8b"
         }
       ]
+    },
+    "anthropic": {
+      "baseUrl": "https://api.anthropic.com",
+      "api": "anthropic-messages",
+      "models": [
+        {
+          "id": "claude-sonnet-4-6",
+          "name": "Claude Sonnet 4.6"
+        },
+        {
+          "id": "claude-opus-4-6",
+          "name": "Claude Opus 4.6"
+        }
+      ],
+      "apiKey": "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"
     }
   }
 }
