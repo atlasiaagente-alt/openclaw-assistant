@@ -18,9 +18,9 @@
         },
         {
           "pattern": "C:\\Windows\\System32\\cmd.exe",
-          "lastUsedAt": 1774450875776,
+          "lastUsedAt": 1774820033287,
           "id": "d499cd79-2102-4c1f-8c45-a93a596e650b",
-          "lastUsedCommand": "cmd /c openclaw gateway status",
+          "lastUsedCommand": "cmd /c openclaw gateway restart",
           "lastResolvedPath": "C:\\Windows\\System32\\cmd.exe"
         },
         {

@@ -8,7 +8,7 @@
       "name": "daily-openclaw-git-backup",
       "enabled": true,
       "createdAtMs": 1774361618484,
-      "updatedAtMs": 1774409431389,
+      "updatedAtMs": 1774755025153,
       "schedule": {
         "kind": "cron",
         "expr": "30 22 * * *",
@@ -25,14 +25,14 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1774495800000,
-        "lastRunAtMs": 1774409400016,
+        "nextRunAtMs": 1774841400000,
+        "lastRunAtMs": 1774755000021,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 31373,
-        "lastDelivered": true,
+        "lastDurationMs": 25132,
         "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0
+        "consecutiveErrors": 0,
+        "lastDelivered": true
       }
     },
     {
@@ -42,7 +42,7 @@
       "name": "Atlas OS review - morning",
       "enabled": true,
       "createdAtMs": 1774388052968,
-      "updatedAtMs": 1774454551381,
+      "updatedAtMs": 1774789348890,
       "schedule": {
         "kind": "cron",
         "expr": "0 8 * * *",
@@ -52,7 +52,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Revisa la página de Notion 'Atlas OS' y úsala como dashboard operativo. Flujo obligatorio y completo: (1) trata la primera tabla visible como inbox operativo principal; (2) por cada fila del inbox con responsable/dueño claro, muévela primero a la tabla correspondiente del agente/área (Prometeo = TradeLab/producto/técnica; Ares = entrenamiento/disciplina/hábitos; Hestia = relación/fechas/detalles del hogar; Atlas = operación general/vida práctica); no basta con resumirla; (3) después de moverla, coordina activamente al agente dueño mediante conversación real con su sesión; (4) exige decisión, primer paso concreto, o bloqueo explícito; (5) si un subagente no responde, responde ambiguamente o no ejecuta, destrábalo o escálalo explícitamente; no lo reportes como resuelto; (6) cuando una tarea o subagente quede bloqueado por ambigüedad pequeña (por ejemplo fecha pasada, estado incierto o falta de confirmación menor), no te frenes: intenta destrabar con una acción segura y natural, como una pregunta breve en el canal correcto, reencaminar al agente a la siguiente acción útil o continuar con otra actividad mientras esperas respuesta; (7) cuando recibas respuesta suficiente del subagente, vuelve a Notion y actualiza la tarea según el resultado real reportado: estado, siguiente paso, bloqueo y notas útiles; (8) nunca confundas coordinado con ejecutado ni ejecutado con entregado; (9) al final responde con un resumen breve y accionable que incluya evidencia explícita de qué moviste en Notion, con qué sesiones/subagentes hablaste, qué respondió cada uno, qué bloqueos destrabaste y qué quedó pendiente o bloqueado. Si no moviste una tarea con dueño claro, explica por qué.",
+        "message": "Revisa el Tasks Tracker de Notion (DB id: 32f0a0b1-97cc-81a8-9443-df3f85f2ffc7, dentro de la página 'Atlas OS - Home' id: 32f0a0b1-97cc-8115-9e62-ec8765ad533c) y úsalo como dashboard operativo. Flujo obligatorio: (1) Lee todas las tareas del tracker; (2) por cada tarea con estado Backlog o Next y dueño claro, coordina activamente al agente responsable (Prometeo, Ares, Hestia o Atlas); (3) exige decisión, primer paso concreto o bloqueo explícito; (4) si un subagente no responde o queda ambiguo, destrábalo o escálalo; (5) actualiza el estado en el tracker según resultado real: usa siempre Backlog, Next, In progress, Waiting, Blocked o Done; (6) nunca marques Done sin confirmación real de entrega; (7) al final envía a WhatsApp +573183718246 un resumen breve: qué moviste, qué coordinaste, qué quedó bloqueado y qué sigue.",
         "timeoutSeconds": 1800
       },
       "delivery": {
@@ -61,11 +61,11 @@
         "to": "+573183718246"
       },
       "state": {
-        "nextRunAtMs": 1774530000000,
-        "lastRunAtMs": 1774454270468,
+        "nextRunAtMs": 1774875600000,
+        "lastRunAtMs": 1774789200016,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 280913,
+        "lastDurationMs": 148874,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
         "lastDelivered": true
@@ -78,7 +78,7 @@
       "name": "daily-email-review-and-whatsapp-reminder",
       "enabled": true,
       "createdAtMs": 1774390465819,
-      "updatedAtMs": 1774443751348,
+      "updatedAtMs": 1774789435266,
       "schedule": {
         "kind": "cron",
         "expr": "0 8 * * *",
@@ -95,11 +95,11 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1774530000000,
-        "lastRunAtMs": 1774443713214,
+        "nextRunAtMs": 1774875600000,
+        "lastRunAtMs": 1774789348890,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 38134,
+        "lastDurationMs": 86376,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -112,7 +112,7 @@
       "name": "evening-email-review-and-calendar-check",
       "enabled": true,
       "createdAtMs": 1774390767598,
-      "updatedAtMs": 1774483231097,
+      "updatedAtMs": 1774742480441,
       "schedule": {
         "kind": "cron",
         "expr": "0 19 * * *",
@@ -129,14 +129,14 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1774569600000,
-        "lastRunAtMs": 1774483200013,
-        "lastRunStatus": "error",
-        "lastStatus": "error",
-        "lastDurationMs": 31084,
-        "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 1,
-        "lastError": "Delivering to WhatsApp requires target <E.164|group JID>"
+        "nextRunAtMs": 1774828800000,
+        "lastRunAtMs": 1774742400018,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 80423,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0,
+        "lastDelivered": true
       }
     },
     {
@@ -146,7 +146,7 @@
       "name": "Atlas OS review - midday",
       "enabled": true,
       "createdAtMs": 1774451432440,
-      "updatedAtMs": 1774462189903,
+      "updatedAtMs": 1774803839361,
       "schedule": {
         "kind": "cron",
         "expr": "0 12 * * *",
@@ -156,7 +156,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Revisa la página de Notion 'Atlas OS' y úsala como dashboard operativo. Flujo obligatorio y completo: (1) trata la primera tabla visible como inbox operativo principal; (2) por cada fila del inbox con responsable/dueño claro, muévela primero a la tabla correspondiente del agente/área (Prometeo = TradeLab/producto/técnica; Ares = entrenamiento/disciplina/hábitos; Hestia = relación/fechas/detalles del hogar; Atlas = operación general/vida práctica); no basta con resumirla; (3) después de moverla, coordina activamente al agente dueño mediante conversación real con su sesión; (4) exige decisión, primer paso concreto, o bloqueo explícito; (5) si un subagente no responde, responde ambiguamente o no ejecuta, destrábalo o escálalo explícitamente; no lo reportes como resuelto; (6) cuando una tarea o subagente quede bloqueado por ambigüedad pequeña (por ejemplo fecha pasada, estado incierto o falta de confirmación menor), no te frenes: intenta destrabar con una acción segura y natural, como una pregunta breve en el canal correcto, reencaminar al agente a la siguiente acción útil o continuar con otra actividad mientras esperas respuesta; (7) cuando recibas respuesta suficiente del subagente, vuelve a Notion y actualiza la tarea según el resultado real reportado: estado, siguiente paso, bloqueo y notas útiles; (8) nunca confundas coordinado con ejecutado ni ejecutado con entregado; (9) al final responde con un resumen breve y accionable que incluya evidencia explícita de qué moviste en Notion, con qué sesiones/subagentes hablaste, qué respondió cada uno, qué bloqueos destrabaste y qué quedó pendiente o bloqueado. Si no moviste una tarea con dueño claro, explica por qué.",
+        "message": "Revisa el Tasks Tracker de Notion (DB id: 32f0a0b1-97cc-81a8-9443-df3f85f2ffc7, dentro de la página 'Atlas OS - Home' id: 32f0a0b1-97cc-8115-9e62-ec8765ad533c) y úsalo como dashboard operativo. Flujo obligatorio: (1) Lee todas las tareas del tracker; (2) por cada tarea con estado Backlog o Next y dueño claro, coordina activamente al agente responsable (Prometeo, Ares, Hestia o Atlas); (3) exige decisión, primer paso concreto o bloqueo explícito; (4) si un subagente no responde o queda ambiguo, destrábalo o escálalo; (5) actualiza el estado en el tracker según resultado real: usa siempre Backlog, Next, In progress, Waiting, Blocked o Done; (6) nunca marques Done sin confirmación real de entrega; (7) al final envía a WhatsApp +573183718246 un resumen breve: qué moviste, qué coordinaste, qué quedó bloqueado y qué sigue.",
         "timeoutSeconds": 1800
       },
       "delivery": {
@@ -165,11 +165,11 @@
         "to": "+573183718246"
       },
       "state": {
-        "nextRunAtMs": 1774544400000,
-        "lastRunAtMs": 1774461883468,
+        "nextRunAtMs": 1774890000000,
+        "lastRunAtMs": 1774803600014,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 306435,
+        "lastDurationMs": 239347,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
         "lastDelivered": true
@@ -182,7 +182,7 @@
       "name": "Atlas OS review - end of day",
       "enabled": true,
       "createdAtMs": 1774451444116,
-      "updatedAtMs": 1774483456764,
+      "updatedAtMs": 1774742544837,
       "schedule": {
         "kind": "cron",
         "expr": "0 19 * * *",
@@ -192,7 +192,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Revisa la página de Notion 'Atlas OS' y úsala como dashboard operativo. Flujo obligatorio y completo: (1) trata la primera tabla visible como inbox operativo principal; (2) por cada fila del inbox con responsable/dueño claro, muévela primero a la tabla correspondiente del agente/área (Prometeo = TradeLab/producto/técnica; Ares = entrenamiento/disciplina/hábitos; Hestia = relación/fechas/detalles del hogar; Atlas = operación general/vida práctica); no basta con resumirla; (3) después de moverla, coordina activamente al agente dueño mediante conversación real con su sesión; (4) exige decisión, primer paso concreto, o bloqueo explícito; (5) si un subagente no responde, responde ambiguamente o no ejecuta, destrábalo o escálalo explícitamente; no lo reportes como resuelto; (6) cuando una tarea o subagente quede bloqueado por ambigüedad pequeña (por ejemplo fecha pasada, estado incierto o falta de confirmación menor), no te frenes: intenta destrabar con una acción segura y natural, como una pregunta breve en el canal correcto, reencaminar al agente a la siguiente acción útil o continuar con otra actividad mientras esperas respuesta; (7) cuando recibas respuesta suficiente del subagente, vuelve a Notion y actualiza la tarea según el resultado real reportado: estado, siguiente paso, bloqueo y notas útiles; (8) nunca confundas coordinado con ejecutado ni ejecutado con entregado; (9) al final responde con un resumen breve y accionable que incluya evidencia explícita de qué moviste en Notion, con qué sesiones/subagentes hablaste, qué respondió cada uno, qué bloqueos destrabaste y qué quedó pendiente o bloqueado. Si no moviste una tarea con dueño claro, explica por qué.",
+        "message": "Revisa el Tasks Tracker de Notion (DB id: 32f0a0b1-97cc-81a8-9443-df3f85f2ffc7, dentro de la página 'Atlas OS - Home' id: 32f0a0b1-97cc-8115-9e62-ec8765ad533c) y úsalo como dashboard operativo. Flujo obligatorio: (1) Lee todas las tareas del tracker; (2) por cada tarea con estado Backlog o Next y dueño claro, coordina activamente al agente responsable (Prometeo, Ares, Hestia o Atlas); (3) exige decisión, primer paso concreto o bloqueo explícito; (4) si un subagente no responde o queda ambiguo, destrábalo o escálalo; (5) actualiza el estado en el tracker según resultado real: usa siempre Backlog, Next, In progress, Waiting, Blocked o Done; (6) nunca marques Done sin confirmación real de entrega; (7) al final envía a WhatsApp +573183718246 un resumen breve: qué moviste, qué coordinaste, qué quedó bloqueado y qué sigue.",
         "timeoutSeconds": 1800
       },
       "delivery": {
@@ -201,14 +201,202 @@
         "to": "+573183718246"
       },
       "state": {
-        "nextRunAtMs": 1774569600000,
-        "lastRunAtMs": 1774483231097,
+        "nextRunAtMs": 1774828800000,
+        "lastRunAtMs": 1774742480441,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 225667,
+        "lastDurationMs": 64396,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "0e6263ae-c5c2-4bbf-a409-9b91e9d78db2",
+      "agentId": "main",
+      "sessionKey": "agent:main:whatsapp:direct:+573183718246",
+      "name": "Recordatorio entrenamiento pecho 5AM",
+      "enabled": false,
+      "deleteAfterRun": true,
+      "createdAtMs": 1774552279414,
+      "updatedAtMs": 1774605060034,
+      "schedule": {
+        "kind": "at",
+        "at": "2026-03-27T09:50:00.000Z"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Envía un recordatorio a Gustavo por WhatsApp (+573183718246): en 10 minutos es su entrenamiento de pecho de las 5:00 AM. Mensaje corto y motivador.",
+        "timeoutSeconds": 60
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "whatsapp",
+        "to": "+573183718246"
+      },
+      "state": {
+        "lastRunAtMs": 1774605000019,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 60015,
+        "lastError": "cron: job execution timed out",
+        "lastErrorReason": "timeout",
+        "lastDeliveryStatus": "unknown",
+        "consecutiveErrors": 1
+      }
+    },
+    {
+      "id": "95070b27-20b2-4ee5-b54f-c4e18195892c",
+      "agentId": "ares",
+      "sessionKey": "agent:ares:whatsapp:group:120363424964463765@g.us",
+      "name": "Recordatorio gym torso 5AM",
+      "enabled": false,
+      "deleteAfterRun": true,
+      "createdAtMs": 1774554154814,
+      "updatedAtMs": 1774604520073,
+      "schedule": {
+        "kind": "at",
+        "at": "2026-03-27T09:40:00.000Z"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "RECORDATORIO: Son las 4:40AM del viernes 27 de marzo. Gustavo tiene entrenamiento de torso a las 5AM. Escribe en Smart Project (120363424964463765@g.us) un mensaje corto coordinando la llegada al gym: recordar salir ya para llegar a las 5. Rutina del día: 1) Press de banca plano, 2) Dominadas en polea, 3) Press superior inclinado, 4) Remo en polea, 5) Aperturas en máquina.",
+        "timeoutSeconds": 120
+      },
+      "delivery": {
+        "mode": "none"
+      },
+      "state": {
+        "lastRunAtMs": 1774604400006,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 120067,
+        "lastError": "cron: job execution timed out",
+        "lastErrorReason": "timeout",
+        "lastDeliveryStatus": "not-requested",
+        "consecutiveErrors": 1
+      }
+    },
+    {
+      "id": "f1cd2cd1-03f2-46f0-b3eb-351cc7ab5d42",
+      "agentId": "main",
+      "sessionKey": "agent:main:whatsapp:direct:+573183718246",
+      "name": "Recordatorio mensual pagar Seguros Bolívar",
+      "enabled": true,
+      "createdAtMs": 1774656890486,
+      "updatedAtMs": 1774656890486,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 9 24 * *",
+        "tz": "America/Bogota"
+      },
+      "sessionTarget": "main",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "systemEvent",
+        "text": "Recordatorio: antes del 27 de este mes necesitas pagar Seguros Bolívar."
+      },
+      "delivery": {
+        "mode": "none"
+      },
+      "state": {
+        "nextRunAtMs": 1777039200000
+      }
+    },
+    {
+      "id": "2a10319e-4b13-482a-b9ed-f3059d968b05",
+      "agentId": "main",
+      "sessionKey": "agent:main:whatsapp:direct:+573183718246",
+      "name": "monthly-invoice-workdays-calculation-reminder",
+      "enabled": true,
+      "createdAtMs": 1774720840281,
+      "updatedAtMs": 1774720840281,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 9 25-26 * *",
+        "tz": "America/Bogota"
+      },
+      "sessionTarget": "main",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "systemEvent",
+        "text": "Reminder: faltan ~5 días para que cierre el mes. Prepara el cálculo mensual de factura con este formato y sin pedir datos sensibles salvo que falte el mes objetivo: fecha tipo 'February 26 2026'; festivos colombianos válidos del mes facturado; días laborales de lunes a viernes menos festivos; horas trabajadas = días laborales × 8; total = horas × 38 USD; y valor en letras en USD (por ejemplo: 'Seis mil ochenta dólares americanos'). Si alguno de los días 25 o 26 cae a ~5 días del fin de mes, usa ese disparo para hacer el cálculo o pedir el mes exacto si no está claro."
+      },
+      "state": {
+        "nextRunAtMs": 1777125600000
+      }
+    },
+    {
+      "id": "8fd2e785-8d2c-4e19-9b8c-8514e6493a11",
+      "agentId": "main",
+      "sessionKey": "agent:main:whatsapp:direct:+573183718246",
+      "name": "Recordatorio cita psicológica Gustavo - 1 día antes",
+      "enabled": true,
+      "deleteAfterRun": true,
+      "createdAtMs": 1774792338696,
+      "updatedAtMs": 1774792338696,
+      "schedule": {
+        "kind": "at",
+        "at": "2026-04-28T00:15:00.000Z"
+      },
+      "sessionTarget": "main",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "systemEvent",
+        "text": "Recordatorio: mañana martes 28 tienes cita psicológica a las 7:15 PM. Tenlo presente y organiza tu tarde con tiempo."
+      },
+      "state": {
+        "nextRunAtMs": 1777335300000
+      }
+    },
+    {
+      "id": "27dfae11-60aa-4a9e-b9b1-c0a9dc05f4c1",
+      "agentId": "main",
+      "sessionKey": "agent:main:whatsapp:direct:+573183718246",
+      "name": "Recordatorio cita psicológica Gustavo - 3 horas antes",
+      "enabled": true,
+      "deleteAfterRun": true,
+      "createdAtMs": 1774792342032,
+      "updatedAtMs": 1774792342032,
+      "schedule": {
+        "kind": "at",
+        "at": "2026-04-28T21:15:00.000Z"
+      },
+      "sessionTarget": "main",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "systemEvent",
+        "text": "Recordatorio: hoy tienes cita psicológica a las 7:15 PM, en 3 horas. Ve cerrando pendientes y tenla presente."
+      },
+      "state": {
+        "nextRunAtMs": 1777410900000
+      }
+    },
+    {
+      "id": "b1d319c6-dfcc-4882-a79f-0577c21f0e4d",
+      "agentId": "main",
+      "sessionKey": "agent:main:whatsapp:direct:+573183718246",
+      "name": "Recordatorio cita psicológica Gustavo - 30 minutos antes",
+      "enabled": true,
+      "deleteAfterRun": true,
+      "createdAtMs": 1774792347371,
+      "updatedAtMs": 1774792347371,
+      "schedule": {
+        "kind": "at",
+        "at": "2026-04-28T23:45:00.000Z"
+      },
+      "sessionTarget": "main",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "systemEvent",
+        "text": "Recordatorio: hoy tienes cita psicológica a las 7:15 PM, en 30 minutos. Es momento de alistarte o conectarte."
+      },
+      "state": {
+        "nextRunAtMs": 1777419900000
       }
     }
   ]

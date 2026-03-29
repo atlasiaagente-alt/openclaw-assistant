@@ -220,6 +220,16 @@
                                                     "id":  "120363407571517396@g.us"
                                                 }
                                    }
+                     },
+                     {
+                         "agentId":  "hestia",
+                         "match":  {
+                                       "channel":  "whatsapp",
+                                       "peer":  {
+                                                    "kind":  "group",
+                                                    "id":  "120363424696975095@g.us"
+                                                }
+                                   }
                      }
                  ],
     "commands":  {
@@ -255,6 +265,9 @@
                                                                                        "requireMention":  false
                                                                                    },
                                                      "120363407571517396@g.us":  {
+                                                                                       "requireMention":  false
+                                                                                   },
+                                                     "120363424696975095@g.us":  {
                                                                                        "requireMention":  false
                                                                                    }
                                                  },

@@ -21,11 +21,13 @@
   "usageStats": {
     "anthropic:anthropic-token": {
       "errorCount": 0,
-      "lastUsed": 1774360154788
+      "lastUsed": 1774579431591,
+      "lastFailureAt": 1774563642112
     },
     "openai-codex:default": {
       "errorCount": 0,
-      "lastUsed": 1774487271845
+      "lastUsed": 1774826633619,
+      "lastFailureAt": 1774576271325
     }
   }
 }

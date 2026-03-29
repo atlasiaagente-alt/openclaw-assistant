@@ -1,7 +1,12 @@
-# HEARTBEAT.md Template
+# HEARTBEAT.md
 
-```markdown
-# Keep this file empty (or with only comments) to skip heartbeat API calls.
+## Checklist corto
+Rotar 1-2 por heartbeat; no hacer todo siempre.
 
-# Add tasks below when you want the agent to check something periodically.
-```
+- Revisar si hay tareas `Next` o `Backlog` en Atlas OS con owner claro y moverlas a decisión, primer paso o bloqueo explícito.
+- Revisar inbox/correo por urgencias reales.
+- Revisar eventos próximos (<24h) si el calendario está operativo.
+- Revisar si hay bloqueos viejos que ya merecen escalado.
+
+## Regla de salida
+Si no hay novedad real ni acción útil, responder `HEARTBEAT_OK`.
