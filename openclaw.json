@@ -94,7 +94,6 @@
                                     "workspace":  "C:\\Users\\Gustavo\\.openclaw\\workspace-ares",
                                     "agentDir":  "C:\\Users\\Gustavo\\.openclaw\\agents\\ares\\agent",
                                     "groupChat":  {
-                                                      "requireMention":  false,
                                                       "historyLimit":  50
                                                   },
                                     "model":  {
@@ -126,7 +125,6 @@
                                                             }
                                                 },
                                     "groupChat":  {
-                                                      "requireMention":  false,
                                                       "historyLimit":  50
                                                   }
                                 }
@@ -252,6 +250,14 @@
                                                         "+573183718246",
                                                         "+573144752380"
                                                     ],
+                                      "groups":  {
+                                                     "120363424964463765@g.us":  {
+                                                                                       "requireMention":  false
+                                                                                   },
+                                                     "120363407571517396@g.us":  {
+                                                                                       "requireMention":  false
+                                                                                   }
+                                                 },
                                       "groupPolicy":  "allowlist",
                                       "debounceMs":  0,
                                       "mediaMaxMb":  50
