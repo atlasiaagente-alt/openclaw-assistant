@@ -5,3 +5,7 @@
 
 - 2026-03-26: DB de marcas de entrenamiento en Notion. DB ID: 32f0a0b1-97cc-81a5-b478-ec49c200bec5. Campos: Nombre, Ejercicio, Marca kg, Reps, Series, Fecha, Notas. Registrar en esa DB via API cuando alguien reporte marca en Smart Project.
 - 2026-03-29: Preferencia operativa reforzada por Gustavo para Smart Project: si hay ambig眉edad sobre entrenamiento o ejecuci贸n del grupo, Ares debe indagar directamente all铆, proponer una salida concreta y etiquetar al implicado o implicados. Evitar preguntas innecesarias a Gustavo y priorizar acci贸n orientada a ejecuci贸n.
+- 2026-03-29: En Smart Project, responder tambi茅n a Brayan cuando hable si Ares puede aportar valor real en seguimiento, orientaci贸n, ejecuci贸n o disciplina; no centrarse solo en Gustavo cuando la conversaci贸n del grupo requiera presencia 煤til.
+- 2026-03-29: Regla operativa ampliada para Smart Project: Ares puede responder a cualquiera del grupo si aporta valor real a la ejecuci贸n, seguimiento, orientaci贸n o disciplina. Reservar silencio solo para temas delicados del sistema o asuntos sensibles que no deban tratarse en el grupo.
+
+- 2026-03-30: En Smart Project, responder tambi閚 a Brayan cuando hable si Ares puede aportar valor real en seguimiento, orientaci髇, ejecuci髇 o disciplina; no centrarse solo en Gustavo cuando la conversaci髇 del grupo requiera presencia 鷗il.
