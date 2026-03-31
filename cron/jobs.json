@@ -8,7 +8,7 @@
       "name": "daily-openclaw-git-backup",
       "enabled": true,
       "createdAtMs": 1774361618484,
-      "updatedAtMs": 1774755025153,
+      "updatedAtMs": 1774841421141,
       "schedule": {
         "kind": "cron",
         "expr": "30 22 * * *",
@@ -25,11 +25,11 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1774841400000,
-        "lastRunAtMs": 1774755000021,
+        "nextRunAtMs": 1774927800000,
+        "lastRunAtMs": 1774841400016,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 25132,
+        "lastDurationMs": 21125,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
         "lastDelivered": true
@@ -42,7 +42,7 @@
       "name": "Atlas OS review - morning",
       "enabled": true,
       "createdAtMs": 1774388052968,
-      "updatedAtMs": 1774789348890,
+      "updatedAtMs": 1774876644100,
       "schedule": {
         "kind": "cron",
         "expr": "0 8 * * *",
@@ -61,11 +61,11 @@
         "to": "+573183718246"
       },
       "state": {
-        "nextRunAtMs": 1774875600000,
-        "lastRunAtMs": 1774789200016,
+        "nextRunAtMs": 1774962000000,
+        "lastRunAtMs": 1774876550666,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 148874,
+        "lastDurationMs": 93434,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
         "lastDelivered": true
@@ -78,7 +78,7 @@
       "name": "daily-email-review-and-whatsapp-reminder",
       "enabled": true,
       "createdAtMs": 1774390465819,
-      "updatedAtMs": 1774789435266,
+      "updatedAtMs": 1774876748001,
       "schedule": {
         "kind": "cron",
         "expr": "0 8 * * *",
@@ -95,11 +95,11 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1774875600000,
-        "lastRunAtMs": 1774789348890,
+        "nextRunAtMs": 1774962000000,
+        "lastRunAtMs": 1774876644100,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 86376,
+        "lastDurationMs": 103901,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
@@ -112,7 +112,7 @@
       "name": "evening-email-review-and-calendar-check",
       "enabled": true,
       "createdAtMs": 1774390767598,
-      "updatedAtMs": 1774742480441,
+      "updatedAtMs": 1774915300186,
       "schedule": {
         "kind": "cron",
         "expr": "0 19 * * *",
@@ -129,11 +129,11 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1774828800000,
-        "lastRunAtMs": 1774742400018,
+        "nextRunAtMs": 1775001600000,
+        "lastRunAtMs": 1774915200022,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 80423,
+        "lastDurationMs": 100164,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
         "lastDelivered": true
@@ -146,7 +146,7 @@
       "name": "Atlas OS review - midday",
       "enabled": true,
       "createdAtMs": 1774451432440,
-      "updatedAtMs": 1774803839361,
+      "updatedAtMs": 1774890044299,
       "schedule": {
         "kind": "cron",
         "expr": "0 12 * * *",
@@ -165,11 +165,11 @@
         "to": "+573183718246"
       },
       "state": {
-        "nextRunAtMs": 1774890000000,
-        "lastRunAtMs": 1774803600014,
+        "nextRunAtMs": 1774976400000,
+        "lastRunAtMs": 1774890000018,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 239347,
+        "lastDurationMs": 44281,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0,
         "lastDelivered": true
@@ -182,7 +182,7 @@
       "name": "Atlas OS review - end of day",
       "enabled": true,
       "createdAtMs": 1774451444116,
-      "updatedAtMs": 1774742544837,
+      "updatedAtMs": 1774915344653,
       "schedule": {
         "kind": "cron",
         "expr": "0 19 * * *",
@@ -201,11 +201,11 @@
         "to": "+573183718246"
       },
       "state": {
-        "nextRunAtMs": 1774828800000,
-        "lastRunAtMs": 1774742480441,
+        "nextRunAtMs": 1775001600000,
+        "lastRunAtMs": 1774915300186,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 64396,
+        "lastDurationMs": 44467,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0

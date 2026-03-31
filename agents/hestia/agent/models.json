@@ -12,20 +12,7 @@
       "models": [
         {
           "id": "qwen3:8b",
-          "name": "qwen3:8b",
-          "reasoning": false,
-          "input": [
-            "text"
-          ],
-          "cost": {
-            "input": 0,
-            "output": 0,
-            "cacheRead": 0,
-            "cacheWrite": 0
-          },
-          "contextWindow": 200000,
-          "maxTokens": 8192,
-          "api": "ollama"
+          "name": "qwen3:8b"
         }
       ]
     },
@@ -35,37 +22,11 @@
       "models": [
         {
           "id": "claude-sonnet-4-6",
-          "name": "Claude Sonnet 4.6",
-          "reasoning": false,
-          "input": [
-            "text"
-          ],
-          "cost": {
-            "input": 0,
-            "output": 0,
-            "cacheRead": 0,
-            "cacheWrite": 0
-          },
-          "contextWindow": 200000,
-          "maxTokens": 8192,
-          "api": "anthropic-messages"
+          "name": "Claude Sonnet 4.6"
         },
         {
           "id": "claude-opus-4-6",
-          "name": "Claude Opus 4.6",
-          "reasoning": false,
-          "input": [
-            "text"
-          ],
-          "cost": {
-            "input": 0,
-            "output": 0,
-            "cacheRead": 0,
-            "cacheWrite": 0
-          },
-          "contextWindow": 200000,
-          "maxTokens": 8192,
-          "api": "anthropic-messages"
+          "name": "Claude Opus 4.6"
         }
       ],
       "apiKey": "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"

@@ -1,7 +1,7 @@
 {
   "agent:hestia:main": {
     "sessionId": "2050d4bf-39ae-4b71-aeba-e389958c6985",
-    "updatedAt": 1774789358517,
+    "updatedAt": 1774827432925,
     "skillsSnapshot": {
       "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>coding-agent</name>\n    <description>Delegate coding tasks to Codex, Claude Code, or Pi agents via background process. Use when: (1) building/creating new features or apps, (2) reviewing PRs (spawn in temp dir), (3) refactoring large codebases, (4) iterative coding that needs file exploration. NOT for: simple one-liner fixes (just edit), reading code (use read tool), thread-bound ACP harness requests in chat (for example spawn/run Codex or Claude Code in a Discord thread; use sessions_spawn with runtime:&quot;acp&quot;), or any work in ~/clawd workspace (never spawn agents here). Claude Code: use --print --permission-mode bypassPermissions (no PTY). Codex/Pi/OpenCode: pty:true required.</description>\n    <location>~/AppData\\Roaming\\npm\\node_modules\\openclaw\\skills\\coding-agent\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>gog</name>\n    <description>Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs.</description>\n    <location>~/AppData\\Roaming\\npm\\node_modules\\openclaw\\skills\\gog\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>~/AppData\\Roaming\\npm\\node_modules\\openclaw\\skills\\healthcheck\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>node-connect</name>\n    <description>Diagnose OpenClaw node connection and pairing failures for Android, iOS, and macOS companion apps. Use when QR/setup code/manual connect fails, local Wi-Fi works but VPS/tailnet does not, or errors mention pairing required, unauthorized, bootstrap token invalid or expired, gateway.bind, gateway.remote.url, Tailscale, or plugins.entries.device-pair.config.publicUrl.</description>\n    <location>~/AppData\\Roaming\\npm\\node_modules\\openclaw\\skills\\node-connect\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create, edit, improve, or audit AgentSkills. Use when creating a new skill from scratch or when asked to improve, review, audit, tidy up, or clean up an existing skill or SKILL.md file. Also use when editing or restructuring a skill directory (moving files to references/ or scripts/, removing stale content, validating against the AgentSkills spec). Triggers on phrases like &quot;create a skill&quot;, &quot;author a skill&quot;, &quot;tidy up a skill&quot;, &quot;improve this skill&quot;, &quot;review the skill&quot;, &quot;clean up the skill&quot;, &quot;audit the skill&quot;.</description>\n    <location>~/AppData\\Roaming\\npm\\node_modules\\openclaw\\skills\\skill-creator\\SKILL.md</location>\n  </skill>\n  <skill>\n    <name>weather</name>\n    <description>Get current weather and forecasts via wttr.in or Open-Meteo. Use when: user asks about weather, temperature, or forecasts for any location. NOT for: historical weather data, severe weather alerts, or detailed meteorological analysis. No API key needed.</description>\n    <location>~/AppData\\Roaming\\npm\\node_modules\\openclaw\\skills\\weather\\SKILL.md</location>\n  </skill>\n</available_skills>",
       "skills": [
@@ -88,7 +88,7 @@
     "model": "gpt-5.4",
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1774789353494,
+      "generatedAt": 1774827425705,
       "sessionId": "2050d4bf-39ae-4b71-aeba-e389958c6985",
       "sessionKey": "agent:hestia:main",
       "provider": "openai-codex",
@@ -108,9 +108,9 @@
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 31652,
-        "projectContextChars": 18600,
-        "nonProjectContextChars": 13052
+        "chars": 33694,
+        "projectContextChars": 20544,
+        "nonProjectContextChars": 13150
       },
       "injectedWorkspaceFiles": [
         {
@@ -125,8 +125,8 @@
           "name": "SOUL.md",
           "path": "C:\\Users\\Gustavo\\.openclaw\\workspace-hestia\\SOUL.md",
           "missing": false,
-          "rawChars": 5316,
-          "injectedChars": 5316,
+          "rawChars": 7260,
+          "injectedChars": 7260,
           "truncated": false
         },
         {
@@ -200,8 +200,8 @@
         ]
       },
       "tools": {
-        "listChars": 1660,
-        "schemaChars": 6938,
+        "listChars": 1979,
+        "schemaChars": 7628,
         "entries": [
           {
             "name": "read",
@@ -232,6 +232,12 @@
             "summaryChars": 85,
             "schemaChars": 961,
             "propertiesCount": 12
+          },
+          {
+            "name": "cron",
+            "summaryChars": 3420,
+            "schemaChars": 690,
+            "propertiesCount": 13
           },
           {
             "name": "sessions_list",
@@ -308,13 +314,13 @@
         ]
       }
     },
-    "inputTokens": 15459,
-    "outputTokens": 107,
-    "totalTokens": 15459,
+    "inputTokens": 17156,
+    "outputTokens": 236,
+    "totalTokens": 17156,
     "totalTokensFresh": true,
     "cacheRead": 0,
     "cacheWrite": 0,
-    "estimatedCostUsd": 0.46126999999999996,
+    "estimatedCostUsd": 0.5076999999999999,
     "systemSent": true,
     "authProfileOverride": "openai-codex:default",
     "authProfileOverrideSource": "auto",
@@ -681,7 +687,7 @@
     "runtimeMs": 6045
   },
   "agent:hestia:whatsapp:group:120363424696975095@g.us": {
-    "updatedAt": 1774822755390,
+    "updatedAt": 1774827920964,
     "deliveryContext": {
       "channel": "whatsapp",
       "to": "120363424696975095@g.us",
@@ -837,15 +843,13 @@
       "version": 0
     },
     "status": "done",
-    "startedAt": 1774822751732,
-    "endedAt": 1774822755374,
-    "runtimeMs": 3642,
+    "startedAt": 1774827918181,
     "modelProvider": "openai-codex",
     "model": "gpt-5.4",
     "contextTokens": 272000,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1774822751708,
+      "generatedAt": 1774827918162,
       "sessionId": "f0e3e8e7-c7a6-458e-811f-b22fe7242b6c",
       "sessionKey": "agent:hestia:whatsapp:group:120363424696975095@g.us",
       "provider": "openai-codex",
@@ -865,9 +869,9 @@
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 35386,
+        "chars": 34626,
         "projectContextChars": 18600,
-        "nonProjectContextChars": 16786
+        "nonProjectContextChars": 16026
       },
       "injectedWorkspaceFiles": [
         {
@@ -1087,12 +1091,14 @@
         ]
       }
     },
-    "inputTokens": 11352,
-    "outputTokens": 13,
-    "cacheRead": 0,
+    "inputTokens": 284,
+    "outputTokens": 39,
+    "cacheRead": 11392,
     "cacheWrite": 0,
-    "estimatedCostUsd": 0.028575,
-    "totalTokens": 11352,
-    "totalTokensFresh": true
+    "estimatedCostUsd": 0.061853,
+    "totalTokens": 11676,
+    "totalTokensFresh": true,
+    "endedAt": 1774827920950,
+    "runtimeMs": 2769
   }
 }

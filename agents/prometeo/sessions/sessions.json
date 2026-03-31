@@ -325,7 +325,7 @@
   },
   "agent:prometeo:whatsapp:group:120363407571517396@g.us": {
     "sessionId": "923f7941-8832-4b11-baab-70573a106770",
-    "updatedAt": 1774817577170,
+    "updatedAt": 1774845019524,
     "systemSent": true,
     "abortedLastRun": false,
     "displayName": "whatsapp:g-tradelab",
@@ -429,18 +429,18 @@
       ],
       "version": 0
     },
-    "status": "done",
-    "startedAt": 1774817546889,
-    "modelProvider": "anthropic",
-    "model": "claude-sonnet-4-6",
-    "contextTokens": 200000,
+    "status": "failed",
+    "startedAt": 1774844981383,
+    "modelProvider": "openai-codex",
+    "model": "gpt-5.4",
+    "contextTokens": 272000,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1774817546859,
+      "generatedAt": 1774845011872,
       "sessionId": "923f7941-8832-4b11-baab-70573a106770",
       "sessionKey": "agent:prometeo:whatsapp:group:120363407571517396@g.us",
-      "provider": "anthropic",
-      "model": "claude-sonnet-4-6",
+      "provider": "openai-codex",
+      "model": "gpt-5.4",
       "workspaceDir": "C:\\Users\\Gustavo\\.openclaw\\workspace-prometeo",
       "bootstrapMaxChars": 20000,
       "bootstrapTotalMaxChars": 150000,
@@ -456,9 +456,9 @@
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 34732,
+        "chars": 34725,
         "projectContextChars": 20527,
-        "nonProjectContextChars": 14205
+        "nonProjectContextChars": 14198
       },
       "injectedWorkspaceFiles": [
         {
@@ -643,7 +643,7 @@
           },
           {
             "name": "image",
-            "summaryChars": 201,
+            "summaryChars": 260,
             "schemaChars": 342,
             "propertiesCount": 6
           },
@@ -662,17 +662,20 @@
         ]
       }
     },
-    "inputTokens": 6,
-    "outputTokens": 1428,
-    "cacheRead": 141014,
-    "cacheWrite": 254,
-    "estimatedCostUsd": 0.9003844999999999,
-    "totalTokens": 141269,
+    "inputTokens": 3658,
+    "outputTokens": 170,
+    "cacheRead": 126848,
+    "cacheWrite": 0,
+    "estimatedCostUsd": 1.9356125000000002,
+    "totalTokens": 130506,
     "totalTokensFresh": true,
     "authProfileOverride": "anthropic:anthropic-token",
     "authProfileOverrideSource": "auto",
     "authProfileOverrideCompactionCount": 0,
-    "endedAt": 1774817577158,
-    "runtimeMs": 30269
+    "fallbackNoticeSelectedModel": "anthropic/claude-sonnet-4-6",
+    "fallbackNoticeActiveModel": "openai-codex/gpt-5.4",
+    "fallbackNoticeReason": "rate limit",
+    "endedAt": 1774844984444,
+    "runtimeMs": 3061
   }
 }

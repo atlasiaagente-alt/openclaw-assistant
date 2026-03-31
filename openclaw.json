@@ -76,7 +76,23 @@
 
                                                                        }
                                                },
-                                    "workspace":  "C:\\Users\\Gustavo\\.openclaw\\workspace"
+                                    "workspace":  "C:\\Users\\Gustavo\\.openclaw\\workspace",
+                                    "heartbeat":  {
+                                                      "every":  "45m",
+                                                      "target":  "last",
+                                                      "activeHours":  {
+                                                                          "start":  "08:00",
+                                                                          "end":  "22:30"
+                                                                      }
+                                                  },
+                                    "subagents":  {
+                                                      "maxSpawnDepth":  2,
+                                                      "maxChildrenPerAgent":  3,
+                                                      "maxConcurrent":  4,
+                                                      "archiveAfterMinutes":  45,
+                                                      "runTimeoutSeconds":  900,
+                                                      "model":  "ollama/qwen3:8b"
+                                                  }
                                 },
                    "list":  [
                                 {
@@ -262,14 +278,14 @@
                                                     ],
                                       "groups":  {
                                                      "120363424964463765@g.us":  {
-                                                                                       "requireMention":  false
-                                                                                   },
+                                                                                     "requireMention":  false
+                                                                                 },
                                                      "120363407571517396@g.us":  {
-                                                                                       "requireMention":  false
-                                                                                   },
+                                                                                     "requireMention":  false
+                                                                                 },
                                                      "120363424696975095@g.us":  {
-                                                                                       "requireMention":  false
-                                                                                   }
+                                                                                     "requireMention":  false
+                                                                                 }
                                                  },
                                       "groupPolicy":  "allowlist",
                                       "debounceMs":  0,
@@ -333,5 +349,14 @@
                                                             }
                                              }
                                 }
-                }
+                },
+    "cron":  {
+                 "enabled":  true,
+                 "maxConcurrentRuns":  1,
+                 "sessionRetention":  "12h",
+                 "runLog":  {
+                                "maxBytes":  "3mb",
+                                "keepLines":  1500
+                            }
+             }
 }
