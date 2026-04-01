@@ -407,6 +407,35 @@
       "state": {
         "nextRunAtMs": 1777419900000
       }
+    },
+    {
+      "id": "66f48e60-573d-47b9-94f9-40d29cb19542",
+      "agentId": "main",
+      "sessionKey": "agent:main:whatsapp:direct:+573183718246",
+      "name": "Atlas OS follow-up pulse",
+      "enabled": true,
+      "createdAtMs": 1775065826799,
+      "updatedAtMs": 1775065826799,
+      "schedule": {
+        "kind": "every",
+        "everyMs": 10800000,
+        "anchorMs": 1775065826799
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Haz una pasada de seguimiento muy corta sobre Atlas OS - Home / Tasks Tracker. No releas todo. Solo revisa tareas que ya estén en In progress, Waiting o Blocked y que tengan owner claro (Prometeo, Ares, Hestia o Atlas). Máximo 3 tareas por corrida. Objetivo: detectar si siguen igual, si ya merecen destrabe, o si toca escalar. Reglas: (1) no inventes trabajo nuevo; (2) si el bloqueo es menor, destrábalo con una instrucción concreta al agente responsable; (3) si depende de Gustavo o de entrega externa no confirmada, déjalo explícito; (4) no marques Done sin confirmación real; (5) solo envía mensaje a WhatsApp +573183718246 si hay novedad real, destrabe real o bloqueo que merezca escalado. Si no hay novedad material, responde sin delivery útil.",
+        "timeoutSeconds": 360
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "whatsapp",
+        "to": "+573183718246"
+      },
+      "state": {
+        "nextRunAtMs": 1775076626799
+      }
     }
   ]
 }
