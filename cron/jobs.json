@@ -80,7 +80,7 @@
       "name": "daily-email-review-and-whatsapp-reminder",
       "enabled": true,
       "createdAtMs": 1774390465819,
-      "updatedAtMs": 1775065545261,
+      "updatedAtMs": 1775065698259,
       "schedule": {
         "kind": "cron",
         "expr": "0 8 * * *",
@@ -94,7 +94,9 @@
         "timeoutSeconds": 420
       },
       "delivery": {
-        "mode": "announce"
+        "mode": "announce",
+        "channel": "whatsapp",
+        "to": "+573183718246"
       },
       "state": {
         "nextRunAtMs": 1775134800000,
@@ -104,7 +106,8 @@
         "lastDurationMs": 244463,
         "lastDelivered": false,
         "lastDeliveryStatus": "not-delivered",
-        "consecutiveErrors": 0
+        "consecutiveErrors": 0,
+        "runningAtMs": 1775065707717
       }
     },
     {
@@ -114,7 +117,7 @@
       "name": "evening-email-review-and-calendar-check",
       "enabled": true,
       "createdAtMs": 1774390767598,
-      "updatedAtMs": 1775065551302,
+      "updatedAtMs": 1775065702067,
       "schedule": {
         "kind": "cron",
         "expr": "0 19 * * *",
@@ -128,7 +131,9 @@
         "timeoutSeconds": 420
       },
       "delivery": {
-        "mode": "announce"
+        "mode": "announce",
+        "channel": "whatsapp",
+        "to": "+573183718246"
       },
       "state": {
         "nextRunAtMs": 1775088000000,
