@@ -8,7 +8,7 @@
       "name": "daily-openclaw-git-backup",
       "enabled": true,
       "createdAtMs": 1774361618484,
-      "updatedAtMs": 1774841421141,
+      "updatedAtMs": 1775014800037,
       "schedule": {
         "kind": "cron",
         "expr": "30 22 * * *",
@@ -25,14 +25,15 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1774927800000,
-        "lastRunAtMs": 1774841400016,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 21125,
-        "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0,
-        "lastDelivered": true
+        "nextRunAtMs": 1775100600000,
+        "lastRunAtMs": 1775014200017,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 600020,
+        "lastDeliveryStatus": "unknown",
+        "consecutiveErrors": 2,
+        "lastErrorReason": "timeout",
+        "lastError": "cron: job execution timed out"
       }
     },
     {
@@ -42,7 +43,7 @@
       "name": "Atlas OS review - morning",
       "enabled": true,
       "createdAtMs": 1774388052968,
-      "updatedAtMs": 1774876644100,
+      "updatedAtMs": 1775065524835,
       "schedule": {
         "kind": "cron",
         "expr": "0 8 * * *",
@@ -52,8 +53,8 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Revisa el Tasks Tracker de Notion (DB id: 32f0a0b1-97cc-81a8-9443-df3f85f2ffc7, dentro de la página 'Atlas OS - Home' id: 32f0a0b1-97cc-8115-9e62-ec8765ad533c) y úsalo como dashboard operativo. Flujo obligatorio: (1) Lee todas las tareas del tracker; (2) por cada tarea con estado Backlog o Next y dueño claro, coordina activamente al agente responsable (Prometeo, Ares, Hestia o Atlas); (3) exige decisión, primer paso concreto o bloqueo explícito; (4) si un subagente no responde o queda ambiguo, destrábalo o escálalo; (5) actualiza el estado en el tracker según resultado real: usa siempre Backlog, Next, In progress, Waiting, Blocked o Done; (6) nunca marques Done sin confirmación real de entrega; (7) al final envía a WhatsApp +573183718246 un resumen breve: qué moviste, qué coordinaste, qué quedó bloqueado y qué sigue.",
-        "timeoutSeconds": 1800
+        "message": "Revisa el Tasks Tracker de Notion (DB id: 32f0a0b1-97cc-81a8-9443-df3f85f2ffc7, dentro de la página 'Atlas OS - Home' id: 32f0a0b1-97cc-8115-9e62-ec8765ad533c) con enfoque liviano. Solo procesa: (1) tareas en estado Next; (2) tareas Blocked o Waiting que lleven tiempo o necesiten destrabe; (3) inbox principal si la primera tabla visible trae responsable claro y acción inmediata. Máximo 3 tareas por corrida. Para cada una: coordina al agente responsable con una instrucción concreta, exige primer paso o bloqueo explícito, y no marques Done sin confirmación real de entrega. Si no hay cambios relevantes, no inventes trabajo. Al final envía a WhatsApp +573183718246 un resumen de máximo 5 bullets: qué moviste, qué quedó bloqueado y cuál es el siguiente paso.",
+        "timeoutSeconds": 900
       },
       "delivery": {
         "mode": "announce",
@@ -61,14 +62,15 @@
         "to": "+573183718246"
       },
       "state": {
-        "nextRunAtMs": 1774962000000,
-        "lastRunAtMs": 1774876550666,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 93434,
-        "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0,
-        "lastDelivered": true
+        "nextRunAtMs": 1775134800000,
+        "lastRunAtMs": 1775048400019,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 1800015,
+        "lastDeliveryStatus": "unknown",
+        "consecutiveErrors": 2,
+        "lastErrorReason": "timeout",
+        "lastError": "cron: job execution timed out"
       }
     },
     {
@@ -78,7 +80,7 @@
       "name": "daily-email-review-and-whatsapp-reminder",
       "enabled": true,
       "createdAtMs": 1774390465819,
-      "updatedAtMs": 1774876748001,
+      "updatedAtMs": 1775065545261,
       "schedule": {
         "kind": "cron",
         "expr": "0 8 * * *",
@@ -88,20 +90,20 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Review the Gmail inbox of atlas.ia.agente@gmail.com using gog. Look for forwarded messages from Gustavo's personal email, pending items for today, and near-term deadlines. Organize the relevant items into the appropriate shared calendar flow for Gustavo by citing/scheduling what applies toward toledo970501@gmail.com, then send Gustavo a concise WhatsApp reminder to +573183718246 with what he has pending today and any nearby deadlines. Include important context if relevant. Example current context: he has 3 days from 2026-03-24 to complete a ZooLATECH challenge. Be concise and practical.",
-        "timeoutSeconds": 900
+        "message": "Review the Gmail inbox of atlas.ia.agente@gmail.com using gog with a strict lightweight pass. Only capture: (1) pending items for today, (2) deadlines in the next 3 days, (3) forwarded items from Gustavo that need action today. Limit yourself to the most relevant items only. If a calendar action is obvious, propose or organize it briefly toward toledo970501@gmail.com; do not over-process. Then send Gustavo a concise WhatsApp reminder to +573183718246 with max 5 bullets and one clear next action if needed.",
+        "timeoutSeconds": 420
       },
       "delivery": {
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1774962000000,
-        "lastRunAtMs": 1774876644100,
+        "nextRunAtMs": 1775134800000,
+        "lastRunAtMs": 1775050200034,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 103901,
-        "lastDelivered": true,
-        "lastDeliveryStatus": "delivered",
+        "lastDurationMs": 244463,
+        "lastDelivered": false,
+        "lastDeliveryStatus": "not-delivered",
         "consecutiveErrors": 0
       }
     },
@@ -112,7 +114,7 @@
       "name": "evening-email-review-and-calendar-check",
       "enabled": true,
       "createdAtMs": 1774390767598,
-      "updatedAtMs": 1774915300186,
+      "updatedAtMs": 1775065551302,
       "schedule": {
         "kind": "cron",
         "expr": "0 19 * * *",
@@ -122,21 +124,22 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Review the Gmail inbox of atlas.ia.agente@gmail.com using gog for pending items, unresolved tasks, and near-term deadlines. Organize relevant items into the appropriate shared calendar flow for Gustavo by citing/scheduling what applies toward toledo970501@gmail.com, then send Gustavo a concise WhatsApp reminder to +573183718246 with the evening paneo: what is still pending, what rolls into tomorrow, and what deadlines are close. Keep it concise and practical.",
-        "timeoutSeconds": 900
+        "message": "Review the Gmail inbox of atlas.ia.agente@gmail.com with a strict evening pass. Only capture: (1) unresolved items that still matter today, (2) deadlines within the next 3 days, (3) anything that clearly rolls into tomorrow. Keep it lightweight. If a calendar action is obvious, organize it briefly toward toledo970501@gmail.com; do not over-process. Then send Gustavo a concise WhatsApp evening paneo to +573183718246 with max 5 bullets and the single most important thing for tomorrow.",
+        "timeoutSeconds": 420
       },
       "delivery": {
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1775001600000,
-        "lastRunAtMs": 1774915200022,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 100164,
-        "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0,
-        "lastDelivered": true
+        "nextRunAtMs": 1775088000000,
+        "lastRunAtMs": 1775001600012,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 900041,
+        "lastDeliveryStatus": "unknown",
+        "consecutiveErrors": 1,
+        "lastError": "cron: job execution timed out",
+        "lastErrorReason": "timeout"
       }
     },
     {
@@ -146,7 +149,7 @@
       "name": "Atlas OS review - midday",
       "enabled": true,
       "createdAtMs": 1774451432440,
-      "updatedAtMs": 1774890044299,
+      "updatedAtMs": 1775065533733,
       "schedule": {
         "kind": "cron",
         "expr": "0 12 * * *",
@@ -156,8 +159,8 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Revisa el Tasks Tracker de Notion (DB id: 32f0a0b1-97cc-81a8-9443-df3f85f2ffc7, dentro de la página 'Atlas OS - Home' id: 32f0a0b1-97cc-8115-9e62-ec8765ad533c) y úsalo como dashboard operativo. Flujo obligatorio: (1) Lee todas las tareas del tracker; (2) por cada tarea con estado Backlog o Next y dueño claro, coordina activamente al agente responsable (Prometeo, Ares, Hestia o Atlas); (3) exige decisión, primer paso concreto o bloqueo explícito; (4) si un subagente no responde o queda ambiguo, destrábalo o escálalo; (5) actualiza el estado en el tracker según resultado real: usa siempre Backlog, Next, In progress, Waiting, Blocked o Done; (6) nunca marques Done sin confirmación real de entrega; (7) al final envía a WhatsApp +573183718246 un resumen breve: qué moviste, qué coordinaste, qué quedó bloqueado y qué sigue.",
-        "timeoutSeconds": 1800
+        "message": "Revisa el Tasks Tracker de Notion (DB id: 32f0a0b1-97cc-81a8-9443-df3f85f2ffc7, dentro de la página 'Atlas OS - Home' id: 32f0a0b1-97cc-8115-9e62-ec8765ad533c) con enfoque liviano. Solo procesa: (1) tareas en estado Next; (2) tareas Blocked o Waiting que lleven tiempo o necesiten destrabe; (3) inbox principal si la primera tabla visible trae responsable claro y acción inmediata. Máximo 3 tareas por corrida. Para cada una: coordina al agente responsable con una instrucción concreta, exige primer paso o bloqueo explícito, y no marques Done sin confirmación real de entrega. Si no hay cambios relevantes, no inventes trabajo. Al final envía a WhatsApp +573183718246 un resumen de máximo 5 bullets: qué moviste, qué quedó bloqueado y cuál es el siguiente paso.",
+        "timeoutSeconds": 900
       },
       "delivery": {
         "mode": "announce",
@@ -165,14 +168,15 @@
         "to": "+573183718246"
       },
       "state": {
-        "nextRunAtMs": 1774976400000,
-        "lastRunAtMs": 1774890000018,
-        "lastRunStatus": "ok",
-        "lastStatus": "ok",
-        "lastDurationMs": 44281,
-        "lastDeliveryStatus": "delivered",
-        "consecutiveErrors": 0,
-        "lastDelivered": true
+        "nextRunAtMs": 1775149200000,
+        "lastRunAtMs": 1775062800012,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 1800103,
+        "lastDeliveryStatus": "unknown",
+        "consecutiveErrors": 1,
+        "lastError": "cron: job execution timed out",
+        "lastErrorReason": "timeout"
       }
     },
     {
@@ -182,7 +186,7 @@
       "name": "Atlas OS review - end of day",
       "enabled": true,
       "createdAtMs": 1774451444116,
-      "updatedAtMs": 1774915344653,
+      "updatedAtMs": 1775065540389,
       "schedule": {
         "kind": "cron",
         "expr": "0 19 * * *",
@@ -192,8 +196,8 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Revisa el Tasks Tracker de Notion (DB id: 32f0a0b1-97cc-81a8-9443-df3f85f2ffc7, dentro de la página 'Atlas OS - Home' id: 32f0a0b1-97cc-8115-9e62-ec8765ad533c) y úsalo como dashboard operativo. Flujo obligatorio: (1) Lee todas las tareas del tracker; (2) por cada tarea con estado Backlog o Next y dueño claro, coordina activamente al agente responsable (Prometeo, Ares, Hestia o Atlas); (3) exige decisión, primer paso concreto o bloqueo explícito; (4) si un subagente no responde o queda ambiguo, destrábalo o escálalo; (5) actualiza el estado en el tracker según resultado real: usa siempre Backlog, Next, In progress, Waiting, Blocked o Done; (6) nunca marques Done sin confirmación real de entrega; (7) al final envía a WhatsApp +573183718246 un resumen breve: qué moviste, qué coordinaste, qué quedó bloqueado y qué sigue.",
-        "timeoutSeconds": 1800
+        "message": "Revisa el Tasks Tracker de Notion (DB id: 32f0a0b1-97cc-81a8-9443-df3f85f2ffc7, dentro de la página 'Atlas OS - Home' id: 32f0a0b1-97cc-8115-9e62-ec8765ad533c) con enfoque liviano. Solo procesa: (1) tareas en estado Next; (2) tareas Blocked o Waiting que lleven tiempo o necesiten destrabe; (3) inbox principal si la primera tabla visible trae responsable claro y acción inmediata. Máximo 3 tareas por corrida. Para cada una: coordina al agente responsable con una instrucción concreta, exige primer paso o bloqueo explícito, y no marques Done sin confirmación real de entrega. Si no hay cambios relevantes, no inventes trabajo. Al final envía a WhatsApp +573183718246 un resumen de máximo 5 bullets: qué moviste, qué quedó bloqueado y cuál es el siguiente paso.",
+        "timeoutSeconds": 900
       },
       "delivery": {
         "mode": "announce",
@@ -201,11 +205,11 @@
         "to": "+573183718246"
       },
       "state": {
-        "nextRunAtMs": 1775001600000,
-        "lastRunAtMs": 1774915300186,
+        "nextRunAtMs": 1775088000000,
+        "lastRunAtMs": 1775002500053,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 44467,
+        "lastDurationMs": 1097812,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
