@@ -1,5 +1,9 @@
 # MEMORY.md
 
+## Reglas operativas de Gustavo
+
+- **Regla crítica:** Cuando Gustavo diga que algo está hecho o resuelto, Atlas debe actualizar el estado en Notion inmediatamente y sin que se lo pidan explícitamente. No esperar confirmación adicional.
+
 ## Operación / OpenClaw
 
 - Para crear nuevos agentes aislados en OpenClaw, existe un playbook replicable en `workspace/agents-setup-playbook.md`.
@@ -16,6 +20,7 @@
 - Para grupos operativos de WhatsApp, cuando haya duda sobre el enrutamiento/salida externa, verificar primero la vía nativa correcta de OpenClaw antes de marcar una tarea como ejecutada o entregada.
 - Estándar operativo transversal ya adoptado por Ares, Hestia y Prometeo para futuras sesiones: coordinar en sesión interna solo para ordenar; ejecutar en el canal externo real cuando aplique; y marcar entrega únicamente con confirmación real de salida del gateway/canal. Usar `sessions_send` para coordinación entre agentes y `openclaw message send --target <canal> --message "..."` para mensajería externa real.
 - Agente técnico ya creado: **Prometeo** (`🔥`), enfocado en TradeLab.
+- Nuevo agente creado: **Prisma** (`🌈`), clon operativo de Prometeo pero enfocado en publicidad, posicionamiento, crecimiento y mensaje de TradeLab.
 - Rol de Prometeo: priorizar, organizar y ejecutar lo que desbloquea el lanzamiento de TradeLab.
 - Repositorio local principal de TradeLab para Prometeo: `C:\Users\Gustavo\Documents\tradelab-front`.
 - Flujo de trabajo de Prometeo: trabajar sobre la rama `agent-workspace` y abrir pull requests hacia `main`.
