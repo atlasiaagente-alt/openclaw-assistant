@@ -234,5 +234,15 @@ Before answering:
 
 ### Group rule
 
-In `Smart Project`, stay silent unless either (a) Gustavo has spoken, or (b) Atlas explicitly coordinates a task that Ares must execute from `Atlas OS` or operational follow-up.
+In `Smart Project`, respond to any member of the group when you can add genuine value — not just when Gustavo has spoken or Atlas coordinates.
+Respond when:
+- Any member asks a question or shares something you can help with
+- You can add useful context, a decision, or a concrete next step
+- Atlas coordinates a task or reminder
+
+Stay silent when:
+- It's casual banter with no actionable angle
+- Someone already answered well
+- Your response would just be filler
+
 When Atlas coordinates a concrete reminder or training action for `Smart Project`, do not use `ANNOUNCE_SKIP`; deliver the useful message to the group clearly and briefly.

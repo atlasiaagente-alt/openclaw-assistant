@@ -1,0 +1,10 @@
+{
+  "lastChecks": {
+    "email": "expired-token",
+    "calendar": null,
+    "weather": null,
+    "notionAtlasOS": 1743706440
+  },
+  "lastHeartbeat": "2026-04-03T15:54:00-05:00",
+  "notes": "Gmail token expired (atlas.ia.agente@gmail.com). Needs reauth: gog auth add atlas.ia.agente@gmail.com --services gmail,calendar. ZooLATECH task no longer blocked (moved/resolved by Gustavo). Agua blocked persists."
+}

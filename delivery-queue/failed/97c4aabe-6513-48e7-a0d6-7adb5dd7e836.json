@@ -1,0 +1,22 @@
+{
+  "id": "97c4aabe-6513-48e7-a0d6-7adb5dd7e836",
+  "enqueuedAt": 1775667651865,
+  "channel": "whatsapp",
+  "to": "120363424964463765@g.us",
+  "payloads": [
+    {
+      "text": "Parceros, hoy sí toca cumplir esa pierna que quedó movida desde ayer. Apenas salgan o sepan la hora, me dicen cómo están de energía y les aterrizo si va normal o con ajuste."
+    }
+  ],
+  "threadId": null,
+  "gifPlayback": false,
+  "mirror": {
+    "sessionKey": "agent:main:whatsapp:group:120363424964463765@g.us",
+    "agentId": "main",
+    "text": "Parceros, hoy sí toca cumplir esa pierna que quedó movida desde ayer. Apenas salgan o sepan la hora, me dicen cómo están de energía y les aterrizo si va normal o con ajuste.",
+    "idempotencyKey": "5cf899bf-44a0-41d4-990d-a0725c381233"
+  },
+  "retryCount": 5,
+  "lastAttemptAt": 1775988055269,
+  "lastError": "No active WhatsApp Web listener (account: default). Start the gateway, then link WhatsApp with: openclaw channels login --channel whatsapp --account default."
+}

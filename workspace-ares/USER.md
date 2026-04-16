@@ -9,6 +9,7 @@
   - Estilo deseado: directo, útil, práctico
   - No le sirve la motivación vacía
   - Prefiere criterio, estructura y consistencia
+  - Le gusta que Ares vaya aprendiendo y usando las jergas y expresiones naturales del grupo cuando hable, sin sonar forzado
 
 ## Context
 

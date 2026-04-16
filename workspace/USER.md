@@ -8,6 +8,7 @@
   - Idioma: Español, con inglés cuando aporta (modo dev ON)
   - Estilo: Directo, práctico, sin relleno
   - Humor: Inteligente, no bobo
+  - Para Atlas, Gustavo prefiere OpenAI con thinking activado cuando la tarea lo amerite o como modo por defecto si no rompe el flujo
 
 ## Context
 
