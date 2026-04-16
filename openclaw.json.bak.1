@@ -1,24 +1,39 @@
 {
   "meta": {
     "lastTouchedVersion": "2026.3.23-1",
-    "lastTouchedAt": "2026-03-24T18:28:20.307Z"
+    "lastTouchedAt": "2026-04-03T13:05:33.463Z"
   },
   "wizard": {
-    "lastRunAt": "2026-03-24T02:36:24.515Z",
+    "lastRunAt": "2026-04-03T13:05:33.382Z",
     "lastRunVersion": "2026.3.23-1",
-    "lastRunCommand": "onboard",
+    "lastRunCommand": "doctor",
     "lastRunMode": "local"
   },
   "auth": {
     "profiles": {
-      "anthropic:anthropic-token": {
-        "provider": "anthropic",
-        "mode": "token"
-      },
       "openai-codex:default": {
         "provider": "openai-codex",
         "mode": "oauth"
       }
+    }
+  },
+  "acp": {
+    "enabled": true,
+    "backend": "acpx",
+    "defaultAgent": "codex",
+    "allowedAgents": [
+      "codex",
+      "pi",
+      "opencode",
+      "gemini"
+    ],
+    "maxConcurrentSessions": 4,
+    "stream": {
+      "coalesceIdleMs": 300,
+      "maxChunkChars": 1200
+    },
+    "runtime": {
+      "ttlMinutes": 120
     }
   },
   "models": {
@@ -28,10 +43,6 @@
         "apiKey": "ollama-local",
         "api": "ollama",
         "models": [
-          {
-            "id": "qwen3:30b",
-            "name": "qwen3:30b"
-          },
           {
             "id": "qwen3:8b",
             "name": "qwen3:8b"
@@ -45,7 +56,6 @@
       "model": {
         "primary": "openai-codex/gpt-5.4",
         "fallbacks": [
-          "ollama/qwen3:30b",
           "ollama/qwen3:8b"
         ]
       },
@@ -54,7 +64,23 @@
         "ollama/qwen3:30b": {},
         "ollama/qwen3:8b": {}
       },
-      "workspace": "C:\\Users\\Gustavo\\.openclaw\\workspace"
+      "workspace": "C:\\Users\\Gustavo\\.openclaw\\workspace",
+      "heartbeat": {
+        "every": "45m",
+        "activeHours": {
+          "start": "08:00",
+          "end": "22:30"
+        },
+        "target": "last"
+      },
+      "subagents": {
+        "maxConcurrent": 4,
+        "maxSpawnDepth": 2,
+        "maxChildrenPerAgent": 3,
+        "archiveAfterMinutes": 45,
+        "model": "ollama/qwen3:8b",
+        "runTimeoutSeconds": 900
+      }
     },
     "list": [
       {
@@ -71,12 +97,38 @@
         "name": "ares",
         "workspace": "C:\\Users\\Gustavo\\.openclaw\\workspace-ares",
         "agentDir": "C:\\Users\\Gustavo\\.openclaw\\agents\\ares\\agent",
-        "groupChat": {
-          "historyLimit": 50,
-          "mentionPatterns": [
-            "\\bares\\b",
-            "\\bAres\\b"
+        "model": {
+          "primary": "openai-codex/gpt-5.4",
+          "fallbacks": [
+            "ollama/qwen3:8b"
           ]
+        },
+        "groupChat": {
+          "historyLimit": 50
+        }
+      },
+      {
+        "id": "prometeo",
+        "name": "prometeo",
+        "workspace": "C:\\Users\\Gustavo\\.openclaw\\workspace-prometeo",
+        "agentDir": "C:\\Users\\Gustavo\\.openclaw\\agents\\prometeo\\agent",
+        "model": {
+          "primary": "openai-codex/gpt-5.4",
+          "fallbacks": [
+            "ollama/qwen3:30b"
+          ]
+        },
+        "groupChat": {
+          "historyLimit": 50
+        },
+        "runtime": {
+          "type": "acp",
+          "acp": {
+            "agent": "openai",
+            "backend": "acpx",
+            "mode": "persistent",
+            "cwd": "C:\\Users\\Gustavo\\Documents\\tradelab-front"
+          }
         }
       }
     ]
@@ -88,6 +140,57 @@
         "enabled": true,
         "provider": "duckduckgo"
       }
+    },
+    "media": {
+      "audio": {
+        "enabled": true,
+        "attachments": {
+          "mode": "all",
+          "maxAttachments": 4
+        },
+        "models": [
+          {
+            "type": "cli",
+            "command": "python",
+            "args": [
+              "C:\\Users\\Gustavo\\.openclaw\\workspace\\scripts\\whisper-bridge.py",
+              "{{MediaPath}}",
+              "--model",
+              "base",
+              "--language",
+              "es"
+            ],
+            "timeoutSeconds": 180
+          }
+        ],
+        "echoTranscript": true,
+        "echoFormat": "ðŸ“ {transcript}"
+      }
+    },
+    "sessions": {
+      "visibility": "all"
+    },
+    "agentToAgent": {
+      "enabled": true,
+      "allow": [
+        "ares",
+        "prometeo",
+        "hestia",
+        "main"
+      ]
+    },
+    "elevated": {
+      "enabled": true,
+      "allowFrom": {
+        "whatsapp": [
+          "+573183718246"
+        ]
+      }
+    },
+    "exec": {
+      "host": "gateway",
+      "security": "full",
+      "ask": "off"
     }
   },
   "bindings": [
@@ -110,6 +213,26 @@
           "id": "120363424964463765@g.us"
         }
       }
+    },
+    {
+      "agentId": "prometeo",
+      "match": {
+        "channel": "whatsapp",
+        "peer": {
+          "kind": "group",
+          "id": "120363407571517396@g.us"
+        }
+      }
+    },
+    {
+      "agentId": "hestia",
+      "match": {
+        "channel": "whatsapp",
+        "peer": {
+          "kind": "group",
+          "id": "120363424696975095@g.us"
+        }
+      }
     }
   ],
   "commands": {
@@ -120,6 +243,15 @@
   },
   "session": {
     "dmScope": "per-channel-peer"
+  },
+  "cron": {
+    "enabled": true,
+    "maxConcurrentRuns": 1,
+    "sessionRetention": "12h",
+    "runLog": {
+      "maxBytes": "3mb",
+      "keepLines": 1500
+    }
   },
   "hooks": {
     "internal": {
@@ -141,6 +273,17 @@
         "+573144752380"
       ],
       "groupPolicy": "allowlist",
+      "groups": {
+        "120363424964463765@g.us": {
+          "requireMention": false
+        },
+        "120363407571517396@g.us": {
+          "requireMention": false
+        },
+        "120363424696975095@g.us": {
+          "requireMention": false
+        }
+      },
       "debounceMs": 0,
       "mediaMaxMb": 50
     }
@@ -173,6 +316,13 @@
     "entries": {
       "duckduckgo": {
         "enabled": true
+      },
+      "acpx": {
+        "enabled": true,
+        "config": {
+          "permissionMode": "approve-all",
+          "nonInteractivePermissions": "deny"
+        }
       }
     }
   }

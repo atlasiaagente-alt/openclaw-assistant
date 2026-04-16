@@ -18,9 +18,9 @@
         },
         {
           "pattern": "C:\\Windows\\System32\\cmd.exe",
-          "lastUsedAt": 1774827797827,
+          "lastUsedAt": 1776190523756,
           "id": "d499cd79-2102-4c1f-8c45-a93a596e650b",
-          "lastUsedCommand": "cmd /c openclaw message send --target 120363424696975095@g.us --message \"Hola, para arrancar bien con la casa, ¿qué dirían que es lo que más se necesita tener mejor organizado esta semana: mercado, agua, comidas o limpieza?\"",
+          "lastUsedCommand": "cmd /c \"openclaw logs --limit 120 --plain --local-time\"",
           "lastResolvedPath": "C:\\Windows\\System32\\cmd.exe"
         },
         {

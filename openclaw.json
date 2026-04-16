@@ -1,362 +1,362 @@
-﻿{
-    "meta":  {
-                 "lastTouchedVersion":  "2026.3.23-1",
-                 "lastTouchedAt":  "2026-03-25T23:39:11.693Z"
-             },
-    "wizard":  {
-                   "lastRunAt":  "2026-03-24T02:36:24.515Z",
-                   "lastRunVersion":  "2026.3.23-1",
-                   "lastRunCommand":  "onboard",
-                   "lastRunMode":  "local"
-               },
-    "auth":  {
-                 "profiles":  {
-                                  "anthropic:anthropic-token":  {
-                                                                    "provider":  "anthropic",
-                                                                    "mode":  "token"
-                                                                },
-                                  "openai-codex:default":  {
-                                                               "provider":  "openai-codex",
-                                                               "mode":  "oauth"
-                                                           }
-                              }
-             },
-    "models":  {
-                   "providers":  {
-                                     "ollama":  {
-                                                    "baseUrl":  "http://127.0.0.1:11434",
-                                                    "apiKey":  "ollama-local",
-                                                    "api":  "ollama",
-                                                    "models":  [
-                                                                   {
-                                                                       "id":  "qwen3:8b",
-                                                                       "name":  "qwen3:8b"
-                                                                   }
-                                                               ]
-                                                },
-                                     "anthropic":  {
-                                                       "baseUrl":  "https://api.anthropic.com",
-                                                       "api":  "anthropic-messages",
-                                                       "models":  [
-                                                                      {
-                                                                          "id":  "claude-sonnet-4-6",
-                                                                          "name":  "Claude Sonnet 4.6"
-                                                                      },
-                                                                      {
-                                                                          "id":  "claude-opus-4-6",
-                                                                          "name":  "Claude Opus 4.6"
-                                                                      }
-                                                                  ]
-                                                   }
-                                 }
-               },
-    "agents":  {
-                   "defaults":  {
-                                    "model":  {
-                                                  "primary":  "openai-codex/gpt-5.4",
-                                                  "fallbacks":  [
-                                                                    "anthropic/claude-sonnet-4-6",
-                                                                    "ollama/qwen3:8b"
-                                                                ]
-                                              },
-                                    "models":  {
-                                                   "openai-codex/gpt-5.4":  {
-
-                                                                            },
-                                                   "anthropic/claude-sonnet-4-6":  {
-
-                                                                                   },
-                                                   "anthropic/claude-opus-4-6":  {
-
-                                                                                 },
-                                                   "ollama/qwen3:30b":  {
-
-                                                                        },
-                                                   "ollama/qwen3:8b":  {
-
-                                                                       }
-                                               },
-                                    "workspace":  "C:\\Users\\Gustavo\\.openclaw\\workspace",
-                                    "heartbeat":  {
-                                                      "every":  "45m",
-                                                      "target":  "last",
-                                                      "activeHours":  {
-                                                                          "start":  "08:00",
-                                                                          "end":  "22:30"
-                                                                      }
-                                                  },
-                                    "subagents":  {
-                                                      "maxSpawnDepth":  2,
-                                                      "maxChildrenPerAgent":  3,
-                                                      "maxConcurrent":  4,
-                                                      "archiveAfterMinutes":  45,
-                                                      "runTimeoutSeconds":  900,
-                                                      "model":  "ollama/qwen3:8b"
-                                                  }
-                                },
-                   "list":  [
-                                {
-                                    "id":  "main"
-                                },
-                                {
-                                    "id":  "hestia",
-                                    "name":  "hestia",
-                                    "workspace":  "C:\\Users\\Gustavo\\.openclaw\\workspace-hestia",
-                                    "agentDir":  "C:\\Users\\Gustavo\\.openclaw\\agents\\hestia\\agent"
-                                },
-                                {
-                                    "id":  "ares",
-                                    "name":  "ares",
-                                    "workspace":  "C:\\Users\\Gustavo\\.openclaw\\workspace-ares",
-                                    "agentDir":  "C:\\Users\\Gustavo\\.openclaw\\agents\\ares\\agent",
-                                    "groupChat":  {
-                                                      "historyLimit":  50
-                                                  },
-                                    "model":  {
-                                                  "primary":  "openai-codex/gpt-5.4",
-                                                  "fallbacks":  [
-                                                                    "ollama/qwen3:8b"
-                                                                ]
-                                              }
-                                },
-                                {
-                                    "id":  "prometeo",
-                                    "name":  "prometeo",
-                                    "workspace":  "C:\\Users\\Gustavo\\.openclaw\\workspace-prometeo",
-                                    "agentDir":  "C:\\Users\\Gustavo\\.openclaw\\agents\\prometeo\\agent",
-                                    "model":  {
-                                                  "primary":  "anthropic/claude-sonnet-4-6",
-                                                  "fallbacks":  [
-                                                                    "openai-codex/gpt-5.4",
-                                                                    "ollama/qwen3:30b"
-                                                                ]
-                                              },
-                                    "runtime":  {
-                                                    "type":  "acp",
-                                                    "acp":  {
-                                                                "agent":  "claude",
-                                                                "backend":  "acpx",
-                                                                "mode":  "persistent",
-                                                                "cwd":  "C:\\Users\\Gustavo\\Documents\\tradelab-front"
-                                                            }
-                                                },
-                                    "groupChat":  {
-                                                      "historyLimit":  50
-                                                  }
-                                }
-                            ]
-               },
-    "tools":  {
-                  "profile":  "coding",
-                  "web":  {
-                              "search":  {
-                                             "enabled":  true,
-                                             "provider":  "duckduckgo"
-                                         }
-                          },
-                  "media":  {
-                                "audio":  {
-                                              "enabled":  true,
-                                              "attachments":  {
-                                                                  "mode":  "all",
-                                                                  "maxAttachments":  4
-                                                              },
-                                              "models":  [
-                                                             {
-                                                                 "type":  "cli",
-                                                                 "command":  "python",
-                                                                 "args":  [
-                                                                              "C:\\Users\\Gustavo\\.openclaw\\workspace\\scripts\\whisper-bridge.py",
-                                                                              "{{MediaPath}}",
-                                                                              "--model",
-                                                                              "base",
-                                                                              "--language",
-                                                                              "es"
-                                                                          ],
-                                                                 "timeoutSeconds":  180
-                                                             }
-                                                         ],
-                                              "echoTranscript":  true,
-                                              "echoFormat":  "ðŸ“ {transcript}"
-                                          }
-                            },
-                  "sessions":  {
-                                   "visibility":  "all"
-                               },
-                  "agentToAgent":  {
-                                       "enabled":  true,
-                                       "allow":  [
-                                                     "ares",
-                                                     "prometeo",
-                                                     "hestia",
-                                                     "main"
-                                                 ]
-                                   },
-                  "elevated":  {
-                                   "enabled":  true,
-                                   "allowFrom":  {
-                                                     "whatsapp":  [
-                                                                      "+573183718246"
-                                                                  ]
-                                                 }
-                               },
-                  "exec":  {
-                               "host":  "gateway",
-                               "security":  "full",
-                               "ask":  "off"
-                           }
-              },
-    "bindings":  [
-                     {
-                         "agentId":  "hestia",
-                         "match":  {
-                                       "channel":  "whatsapp",
-                                       "peer":  {
-                                                    "kind":  "direct",
-                                                    "id":  "+573144752380"
-                                                }
-                                   }
-                     },
-                     {
-                         "agentId":  "ares",
-                         "match":  {
-                                       "channel":  "whatsapp",
-                                       "peer":  {
-                                                    "kind":  "group",
-                                                    "id":  "120363424964463765@g.us"
-                                                }
-                                   }
-                     },
-                     {
-                         "agentId":  "prometeo",
-                         "match":  {
-                                       "channel":  "whatsapp",
-                                       "peer":  {
-                                                    "kind":  "group",
-                                                    "id":  "120363407571517396@g.us"
-                                                }
-                                   }
-                     },
-                     {
-                         "agentId":  "hestia",
-                         "match":  {
-                                       "channel":  "whatsapp",
-                                       "peer":  {
-                                                    "kind":  "group",
-                                                    "id":  "120363424696975095@g.us"
-                                                }
-                                   }
-                     }
-                 ],
-    "commands":  {
-                     "native":  "auto",
-                     "nativeSkills":  "auto",
-                     "restart":  true,
-                     "ownerDisplay":  "raw"
-                 },
-    "session":  {
-                    "dmScope":  "per-channel-peer"
-                },
-    "hooks":  {
-                  "internal":  {
-                                   "enabled":  true,
-                                   "entries":  {
-                                                   "session-memory":  {
-                                                                          "enabled":  true
-                                                                      }
-                                               }
-                               }
-              },
-    "channels":  {
-                     "whatsapp":  {
-                                      "enabled":  true,
-                                      "dmPolicy":  "pairing",
-                                      "selfChatMode":  false,
-                                      "allowFrom":  [
-                                                        "+573183718246",
-                                                        "+573144752380"
-                                                    ],
-                                      "groups":  {
-                                                     "120363424964463765@g.us":  {
-                                                                                     "requireMention":  false
-                                                                                 },
-                                                     "120363407571517396@g.us":  {
-                                                                                     "requireMention":  false
-                                                                                 },
-                                                     "120363424696975095@g.us":  {
-                                                                                     "requireMention":  false
-                                                                                 }
-                                                 },
-                                      "groupPolicy":  "allowlist",
-                                      "debounceMs":  0,
-                                      "mediaMaxMb":  50
-                                  }
-                 },
-    "gateway":  {
-                    "port":  18789,
-                    "mode":  "local",
-                    "bind":  "loopback",
-                    "auth":  {
-                                 "mode":  "token",
-                                 "token":  "410fd5717d43fba79ea28c6776e1ce42972b44ad020c6d21"
-                             },
-                    "tailscale":  {
-                                      "mode":  "off",
-                                      "resetOnExit":  false
-                                  },
-                    "nodes":  {
-                                  "denyCommands":  [
-                                                       "camera.snap",
-                                                       "camera.clip",
-                                                       "screen.record",
-                                                       "contacts.add",
-                                                       "calendar.add",
-                                                       "reminders.add",
-                                                       "sms.send"
-                                                   ]
-                              }
-                },
-    "acp":  {
-                "enabled":  true,
-                "backend":  "acpx",
-                "defaultAgent":  "claude",
-                "allowedAgents":  [
-                                      "claude",
-                                      "codex",
-                                      "pi",
-                                      "opencode",
-                                      "gemini"
-                                  ],
-                "maxConcurrentSessions":  4,
-                "stream":  {
-                               "coalesceIdleMs":  300,
-                               "maxChunkChars":  1200
-                           },
-                "runtime":  {
-                                "ttlMinutes":  120
-                            }
-            },
-    "plugins":  {
-                    "entries":  {
-                                    "duckduckgo":  {
-                                                       "enabled":  true
-                                                   },
-                                    "acpx":  {
-                                                 "enabled":  true,
-                                                 "config":  {
-                                                                "permissionMode":  "approve-all",
-                                                                "nonInteractivePermissions":  "deny"
-                                                            }
-                                             }
-                                }
-                },
-    "cron":  {
-                 "enabled":  true,
-                 "maxConcurrentRuns":  1,
-                 "sessionRetention":  "12h",
-                 "runLog":  {
-                                "maxBytes":  "3mb",
-                                "keepLines":  1500
-                            }
-             }
+{
+  "meta": {
+    "lastTouchedVersion": "2026.3.23-1",
+    "lastTouchedAt": "2026-04-14T01:16:08.478Z"
+  },
+  "wizard": {
+    "lastRunAt": "2026-04-08T01:24:16.723Z",
+    "lastRunVersion": "2026.3.23-1",
+    "lastRunCommand": "configure",
+    "lastRunMode": "local"
+  },
+  "auth": {
+    "profiles": {
+      "openai-codex:default": {
+        "provider": "openai-codex",
+        "mode": "oauth"
+      }
+    }
+  },
+  "acp": {
+    "enabled": true,
+    "backend": "acpx",
+    "defaultAgent": "codex",
+    "allowedAgents": [
+      "codex",
+      "pi",
+      "opencode",
+      "gemini"
+    ],
+    "maxConcurrentSessions": 4,
+    "stream": {
+      "coalesceIdleMs": 300,
+      "maxChunkChars": 1200
+    },
+    "runtime": {
+      "ttlMinutes": 120
+    }
+  },
+  "models": {
+    "providers": {
+      "ollama": {
+        "baseUrl": "http://127.0.0.1:11434",
+        "apiKey": "ollama-local",
+        "api": "ollama",
+        "models": [
+          {
+            "id": "qwen3:8b",
+            "name": "qwen3:8b"
+          }
+        ]
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "openai-codex/gpt-5.4",
+        "fallbacks": [
+          "ollama/qwen3:30b",
+          "ollama/qwen3:8b",
+          "openai-codex/gpt-5.1",
+          "openai-codex/gpt-5.1-codex-max",
+          "openai-codex/gpt-5.1-codex-mini"
+        ]
+      },
+      "models": {
+        "openai-codex/gpt-5.4": {},
+        "ollama/qwen3:30b": {},
+        "ollama/qwen3:8b": {},
+        "openai-codex/gpt-5.1": {},
+        "openai-codex/gpt-5.1-codex-max": {},
+        "openai-codex/gpt-5.1-codex-mini": {}
+      },
+      "workspace": "C:\\Users\\Gustavo\\.openclaw\\workspace",
+      "heartbeat": {
+        "every": "45m",
+        "activeHours": {
+          "start": "08:00",
+          "end": "22:30"
+        },
+        "target": "last"
+      },
+      "subagents": {
+        "maxConcurrent": 4,
+        "maxSpawnDepth": 2,
+        "maxChildrenPerAgent": 3,
+        "archiveAfterMinutes": 45,
+        "model": "ollama/qwen3:8b",
+        "runTimeoutSeconds": 900
+      }
+    },
+    "list": [
+      {
+        "id": "main"
+      },
+      {
+        "id": "hestia",
+        "name": "hestia",
+        "workspace": "C:\\Users\\Gustavo\\.openclaw\\workspace-hestia",
+        "agentDir": "C:\\Users\\Gustavo\\.openclaw\\agents\\hestia\\agent"
+      },
+      {
+        "id": "ares",
+        "name": "ares",
+        "workspace": "C:\\Users\\Gustavo\\.openclaw\\workspace-ares",
+        "agentDir": "C:\\Users\\Gustavo\\.openclaw\\agents\\ares\\agent",
+        "model": {
+          "primary": "openai-codex/gpt-5.4",
+          "fallbacks": [
+            "ollama/qwen3:8b"
+          ]
+        },
+        "groupChat": {
+          "historyLimit": 50
+        }
+      },
+      {
+        "id": "prometeo",
+        "name": "prometeo",
+        "workspace": "C:\\Users\\Gustavo\\.openclaw\\workspace-prometeo",
+        "agentDir": "C:\\Users\\Gustavo\\.openclaw\\agents\\prometeo\\agent",
+        "model": {
+          "primary": "openai-codex/gpt-5.4",
+          "fallbacks": [
+            "ollama/qwen3:30b"
+          ]
+        },
+        "groupChat": {
+          "historyLimit": 50
+        },
+        "runtime": {
+          "type": "acp",
+          "acp": {
+            "agent": "openai",
+            "backend": "acpx",
+            "mode": "persistent",
+            "cwd": "C:\\Users\\Gustavo\\Documents\\tradelab-front"
+          }
+        }
+      },
+      {
+        "id": "prisma",
+        "name": "prisma",
+        "workspace": "C:\\Users\\Gustavo\\.openclaw\\workspace-prisma",
+        "agentDir": "C:\\Users\\Gustavo\\.openclaw\\agents\\prisma\\agent",
+        "groupChat": {
+          "historyLimit": 50,
+          "mentionPatterns": [
+            "\\bprisma\\b",
+            "\\bPrisma\\b"
+          ]
+        }
+      }
+    ]
+  },
+  "tools": {
+    "profile": "coding",
+    "web": {
+      "search": {
+        "enabled": true,
+        "provider": "duckduckgo"
+      }
+    },
+    "media": {
+      "audio": {
+        "enabled": true,
+        "attachments": {
+          "mode": "all",
+          "maxAttachments": 4
+        },
+        "models": [
+          {
+            "type": "cli",
+            "command": "python",
+            "args": [
+              "C:\\Users\\Gustavo\\.openclaw\\workspace\\scripts\\whisper-bridge.py",
+              "{{MediaPath}}",
+              "--model",
+              "base",
+              "--language",
+              "es"
+            ],
+            "timeoutSeconds": 180
+          }
+        ],
+        "echoTranscript": true,
+        "echoFormat": "ðŸ“ {transcript}"
+      }
+    },
+    "sessions": {
+      "visibility": "all"
+    },
+    "agentToAgent": {
+      "enabled": true,
+      "allow": [
+        "ares",
+        "prometeo",
+        "hestia",
+        "main"
+      ]
+    },
+    "elevated": {
+      "enabled": true,
+      "allowFrom": {
+        "whatsapp": [
+          "+573183718246"
+        ]
+      }
+    },
+    "exec": {
+      "host": "gateway",
+      "security": "full",
+      "ask": "off"
+    }
+  },
+  "bindings": [
+    {
+      "agentId": "hestia",
+      "match": {
+        "channel": "whatsapp",
+        "peer": {
+          "kind": "direct",
+          "id": "+573144752380"
+        }
+      }
+    },
+    {
+      "agentId": "ares",
+      "match": {
+        "channel": "whatsapp",
+        "peer": {
+          "kind": "group",
+          "id": "120363424964463765@g.us"
+        }
+      }
+    },
+    {
+      "agentId": "prometeo",
+      "match": {
+        "channel": "whatsapp",
+        "peer": {
+          "kind": "group",
+          "id": "120363407571517396@g.us"
+        }
+      }
+    },
+    {
+      "agentId": "hestia",
+      "match": {
+        "channel": "whatsapp",
+        "peer": {
+          "kind": "group",
+          "id": "120363424696975095@g.us"
+        }
+      }
+    },
+    {
+      "agentId": "prisma",
+      "match": {
+        "channel": "whatsapp",
+        "peer": {
+          "kind": "group",
+          "id": "120363410320000607@g.us"
+        }
+      }
+    }
+  ],
+  "commands": {
+    "native": "auto",
+    "nativeSkills": "auto",
+    "restart": true,
+    "ownerDisplay": "raw"
+  },
+  "session": {
+    "dmScope": "per-channel-peer"
+  },
+  "cron": {
+    "enabled": true,
+    "maxConcurrentRuns": 1,
+    "sessionRetention": "12h",
+    "runLog": {
+      "maxBytes": "3mb",
+      "keepLines": 1500
+    }
+  },
+  "hooks": {
+    "internal": {
+      "enabled": true,
+      "entries": {
+        "session-memory": {
+          "enabled": true
+        }
+      }
+    }
+  },
+  "channels": {
+    "whatsapp": {
+      "enabled": true,
+      "dmPolicy": "pairing",
+      "selfChatMode": false,
+      "allowFrom": [
+        "+573183718246",
+        "+573144752380"
+      ],
+      "groupPolicy": "allowlist",
+      "groups": {
+        "120363424964463765@g.us": {
+          "requireMention": false
+        },
+        "120363407571517396@g.us": {
+          "requireMention": false
+        },
+        "120363424696975095@g.us": {
+          "requireMention": false
+        },
+        "120363410320000607@g.us": {
+          "requireMention": false
+        }
+      },
+      "debounceMs": 0,
+      "mediaMaxMb": 50
+    }
+  },
+  "gateway": {
+    "port": 18789,
+    "mode": "local",
+    "bind": "loopback",
+    "auth": {
+      "mode": "token",
+      "token": "410fd5717d43fba79ea28c6776e1ce42972b44ad020c6d21"
+    },
+    "tailscale": {
+      "mode": "off",
+      "resetOnExit": false
+    },
+    "nodes": {
+      "denyCommands": [
+        "camera.snap",
+        "camera.clip",
+        "screen.record",
+        "contacts.add",
+        "calendar.add",
+        "reminders.add",
+        "sms.send"
+      ]
+    }
+  },
+  "plugins": {
+    "entries": {
+      "duckduckgo": {
+        "enabled": true
+      },
+      "acpx": {
+        "enabled": true,
+        "config": {
+          "permissionMode": "approve-all",
+          "nonInteractivePermissions": "deny"
+        }
+      }
+    }
+  }
 }
